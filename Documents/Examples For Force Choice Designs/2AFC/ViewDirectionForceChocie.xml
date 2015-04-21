@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <TrialTypes>
+        
+        <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams  Name = "BasicTraining" CueType = "NoCue"  ChoicesType = "NoChoices" ProbWeight = "1"  JuiceMS = "60" MultipleSaccades = "0"  TrialTimeoutMS = "60000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0"  FixationSpotSize = "30"  FixationSpotType = "Disc" FixationRegion = "50" FixationPosition = "Random" AbortTrialIfTouchOutsideCue = "1" RewardTouchCue = "1"  RewardSound = "CorrectTrialSoundFile"             >  </PreCueFixation>
+            <PostChoice InterTrialIntervalMinSec = "0"  InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" > </PostChoice>
+        </Trial>         
+        <!-- ********************************************************************************************* -->
+   
+        
+        <Trial>
+            <TrialParams Name = "ViewDirection_Left_Easy_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "50" MultipleSaccades = "0" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0"  FixationSpotSize = "30" FixationSpotType = "Diamond" FixationRegion = "60" FixationPosition = "Center" FixationColor = " 0 255 0" AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0"             >  </PreCueFixation>            
+            <Cue DisplayCue = "1"  CueMedia = "Random" CueValidAttributes = "ViewDiscrimination_Exp1;Left;DifficultyEasy" CueInvalidAttributes = "" CuePeriodMS = "1000" OverlayFixation = "0" >  </Cue>
+            <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "1" > </ChoicesParam>                   
+                <Choice  Media ="Circle" Position = "-300 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>                 
+                <Choice Media ="Circle" Position = "300 0" JuiceReward = "0" SizePix = "80" > </Choice>
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "3" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0" > </PostChoice>
+        </Trial>         
+        
+        <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "ViewDirection_Right_Easy_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "50" MultipleSaccades = "0" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0"  FixationSpotSize = "30" FixationSpotType = "Diamond" FixationRegion = "60" FixationPosition = "Center" FixationColor = " 0 255 0" AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0"             >  </PreCueFixation>            
+            <Cue DisplayCue = "1"  CueMedia = "Random" CueValidAttributes = "ViewDiscrimination_Exp1;Right;DifficultyEasy" CueInvalidAttributes = "" CuePeriodMS = "1000" OverlayFixation = "0" >  </Cue>
+            <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "1" > </ChoicesParam>                   
+                <Choice  Media ="Circle" Position = "-300 0" JuiceReward = "0" SizePix = "80"  > </Choice>                 
+                <Choice Media ="Circle" Position = "300 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile"> </Choice>
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "3" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0" > </PostChoice>
+        </Trial>                         
+        <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "ViewDirection_Right_Training_Exp1"  CueType = "Random"  ChoicesType = "Fixed"  ProbWeight = "1"  JuiceMS = "60" MultipleSaccades = "0" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "30" FixationSpotType = "Diamond" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 255 0"  AbortTrialIfTouchOutsideCue = "0"  RewardTouchCue = "0"    >  </PreCueFixation>            
+            <Cue DisplayCue = "1" CueMedia = "Random"  CuePeriodMS = "1000"  CueValidAttributes = "ViewDiscrimination_Exp1;Right;DifficultyEasy" CueInvalidAttributes = "" OverlayFixation = "0" >  </Cue>
+            <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "1" > </ChoicesParam>                   
+                <Choice Media ="Circle" Position = "300 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "3" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0" > </PostChoice>
+        </Trial>                 
+        <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "ViewDirection_Left_Training_Exp1"  CueType = "Random"  ChoicesType = "Fixed"  ProbWeight = "1"  JuiceMS = "60" MultipleSaccades = "0" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "30" FixationSpotType = "Diamond" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 255 0"  AbortTrialIfTouchOutsideCue = "0"  RewardTouchCue = "0"    >  </PreCueFixation>            
+            <Cue DisplayCue = "1" CueMedia = "Random"  CuePeriodMS = "1000"  CueValidAttributes = "ViewDiscrimination_Exp1;Left;DifficultyEasy" CueInvalidAttributes = "" OverlayFixation = "0" >  </Cue>
+            <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "1" > </ChoicesParam>                   
+                <Choice Media ="Circle" Position = "-300 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "3" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0" > </PostChoice>
+        </Trial>                 
+        <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "ViewDirection_Right_Intermediate_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "110" MultipleSaccades = "0" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0"  FixationSpotSize = "30" FixationSpotType = "Diamond" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 255 0" AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue DisplayCue = "1"  CueMedia = "Random" CuePeriodMS = "1000" CueValidAttributes = "ViewDiscrimination_Exp1;Right;DifficultyIntermediate" CueInvalidAttributes = "" OverlayFixation = "0" >  </Cue> 
+            <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "1" > </ChoicesParam>                    
+                <Choice Media ="Circle" Position = "300 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+                <Choice Media ="Circle"  Position = "-300 0" JuiceReward = "0" SizePix = "80" > </Choice>                 
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "3" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0" > </PostChoice>
+        </Trial>             
+        <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "ViewDirection_Left_Intermediate_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "110" MultipleSaccades = "0" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0"  FixationSpotSize = "30" FixationSpotType = "Diamond" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 255 0" AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue DisplayCue = "1"  CueMedia = "Random" CuePeriodMS = "1000" CueValidAttributes = "ViewDiscrimination_Exp1;Left;DifficultyIntermediate" CueInvalidAttributes = "" OverlayFixation = "0" >  </Cue> 
+            <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "1" > </ChoicesParam>                    
+                <Choice Media ="Circle" Position = "300 0" JuiceReward = "0" SizePix = "80"  > </Choice>
+                <Choice Media ="Circle"  Position = "-300 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>                 
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "3" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0" > </PostChoice>
+        </Trial>             
+        
+    </TrialTypes>
+    
+    <TrialOrder>
+        <Block Name = "Easy" Types = "ViewDirection_Left_Easy_Exp1;ViewDirection_Right_Easy_Exp1" NumTrials = "10" RepeatIncorrect = "1"> </Block>
+        <Block Types = "BasicTraining"                                                              NumTrials = "15"> </Block>
+        <Block Types = "ViewDirection_Right_Training_Exp1"                         NumTrials = "30"> </Block>
+        <Block Types = "ViewDirection_Left_Training_Exp1"                          NumTrials = "40"> </Block>
+        <Block Types = "ViewDirection_Right_Training_Exp1"                         NumTrials = "2"> </Block>
+        <Block Types = "ViewDirection_Right_Easy_Exp1"                              NumTrials = "30"> </Block>
+        <Block Types = "ViewDirection_Left_Training_Exp1"                           NumTrials = "2"> </Block>
+        <Block Types = "ViewDirection_Left_Easy_Exp1"                                 NumTrials = "40"> </Block>
+        <Block Types = "ViewDirection_Right_Easy_Exp1"                              NumTrials = "20"> </Block>
+        <Block Types = "ViewDirection_Left_Easy_Exp1"                                 NumTrials = "30"> </Block>
+        <Block Types = "ViewDirection_Left_Easy_Exp1;ViewDirection_Right_Easy_Exp1" NumTrials = "100"> </Block>
+        <Block Types = "BasicTraining"                                                              NumTrials = "5"> </Block>
+        <Block Types = "ViewDirection_Left_Easy_Exp1;ViewDirection_Right_Easy_Exp1" NumTrials = "100"> </Block>
+        <Block Types = "BasicTraining"                                                              NumTrials = "5"> </Block>
+        <Block Types = "ViewDirection_Left_Easy_Exp1;ViewDirection_Right_Easy_Exp1" NumTrials = "100"> </Block>
+        <Block Types = "BasicTraining"                                                              NumTrials = "5"> </Block>
+        <Block Types = "ViewDirection_Left_Easy_Exp1;ViewDirection_Right_Easy_Exp1" NumTrials = "100"> </Block>
+        <Block Types = "BasicTraining"                                                              NumTrials = "5"> </Block>
+        <Block Types = "ViewDirection_Left_Intermediate_Exp1;ViewDirection_Right_Intermediate_Exp1" NumTrials = "5000"> </Block>
+    </TrialOrder>         
+    
+    <Media>
+        <Image Name = "ID1_Yaw_1_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_1_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_2_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_2_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_3_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_3_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_4_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_4_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_5_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_5_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_6_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_6_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_8_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_8_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_10_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_10_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_12_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_12_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_14_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_14_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_16_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_16_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_18_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_18_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_20_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_20_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_22_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_22_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_24_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_24_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_26_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_26_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_28_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_28_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_30_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_30_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_40_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_40_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_50_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_50_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_60_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_60_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_70_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_70_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_80_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_80_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_90_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_90_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        
+        <Image Name = "ID1_Yaw_-1_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-1_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_-2_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-2_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_-3_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-3_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_-4_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-4_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_-5_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-5_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_-6_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-6_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_-8_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-8_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID1_Yaw_-10_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-10_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-12_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-12_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-14_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-14_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-16_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-16_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-18_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-18_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-20_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-20_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-22_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-22_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-24_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-24_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-26_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-26_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-28_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-28_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID1_Yaw_-30_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-30_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_-40_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-40_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_-50_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-50_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_-60_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-60_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_-70_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-70_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_-80_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-80_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID1_Yaw_-90_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID1\ID1_Yaw_-90_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        
+        
+        <Image Name = "ID2_Yaw_1_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_1_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_2_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_2_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_3_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_3_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_4_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_4_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_5_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_5_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_6_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_6_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_8_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_8_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_10_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_10_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_12_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_12_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_14_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_14_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_16_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_16_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_18_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_18_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_20_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_20_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_22_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_22_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_24_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_24_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_26_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_26_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_28_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_28_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_30_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_30_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_40_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_40_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_50_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_50_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_60_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_60_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_70_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_70_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_80_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_80_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_90_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_90_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Right;DifficultyEasy"> </Image>
+        
+        <Image Name = "ID2_Yaw_-1_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-1_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_-2_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-2_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_-3_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-3_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_-4_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-4_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_-5_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-5_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_-6_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-6_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_-8_Pitch_0"  FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-8_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyHard"> </Image>
+        <Image Name = "ID2_Yaw_-10_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-10_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-12_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-12_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-14_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-14_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-16_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-16_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-18_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-18_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-20_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-20_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-22_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-22_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-24_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-24_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-26_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-26_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-28_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-28_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyIntermediate"> </Image>
+        <Image Name = "ID2_Yaw_-30_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-30_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_-40_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-40_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_-50_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-50_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_-60_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-60_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_-70_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-70_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_-80_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-80_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        <Image Name = "ID2_Yaw_-90_Pitch_0" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ID2\ID2_Yaw_-90_Pitch_0.bmp" Attr = "ViewDiscrimination_Exp1;Identity1;Left;DifficultyEasy"> </Image>
+        
+        <Image Name = "Circle" FileName = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\GreenCircle.png" Attr = ""> </Image>
+        
+    </Media>
+    
+</Config>

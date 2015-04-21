@@ -1,0 +1,15 @@
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\bin\Release\clrzmq.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\bin\Release\clrzmq.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\obj\Release\clrzmq.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\obj\Release\clrzmq.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\obj\Release\ZeroMQ.csprojResolveAssemblyReference.cache
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\bin\Release\clrzmq.dll
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\bin\Release\clrzmq.pdb
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\obj\Release\ZeroMQ.csprojResolveAssemblyReference.cache
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\obj\Release\clrzmq.dll
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\obj\Release\clrzmq.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\bin\Release\clrzmq.dll
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\bin\Release\clrzmq.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\obj\Release\clrzmq.dll
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\obj\Release\clrzmq.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\obj\Release\ZeroMQ.csprojResolveAssemblyReference.cache

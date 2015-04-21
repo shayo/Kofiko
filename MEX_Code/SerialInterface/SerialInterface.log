@@ -1,0 +1,23 @@
+﻿Build started 12/27/2012 4:03:55 PM.
+     1>Project "Z:\MEX_Code\SerialInterface\SerialInterface.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Win32\Release\SerialInterface.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(Z:\MEX_Code\SerialInterface\Win32\Release\SerialInterface.dll) does not match the Linker's OutputFile property value (Z:\MEX\win32\fndllSerialInterface.mexw32). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.mexw32). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(SerialInterface) does not match the Linker's OutputFile property value (fndllSerialInterface). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\MEX\win32\fndllSerialInterface.mexw32" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\MATLAB\R2011a_x32\\extern\lib\win32\microsoft /LIBPATH:"..\..\PublicLib\ZeroMQ-3.2.2\lib_x86" odbc32.lib odbccp32.lib libmx.lib libmex.lib libmat.lib "libzmq-v110-mt-3_2_2.lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"SerialInterface.def" /MANIFEST /ManifestFile:"Win32\Release\SerialInterface.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\Win32\Release\fndllSerialInterface.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Win32\Release\SerialInterface.lib" /MACHINE:X86 /DLL .\Win32\Release\SerialInterface.obj
+            Creating library Win32\Release\SerialInterface.lib and object Win32\Release\SerialInterface.exp
+         SerialInterface.vcxproj -> Z:\MEX_Code\SerialInterface\Win32\Release\SerialInterface.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\MEX\win32\fndllSerialInterface.mexw32;#2" /manifest Win32\Release\SerialInterface.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Win32\Release\SerialInterface.unsuccessfulbuild".
+         Touching "Win32\Release\SerialInterface.lastbuildstate".
+     1>Done Building Project "Z:\MEX_Code\SerialInterface\SerialInterface.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.30

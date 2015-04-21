@@ -1,0 +1,29 @@
+﻿Build started 7/18/2013 3:41:05 PM.
+     1>Project "Z:\MEX_Code\KlustaKwikMatlabWrapper\KlustaKwikMatlabWrapper.vcxproj" on node 2 (rebuild target(s)).
+     1>CoreClean:
+         Creating directory "Win32\Release\".
+       InitializeBuildStatus:
+         Creating "Win32\Release\KlustaKwikMatlabWrapper.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\MATLAB\R2011a_x32\\extern\include /Zi /nologo /W3 /WX- /O2 /Ob1 /Oy- /D MX_COMPAT_32 /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SELECTLABELS_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Win32\Release\\" /Fd".\Win32\Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt KlustaKwikMatlabWrapper.cpp
+         KlustaKwikMatlabWrapper.cpp
+     1>KlustaKwikMatlabWrapper.cpp(83): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>KlustaKwikMatlabWrapper.cpp(129): warning C4996: 'vsnprintf': This function or variable may be unsafe. Consider using vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\include\stdio.h(354) : see declaration of 'vsnprintf'
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(Z:\MEX_Code\KlustaKwikMatlabWrapper\Win32\Release\KlustaKwikMatlabWrapper.dll) does not match the Linker's OutputFile property value (Z:\MEX\win32\fndllKlustaKwikMatlabWrapper.mexw32). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.mexw32). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(992,5): warning MSB8012: TargetName(KlustaKwikMatlabWrapper) does not match the Linker's OutputFile property value (fndllKlustaKwikMatlabWrapper). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\MEX\win32\fndllKlustaKwikMatlabWrapper.mexw32" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\MATLAB\R2011a_x32\\extern\lib\win32\microsoft odbc32.lib odbccp32.lib libmx.lib libmex.lib libmat.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"KlustaKwikMatlabWrapper.def" /MANIFEST /ManifestFile:"Win32\Release\KlustaKwikMatlabWrapper.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\Win32\Release\fndllKlustaKwikMatlabWrapper.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Win32\Release\KlustaKwikMatlabWrapper.lib" /MACHINE:X86 /DLL .\Win32\Release\KlustaKwikMatlabWrapper.obj
+            Creating library Win32\Release\KlustaKwikMatlabWrapper.lib and object Win32\Release\KlustaKwikMatlabWrapper.exp
+         KlustaKwikMatlabWrapper.vcxproj -> Z:\MEX_Code\KlustaKwikMatlabWrapper\Win32\Release\KlustaKwikMatlabWrapper.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\MEX\win32\fndllKlustaKwikMatlabWrapper.mexw32;#2" /manifest Win32\Release\KlustaKwikMatlabWrapper.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Win32\Release\KlustaKwikMatlabWrapper.unsuccessfulbuild".
+         Touching "Win32\Release\KlustaKwikMatlabWrapper.lastbuildstate".
+     1>Done Building Project "Z:\MEX_Code\KlustaKwikMatlabWrapper\KlustaKwikMatlabWrapper.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.05

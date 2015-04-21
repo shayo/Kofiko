@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Unpack GUI Configuration file -->
+
+<Config>
+    <Vars>
+
+    <m_strctParam
+        Name = "UnpackedRoot"
+        Value = "/space/data/$USER/cooked/"
+    > </m_strctParam>
+    
+    <m_strctParam
+        Name = "Subfolder_BOLD"
+        Value = "/bold"
+    > </m_strctParam>
+    
+    <m_strctParam
+        Name = "Subfolder_Fieldmap"
+        Value = "/fieldmap"
+    > </m_strctParam>
+    
+    <m_strctParam
+        Name = "Functional_Stem"
+        Value = "f.nii"
+    > </m_strctParam>
+    
+   <m_strctParam
+        Name = "Fieldmap_Stem"
+        Value = "fieldmap.nii"
+    > </m_strctParam>
+     
+    <m_strctParam
+        Name = "Pipeline"
+        Value = "FuncPreprocPipeline_v1.csh"
+    > </m_strctParam>
+    
+    <m_strctParam
+        Name = "B0_Correction"
+        Value = "1"
+    > </m_strctParam>
+ 
+    
+    <m_strctParam
+        Name = "EPI_Echo_Spacing"
+        Value = "0.63"
+    > </m_strctParam>
+ 
+    <m_strctParam
+        Name = "Smoothing_FWHM"
+        Value = "1"
+    > </m_strctParam>
+       
+    <m_strctParam
+        Name = "UseCluster"
+        Value = "1"
+    > </m_strctParam>
+    
+    <m_strctParam
+        Name = "EmailWhenDone"
+        Value = "1"
+    > </m_strctParam>
+   
+    <m_strctParam
+        Name = "EmailAddress"
+        Value = "$USER@caltech.edu"
+    > </m_strctParam>
+    
+    
+    <m_strctParam
+        Name = "Subfolder_Template"
+        Value = "/MOCOVOL"
+    > </m_strctParam>
+    
+    
+    <m_strctParam
+        Name = "MotionCorrection_Template"
+        Value = "mocovol.nii"
+    > </m_strctParam>
+
+   
+    <m_strctParam
+        Name = "nominal_EPI_echospacing"
+        Value = "0.63"
+    > </m_strctParam>
+    
+   
+    <m_strctParam
+        Name = "Subfolder_Masks"
+        Value = "/masks"
+    > </m_strctParam>
+    
+
+    </Vars>
+    
+</Config>

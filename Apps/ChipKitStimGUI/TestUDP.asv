@@ -1,0 +1,137 @@
+% Demonstrate the basic interaction with the nano stimulator
+addpath('Z:\PublicLib\Msocket\src');
+
+UDP_MODIFY_PULSE_FREQ = 1;
+UDP_MODIFY_PULSE_WIDTH = 2;
+UDP_MODIFY_SECOND_PULSE = 3;
+UDP_MODIFY_TRAIN_LENGTH = 4;
+UDP_MODIFY_TRAIN_FREQ = 5;
+UDP_MODIFY_NUM_TRAINS = 6;
+UDP_MODIFY_TRIG_DELAY = 7;
+UDP_MODIFY_SECOND_PULSE_WIDTH = 8;
+UDP_MODIFY_SECOND_PULSE_DELAY = 9;
+UDP_MODIFY_AMPLITUDE = 10;
+UDP_SOFT_TRIGGER = 11;
+UDP_SAVE_PRESET = 12;
+UDP_LOAD_PRESET = 13;
+UDP_TOGGLE_CHANNEL_ACTIVE = 14;
+
+UDP_GET_CURRENT_SETTINGS = 15;
+UDP_GET_PRESET_DATA = 16;
+
+    sock = udp_msconnect('192.168.50.17',6000);
+
+% Pulse frequency
+for channel=0:1
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 250.0',UDP_MODIFY_PULSE_FREQ,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    
+    % Pulse Width
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 50',UDP_MODIFY_PULSE_WIDTH,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    
+    % Bipolar
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 1',UDP_MODIFY_SECOND_PULSE,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    % Train length
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 1500000',UDP_MODIFY_TRAIN_LENGTH,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    % Train freuqncy
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 10.0',UDP_MODIFY_TRAIN_FREQ,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    % Number of trains
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d  %d 1',UDP_MODIFY_NUM_TRAINS,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    % Trigger delay
+     T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d  %d 0',UDP_MODIFY_TRIG_DELAY,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    
+    % Second pulse width
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 50',UDP_MODIFY_SECOND_PULSE_WIDTH,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    
+    % Second pulse delay
+     T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 50',UDP_MODIFY_SECOND_PULSE_DELAY,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    % Modify amplitude
+     T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d 50',UDP_MODIFY_AMPLITUDE,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+    
+    % Simulate soft trigger
+    T=udp_msrecvraw_mod(sock,0);
+    success = udp_mssendraw_mod(sock,uint8(sprintf('%02d %d',UDP_SOFT_TRIGGER,channel)));
+    T=udp_msrecvraw_mod(sock,1);
+    fprintf('%s\n',char(T));
+end
+
+% Save current settings to a preset
+T=udp_msrecvraw_mod(sock,0);
+success = udp_mssendraw_mod(sock,uint8(sprintf('%02d 0',UDP_SAVE_PRESET)));
+T=udp_msrecvraw_mod(sock,1);
+fprintf('%s\n',char(T));
+
+% load settings to a preset
+T=udp_msrecvraw_mod(sock,0);
+success = udp_mssendraw_mod(sock,uint8(sprintf('%02d 0',UDP_LOAD_PRESET)));
+T=udp_msrecvraw_mod(sock,1);
+fprintf('%s\n',char(T));
+
+
+% disable a channel
+T=udp_msrecvraw_mod(sock,0);
+success = udp_mssendraw_mod(sock,uint8('14 1 0'));
+T=udp_msrecvraw_mod(sock,1);
+fprintf('%s\n',char(T));
+
+% enable a channel
+T=udp_msrecvraw_mod(sock,0);
+success = udp_mssendraw_mod(sock,uint8('%02d 1 1',UDP_TOGGLE_CHANNEL_ACTIVE));
+T=udp_msrecvraw_mod(sock,1);
+fprintf('%s\n',char(T));
+
+
+% Read preset parameters....
+ 
+while (1)
+    T=udp_msrecvraw_mod(sock,0);
+    if isempty(T)
+        break;
+    end;
+end
+success = udp_mssendraw_mod(sock,uint8(sprintf('%02d',UDP_GET_CURRENT_SETTINGS)));
+T=udp_msrecvraw_mod(sock,1);
+str2num(char(T))
+
+sscanf('%f',T)
+char(T)
+fprintf('%s\n',char(T));
+

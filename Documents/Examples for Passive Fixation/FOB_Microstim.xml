@@ -1,0 +1,302 @@
+<Config>
+    
+    <Media>
+        
+        <Image Name = "face1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face1.bmp"  Attr = "Block1;Frontal Faces;" > </Image>
+        <Image Name = "face2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face2.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face3.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face4.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face5.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face6.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face7.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face8.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face9.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face10.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face11.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face12.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face13.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face14.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face15.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        <Image Name = "face16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face16.bmp"  Attr = "Block1;Frontal Faces"> </Image>
+        
+        <Image Name = "body1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body1.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body2.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body3.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body4.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body5.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body6.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body7.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body8.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body9.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body10.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body11.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body12.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body13.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body14.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body15.bmp"  Attr = "Block1;Bodies"> </Image>
+        <Image Name = "body16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body16.bmp"  Attr = "Block1;Bodies"> </Image>
+        
+        <Image Name = "fruit1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit1.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit2.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit3.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit4.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit5.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit6.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit7.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit8.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit9.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit10.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit11.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit12.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit13.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit14.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit15.bmp"  Attr = "Block1;Fruits"> </Image>
+        <Image Name = "fruit16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit16.bmp"  Attr = "Block1;Fruits"> </Image>
+        
+        
+        <Image Name = "techno1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno1.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno2.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno3.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno4.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno5.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno6.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno7.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno8.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno9.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno10.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno11.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno12.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno13.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno14.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno15.bmp"  Attr = "Block1;Gadgets"> </Image>
+        <Image Name = "techno16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno16.bmp"  Attr = "Block1;Gadgets"> </Image>
+        
+        
+        <Image Name = "hand1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand1.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand2.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand3.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand4.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand5.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand6.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand7.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand8.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand9.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand10.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand11.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand12.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand13.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand14.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand15.bmp"  Attr = "Block1;Hands"> </Image>
+        <Image Name = "hand16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand16.bmp"  Attr = "Block1;Hands"> </Image>
+        
+        <Image Name = "techno1_i_grid_scram.bmp1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno1_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno2_i_grid_scram.bmp2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno2_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno3_i_grid_scram.bmp3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno3_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno4_i_grid_scram.bmp4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno4_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno5_i_grid_scram.bmp5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno5_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno6_i_grid_scram.bmp6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno6_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno7_i_grid_scram.bmp7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno7_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno8_i_grid_scram.bmp8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno8_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno9_i_grid_scram.bmp9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno9_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno10_i_grid_scram.bmp10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno10_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno11_i_grid_scram.bmp11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno11_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno12_i_grid_scram.bmp12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno12_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno13_i_grid_scram.bmp13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno13_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno14_i_grid_scram.bmp14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno14_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno15_i_grid_scram.bmp15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno15_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+        <Image Name = "techno16_i_grid_scram.bmp16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno16_i_grid_scram.bmp"  Attr = "Block1;Scrambles"> </Image>
+     
+        
+        <Image Name = "microstim_face1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face1.bmp"  Attr = "Block2;Microstim;Frontal Faces;" > </Image>
+        <Image Name = "microstim_face2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face2.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face3.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face4.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face5.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face6.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face7.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face8.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face9.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face10.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face11.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face12.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face13.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face14.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face15.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        <Image Name = "microstim_face16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\face16.bmp"  Attr = "Block2;Microstim;Frontal Faces"> </Image>
+        
+        <Image Name = "microstim_body1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body1.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body2.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body3.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body4.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body5.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body6.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body7.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body8.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body9.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body10.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body11.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body12.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body13.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body14.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body15.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        <Image Name = "microstim_body16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\body16.bmp"  Attr = "Block2;Microstim;Bodies"> </Image>
+        
+        <Image Name = "microstim_fruit1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit1.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit2.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit3.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit4.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit5.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit6.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit7.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit8.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit9.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit10.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit11.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit12.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit13.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit14.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit15.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        <Image Name = "microstim_fruit16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\fruit16.bmp"  Attr = "Block2;Microstim;Fruits"> </Image>
+        
+        
+        <Image Name = "microstim_techno1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno1.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno2.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno3.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno4.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno5.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno6.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno7.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno8.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno9.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno10.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno11.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno12.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno13.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno14.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno15.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        <Image Name = "microstim_techno16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno16.bmp"  Attr = "Block2;Microstim;Gadgets"> </Image>
+        
+        
+        <Image Name = "microstim_hand1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand1.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand2.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand3.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand4.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand5.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand6.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand7.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand8.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand9.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand10.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand11.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand12.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand13.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand14.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand15.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        <Image Name = "microstim_hand16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\hand16.bmp"  Attr = "Block2;Microstim;Hands"> </Image>
+        
+        <Image Name = "microstim_techno1_i_grid_scram.bmp1" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno1_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno2_i_grid_scram.bmp2" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno2_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno3_i_grid_scram.bmp3" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno3_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno4_i_grid_scram.bmp4" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno4_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno5_i_grid_scram.bmp5" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno5_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno6_i_grid_scram.bmp6" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno6_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno7_i_grid_scram.bmp7" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno7_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno8_i_grid_scram.bmp8" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno8_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno9_i_grid_scram.bmp9" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno9_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno10_i_grid_scram.bmp10" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno10_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno11_i_grid_scram.bmp11" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno11_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno12_i_grid_scram.bmp12" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno12_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno13_i_grid_scram.bmp13" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno13_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno14_i_grid_scram.bmp14" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno14_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno15_i_grid_scram.bmp15" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno15_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+        <Image Name = "microstim_techno16_i_grid_scram.bmp16" FileName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v2_FOB\techno16_i_grid_scram.bmp"  Attr = "Block2;Microstim;Scrambles"> </Image>
+     
+        
+        
+        
+     </Media>
+    
+   <Blocks>
+		<Block Name = "FOB (-Stim)" Attr = "Block1" > </Block>
+        <Block Name = "FOB (+Stim)" Attr = "Block2" > </Block>
+        <Block Name = "FOB (mixed Stim)" Attr = "Block1;Block2" > </Block>
+    </Blocks>
+    
+    <BlockOrder>
+        <Order Name = "Default Order">
+			<Block Name = "FOB (-Stim)" Repitition = "1" > </Block>
+            <Block Name = "FOB (+Stim)" Repitition = "1" > </Block>
+            <Block Name = "FOB (mixed Stim)" Repitition = "1" > </Block>
+          </Order>
+     </BlockOrder>
+        
+    <Conditions>
+        <Condition Name = "Frontal Faces" ValidAttributes = "Frontal Faces" DefaultVisibility = "1"> </Condition>
+        <Condition Name = "Bodies" ValidAttributes = "Bodies" DefaultVisibility = "1"> </Condition>
+        <Condition Name = "Fruits" ValidAttributes = "Fruits" DefaultVisibility = "1"> </Condition>
+        <Condition Name = "Gadgets" ValidAttributes = "Gadgets" DefaultVisibility = "1"> </Condition>
+        <Condition Name = "Hands" ValidAttributes = "Hands" DefaultVisibility = "1"> </Condition>
+        <Condition Name = "Scrambles" ValidAttributes = "Scrambles" DefaultVisibility = "1"> </Condition>
+        <Condition Name = "Sinha" ValidAttributes = "Sinha" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Sinha Effective+BlackHair" ValidAttributes = "Sinha Effective+BlackHair" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Sinha Inverted+BlackHair" ValidAttributes = "Sinha Inverted+BlackHair" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Sinha Effective+WhiteHair" ValidAttributes = "Sinha Effective+WhiteHair" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Sinha Inverted+WhiteHair" ValidAttributes = "Sinha Inverted+WhiteHair" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Aspect Ratio Low" ValidAttributes = "SinhaTuning;AspectRatio_Low" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Aspect Ratio High" ValidAttributes = "SinhaTuning;AspectRatio_High" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Assembly Height Low" ValidAttributes = "SinhaTuning;AssemblyHeight_Low" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Assembly Height High" ValidAttributes = "SinhaTuning;AssemblyHeight_High" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Eye Distance Low" ValidAttributes = "SinhaTuning;EyeDistance_Low" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Eye Distance High" ValidAttributes = "SinhaTuning;EyeDistance_High" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Iris Size Low" ValidAttributes = "SinhaTuning;IrisSize_Low" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Iris Size High" ValidAttributes = "SinhaTuning;IrisSize_High" DefaultVisibility = "0"> </Condition>
+         <Condition Name = "Face CartoonParts" ValidAttributes = "CartoonParts"> </Condition>
+        <Condition Name = "Face CartoonParts+Nose" ValidAttributes = "CartoonParts;Nose"> </Condition>
+        <Condition Name = "Face CartoonParts - Nose" ValidAttributes = "CartoonParts" InvalidAttributes = "Nose"> </Condition>
+        <Condition Name = "Face CartoonParts+Mouth" ValidAttributes = "CartoonParts;Mouth"> </Condition>
+        <Condition Name = "Face CartoonParts - Mouth" ValidAttributes = "CartoonParts" InvalidAttributes = "Mouth"> </Condition>
+        <Condition Name = "Face CartoonParts+EyeBrow" ValidAttributes = "CartoonParts;EyeBrow"> </Condition>
+        <Condition Name = "Face CartoonParts - EyeBrow" ValidAttributes = "CartoonParts" InvalidAttributes = "EyeBrow"> </Condition>
+        <Condition Name = "Face CartoonParts+Pupil" ValidAttributes = "CartoonParts;Pupil"> </Condition>
+        <Condition Name = "Face CartoonParts -Pupil" ValidAttributes = "CartoonParts" InvalidAttributes = "Pupil"> </Condition>
+        <Condition Name = "Face CartoonParts+BoundingEllipse" ValidAttributes = "CartoonParts;BoundingEllipse" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Face CartoonParts -BoundingEllipse" ValidAttributes = "CartoonParts" InvalidAttributes = "BoundingEllipse" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Face CartoonParts+Hair" ValidAttributes = "CartoonParts;Hair"> </Condition>
+        <Condition Name = "Face CartoonParts -Hair" ValidAttributes = "CartoonParts" InvalidAttributes = "Hair"> </Condition>
+        
+        <Condition Name = "Aspect Ratio -" ValidAttributes = "Tuning;AspectRatioLow" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Aspect Ratio 0" ValidAttributes = "Tuning;AspectRatioMedium" > </Condition>
+        <Condition Name = "Aspect Ratio +" ValidAttributes = "Tuning;AspectRatioHigh" DefaultVisibility = "0" > </Condition>
+        
+        <Condition Name = "Eye Distance -" ValidAttributes = "Tuning;EyeDistanceLow" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Eye Distance 0" ValidAttributes = "Tuning;EyeDistanceMedium" > </Condition>
+        <Condition Name = "Eye Distance +" ValidAttributes = "Tuning;EyeDistanceHigh" DefaultVisibility = "0"> </Condition>
+        
+        <Condition Name = "Assembly Height -" ValidAttributes = "Tuning;AssemblyHeightLow" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Assembly Height 0" ValidAttributes = "Tuning;AssemblyHeightMedium" > </Condition>
+        <Condition Name = "Assembly Height +" ValidAttributes = "Tuning;AssemblyHeightHigh" DefaultVisibility = "0"> </Condition>
+        
+        <Condition Name = "Iris Size -" ValidAttributes = "Tuning;IrisSizeLow" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Iris Size 0" ValidAttributes = "Tuning;IrisSizeMedium" > </Condition>
+        <Condition Name = "Iris Size +" ValidAttributes = "Tuning;IrisSizeHigh" DefaultVisibility = "0"> </Condition>
+        
+        <Condition Name = "Sinha8" ValidAttributes = "Sinha8" DefaultVisibility = "0"> </Condition>
+        
+        <Condition Name = "Real Face Inverted" ValidAttributes = "Real Face Inverted" DefaultVisibility = "0"> </Condition>
+        
+        <Condition Name = "Cropped Inverted" ValidAttributes = "CroppedReal;Inverted" DefaultVisibility = "0"> </Condition>
+        <Condition Name = "Cropped Faces" ValidAttributes = "CroppedReal;" DefaultVisibility = "0"> </Condition>
+        
+        
+    </Conditions>
+    
+    <StatServer
+        NumTrialsInCircularBuffer = "200"
+        Pre_TimeSec = "0.5"
+        Post_TimeSec = "0.5"
+    > </StatServer>   
+    
+    
+</Config>
+
+

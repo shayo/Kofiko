@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Data Browser Configuration -->
+
+<Config>
+    
+    <m_strctDirectories
+        m_strDataFolder = "D:\Data\Doris\Electrophys\"
+    > </m_strctDirectories>
+    
+      <m_strctRAWPipelines>
+      <m_acPipeline
+            m_strName = "Passive Fixation (v4) (with photodiode, ignore stim server flips)"
+            m_strFunc = "fnPipelinePassiveFixation_v4"
+        > </m_acPipeline>  
+
+        
+        <m_acPipeline
+            m_strName = "New Optogenetics Standard Analysis Pipeline"
+            m_strFunc = "fnPipelineOptogeneticsMicrostim_v2"
+        > </m_acPipeline>  
+
+        <m_acPipeline
+            m_strName = "Passive Fixation (v3) (with photodiode, use stim server flips)"
+            m_strFunc = "fnPipelinePassiveFixation_v3"
+        > </m_acPipeline>  
+                 
+        <m_acPipeline
+            m_strName = "Passive Fixation (v2) Standard Analysis Pipeline"
+            m_strFunc = "fnPipelinePassiveFixation_v2"
+        > </m_acPipeline>  
+        
+        <m_acPipeline
+            m_strName = "Touch Force Choice Neural Analysis Pipeline"
+            m_strFunc = "fnPipelineForceChoice_v2"
+        > </m_acPipeline>  
+       
+        <m_acPipeline
+            m_strName = "Touch Force Choice (Memory Guided Saccades) Neural Analysis Pipeline"
+            m_strFunc = "fnPipelineForceChoice_v3_Saccades"
+        > </m_acPipeline>  
+       
+        
+        <m_acPipeline
+            m_strName = "Touch Force Choice (memory guided saccade)"
+            m_strFunc = "fnPipelineTouchForceChoice_v1"
+        > </m_acPipeline>  
+        
+      <m_acPipeline
+            m_strName = "Touch Force Choice (Mid-Saccade stim)"
+            m_strFunc = "fnPipelineTouchForceChoice_v2"
+        > </m_acPipeline>  
+         
+        <m_acPipeline
+            m_strName = "Optogenetics Microstim Standard Analysis Pipeline"
+            m_strFunc = "fnPipelineOptogeneticsMicrostim_v1"
+        > </m_acPipeline>  
+
+        <m_acPipeline
+            m_strName = "Electrical Microstim (no amplitude data)"
+            m_strFunc = "fnPipelineElectricalMicrostim_v1"
+        > </m_acPipeline>  
+
+        <m_acPipeline
+            m_strName = "Electrical Microstim (with amplitude)"
+            m_strFunc = "fnPipelineElectricalMicrostim_v2"
+        > </m_acPipeline>  
+        
+            <m_acPipeline
+            m_strName = "Electrical Microstim (for optical induced saccade sites)"
+            m_strFunc = "fnPipelineElectricalMicrostim_v3"
+        > </m_acPipeline>  
+        
+    
+     
+        <m_acPipeline
+            m_strName = "Electrical Microstim (for antidromic spikes)"
+            m_strFunc = "fnPipelineElectricalMicrostim_v4"
+        > </m_acPipeline>  
+           
+
+        <m_acPipeline
+            m_strName = "Invivo fluorescence measurement pipeline"
+            m_strFunc = "fnPipelineFiberscope_v1"
+        > </m_acPipeline>  
+        
+       </m_strctRAWPipelines>
+       
+       
+    <m_strctProcessedPipelines>
+        <m_acPipeline
+            m_strName = "Saccades During Force Choice"
+            m_strFunc = "fnTouchForceChoiceAnalyzeSaccades"
+        > </m_acPipeline>
+        
+        <m_acPipeline
+            m_strName = "Saccades During Force Choice 2"
+            m_strFunc = "fnTouchForceChoiceAnalyzeSaccades"
+        > </m_acPipeline>
+        
+    </m_strctProcessedPipelines>
+    
+  <m_strctPopulationPipelines>
+        <m_acPipeline
+            m_strName = "Touch Force Choice: behavior"
+            m_strFunc = "fnTouchForceChoicePopulationBehavior"
+        > </m_acPipeline>
+        
+        <m_acPipeline
+            m_strName = "Optical Stimulation: Eye movements"
+            m_strFunc = "fnOpticalStimulationEyeMovementPopulationAnalysis"
+        > </m_acPipeline>        
+        
+        <m_acPipeline
+            m_strName = "Optical Stimulation: Neural Response"
+            m_strFunc = "fnOpticalStimulationNeuralResponsePopulationAnalysis"
+        > </m_acPipeline>        
+        
+        <m_acPipeline
+            m_strName = "Optical Stimulation: Eye movement Control"
+            m_strFunc = "fnOpticalStimulationEyeMovementPopulationAnalysisControl"
+        > </m_acPipeline>        
+
+        
+        <m_acPipeline
+            m_strName = "Optical Stimulation:  Memory Saccade Task"
+            m_strFunc = "fnOpticalStimulationBehaviorPopulationAnalysis"
+        > </m_acPipeline>                
+        
+      <m_acPipeline
+            m_strName = "Memory Saccade Task Neural Response"
+            m_strFunc = "fnOpticalStimulationNeuralPopulationAnalysis"
+        > </m_acPipeline>                
+   
+        
+       
+      <m_acPipeline
+            m_strName = "Cheta Optogenetics in Anakin"
+            m_strFunc = "fnChetaOpticalStimulationNeuralPopulationAnalysis"
+        > </m_acPipeline>                
+        
+  </m_strctPopulationPipelines>       
+  
+</Config>

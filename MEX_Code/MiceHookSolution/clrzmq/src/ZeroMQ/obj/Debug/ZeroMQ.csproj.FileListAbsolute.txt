@@ -1,0 +1,12 @@
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\bin\Debug\clrzmq.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\bin\Debug\clrzmq.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\obj\Debug\clrzmq.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ\obj\Debug\clrzmq.pdb
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\bin\Debug\clrzmq.dll
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\bin\Debug\clrzmq.pdb
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\obj\Debug\clrzmq.dll
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ\obj\Debug\clrzmq.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\bin\Debug\clrzmq.dll
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\bin\Debug\clrzmq.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\obj\Debug\clrzmq.dll
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ\obj\Debug\clrzmq.pdb

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Stimulus Server Configuration -->
+
+<Config>
+
+<Directories
+   LogFolder="C:\Shay\Data\Logs\"
+   PTB_Folder = "C:\Shay\Code\PublicLib\PTB\"
+> </Directories>
+
+<StimulusServer
+    Port = "1502"
+    ListenTimeoutSec = "5"
+    CommandTimeoutSec = "35"
+    PTBScreen = "1"
+    StereoMode = "10"
+    SkipSyncTests = "0"
+    DebugMode = "0"
+    VirtualServer = "0"
+    SimulateSpikeTrain = "0"
+    CaptureOtherScreens = "0"
+    NetworkCmdTimeout = "0"
+> </StimulusServer>
+
+
+</Config>

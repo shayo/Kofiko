@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Passive Fixation Paradigm Data Analysis Pipeline Configuration -->
+
+<Config>
+
+<!-- Passive Fixation Configuration -->                
+            <m_strctGeneral
+                m_strParadigmName = "Passive Fixation"
+
+                m_strAnalysisDescription = "Passive Fixation - Standard Analysis"
+                m_bActiveNeuralAnalysis = "1"
+
+                m_strStatisticsFunction = "fnCollectPassiveFixationUnitStats"
+                m_strDisplayFunction = "fnDisplayPassiveFixation"
+
+                m_strMultiChannelStatisticsFunction = "fnDummyMultiChannelAnalysis"
+                
+                m_bActiveBehaviorAnalysis = "0"
+                m_strBehaviorStatisticsScript = ""
+                m_strBehaviorDisplayScript = ""                
+
+            > </m_strctGeneral>
+            
+            <m_strctParams
+                m_bSkipInactiveDesigns = "0"
+                
+                m_strSyncMethod = "FlipTime"
+                
+                m_fFixationPercThreshold = "95"
+                
+                m_bIncludeLFP_PerTrial = "0"
+                m_bIncludeLFP_PerGroup = "1"
+                
+                m_iBeforeMS = "-200"
+                m_iAfterMS = "500"
+                
+                m_iStartAvgMS = "50"
+                m_iEndAvgMS = "250"
+                m_iStartBaselineAvgMS = "0"
+                m_iEndBaselineAvgMS = "50"
+                
+                m_iConfidenceLevel = "0.05"
+                m_iDiscardUnitMinimumSpikes = "50"    
+                
+                m_bFourierAnalysis = "0"
+                
+                m_iTimeSmoothingMS = "15"
+                m_bGaussianSmoothing = "1"
+                m_bSubtractBaseline = "1"
+            > </m_strctParams>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha List V0"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\SinhaFOB\SinhaFOB.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\SinhaFOB\SinhaFOB.txt"
+                m_strAnalysisScript = "fnAnalyzeSinhaFOB"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha List V1"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\Sinha_randbackAndControl\128x128\List.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\Sinha_randbackAndControl\128x128\List.txt"
+                m_strAnalysisScript = "fnAnalyzeSinha"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+            > </m_acSpecificAnalysis>
+
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha List V2"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\Sinha_v2_FOB\Sinha_v2_FOB.txt"
+                m_strDesignName2 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_4.txt"
+                m_strDesignName3 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_8.txt"
+                m_strDesignName4 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_16.txt"
+                m_strDesignName5 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_32.txt"
+                m_strDesignName6 = "\\kofiko\StimulusSet\Sinha_v2_FOB_SecondTemplate\Sinha_v2_FOB_SecondTemplate.txt"
+                m_strDesignName7 = "\\kofiko\StimulusSet\Sinha_Edges\Sinha_Edges.txt"
+                m_strDesignName8 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB\Sinha_v2_FOB.txt"
+                m_strDesignName9 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_4.txt"
+                m_strDesignName10 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_8.txt"
+                m_strDesignName11 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_16.txt"
+                m_strDesignName12 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_32.txt"
+                m_strDesignName13 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_SecondTemplate\Sinha_v2_FOB_SecondTemplate.txt"
+                m_strDesignName14 = "\\kofiko-23B\StimulusSet\Sinha_Edges\Sinha_Edges.txt"
+                
+                m_strAnalysisScript = "fnAnalyzeSinhaV2"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+                
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha Profile List "
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\Sinha_Profile\Sinha_Profile.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\Sinha_Profile\Sinha_Profile.txt"
+                m_strAnalysisScript = "fnAnalyzeSinhaProfile"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "CBCL List"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\CMU_CBCL_Experiment\CMU_CBCL_Experiment.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\CMU_CBCL_Experiment\CMU_CBCL_Experiment.txt"
+                m_strAnalysisScript = "fnAnalyzeCBCL"
+                m_strDisplayScript = "fnDisplayCBCLAnalysis"
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Parameter Sweep"
+                m_bActive = "1"
+
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Monkey_Bodyparts\StandardFOB_v2_sweep.txt"
+                m_strAnalysisScript = "fnAnalyzeParameterSweep"
+                m_strDisplayScript = "fnDisplayParameterSweep"
+            > </m_acSpecificAnalysis>
+            
+          <m_acSpecificAnalysis
+                m_strAnalysisDescription = "ViolaJones"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Caltech256_VJ\ViolaJones.txt"
+                m_strAnalysisScript = "fnAnalyzeViolaJones"
+                m_strDisplayScript = "fnDisplayViolaJones"
+            > </m_acSpecificAnalysis>
+
+            
+            
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "FOB"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Monkey_Bodyparts\StandardFOB_v2.txt"
+                m_strAnalysisScript = "fnDummyPassiveFixationAnalysis"
+                m_strDisplayScript = "fnDisplayPassiveFixation"
+            > </m_acSpecificAnalysis>
+              
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Face Views"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\face_views\imlist_faceviews.txt"
+                m_strAnalysisScript = "fnDummyPassiveFixationAnalysis"
+                m_strDisplayScript = "fnDisplayPassiveFixation"
+            > </m_acSpecificAnalysis>
+             
+            
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "FOB Inv"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Monkey_Bodyparts\StandardFOB_v4_Inv.txt"
+                m_strAnalysisScript = "fnAnalyzeFOBInv"
+                m_strDisplayScript = "fnDisplayPassiveFixationInv"
+            > </m_acSpecificAnalysis>
+            
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "CBCL Inv List"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\CMU_CBCL_Experiment_Inv\CMU_CBCL_Experiment_Inv.txt"
+                m_strAnalysisScript = "fnAnalyzeCBCL_Inv"
+                m_strDisplayScript = "fnDisplayCBCL_Inv"
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+              
+            
+        </m_acParadigmAnalysis>
+        
+           
+        
+     
+        
+       
+    
+<!-- Population Analysis Configuration -->
+  
+</Config>

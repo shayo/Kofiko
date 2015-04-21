@@ -1,0 +1,28 @@
+﻿Build started 5/16/2014 9:43:09 AM.
+     1>Project "Z:\MEX_Code\DAQ\fnDAQ.vcxproj" on node 2 (build target(s)).
+     1>PrepareForBuild:
+         Creating directory "x64\Release\".
+       InitializeBuildStatus:
+         Creating "x64\Release\fnDAQ.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\MATLAB\R2014a_x64\\extern\include /I..\..\PublicLib\MCCDAQ_64 /Zi /nologo /W3 /WX- /O2 /Ob1 /D MX_COMPAT_32 /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SELECTLABELS_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x64\Release\\" /Fd".\x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt fnDAQ.cpp
+         fnDAQ.cpp
+     1>fnDAQ.cpp(29): warning C4244: '=' : conversion from 'LONGLONG' to 'double', possible loss of data
+     1>fnDAQ.cpp(242): warning C4101: 'LowChan' : unreferenced local variable
+     1>fnDAQ.cpp(242): warning C4101: 'HighChan' : unreferenced local variable
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(Z:\MEX_Code\DAQ\x64\Release\fnDAQ.dll) does not match the Linker's OutputFile property value (Z:\MEX\x64\fnDAQ.mexw64). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.mexw64). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\MEX\x64\fnDAQ.mexw64" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\MATLAB\R2014a_x64\\extern\lib\win64\microsoft /LIBPATH:..\..\PublicLib\MCCDAQ_64 odbc32.lib odbccp32.lib libmx.lib libmex.lib libmat.lib cbw64.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\fnDAQ.def" /MANIFEST /ManifestFile:"x64\Release\fnDAQ.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\x64\Release\fndllfnDAQ.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"x64\Release\fnDAQ.lib" /MACHINE:X64 /DLL .\x64\Release\fnDAQ.obj
+            Creating library x64\Release\fnDAQ.lib and object x64\Release\fnDAQ.exp
+         fnDAQ.vcxproj -> Z:\MEX_Code\DAQ\x64\Release\fnDAQ.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\MEX\x64\fnDAQ.mexw64;#2" /manifest x64\Release\fnDAQ.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\fnDAQ.unsuccessfulbuild".
+         Touching "x64\Release\fnDAQ.lastbuildstate".
+     1>Done Building Project "Z:\MEX_Code\DAQ\fnDAQ.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.67

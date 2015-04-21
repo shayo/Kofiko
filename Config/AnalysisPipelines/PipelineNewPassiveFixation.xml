@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Passive Fixation New Paradigm Configuration -->        
+
+<Config>
+    
+    <m_strctGeneral
+        m_strParadigmName = "Passive Fixation New"
+        
+        m_strAnalysisDescription = "Passive Fixation New - Standard Analysis"
+        m_bActiveNeuralAnalysis = "1"
+        
+        m_strStatisticsFunction = "fnCollectPassiveFixationNewUnitStats"
+        m_strDisplayFunction = "fnDisplayPassiveFixation_v2"
+        
+        m_strMultiChannelStatisticsFunction = "fnDummyMultiChannelAnalysis"
+        
+        m_bActiveBehaviorAnalysis = "0"
+        m_strBehaviorStatisticsScript = ""
+        m_strBehaviorDisplayScript = ""                
+        
+    > </m_strctGeneral>
+    
+    <m_strctParams
+        m_bSkipInactiveDesigns = "0"
+        
+        m_strSyncMethod = "FlipTime"
+        
+        m_fFixationPercThreshold = "90"
+        
+        m_bIncludeLFP_PerTrial = "0"
+        m_bIncludeLFP_PerGroup = "1"
+        
+        m_iBeforeMS = "-200"
+        m_iAfterMS = "500"
+        
+        m_iStartAvgMS = "60"
+        m_iEndAvgMS = "220"
+        m_iStartBaselineAvgMS = "0"
+        m_iEndBaselineAvgMS = "50"
+        
+        m_iConfidenceLevel = "0.05"
+        m_iDiscardUnitMinimumSpikes = "50"    
+        
+        m_bFourierAnalysis = "0"
+        
+        m_iTimeSmoothingMS = "3"
+        m_bGaussianSmoothing = "1"
+        m_bSubtractBaseline = "1"
+    > </m_strctParams>
+    
+
+    <m_acSpecificAnalysis
+        m_strAnalysisDescription = "Face Localizer v0 and v2"
+        m_bActive = "1"
+        
+        m_strDesignName = "\\192.168.50.93\StimulusSet\Monkey_Bodyparts\StandardFOB_v2.txt"
+        m_strDesignName2 = "\\192.168.50.93\StimulusSet\Monkey_Bodyparts\imlist.txt"
+          
+        m_strAnalysisScript = "fnFOBPassiveFixationAnalysis"
+        m_strDisplayScript = "fnDisplayPassiveFixation_v2"
+    > </m_acSpecificAnalysis>
+
+    
+  <m_acSpecificAnalysis
+        m_strAnalysisDescription = "Face Localizer V6"
+        m_bActive = "1"
+        
+        m_strDesignName = "\\192.168.50.93\StimulusSet\StandardFaceLocalizer\V6\StandardFOB_v6.xml"
+        
+        m_strAnalysisScript = "fnFOB_v6_PassiveFixationAnalysis"
+        m_strDisplayScript = "fnDisplayPassiveFixation_v6"
+    > </m_acSpecificAnalysis>
+    
+    
+    
+      <m_acSpecificAnalysis
+        m_strAnalysisDescription = "Sinha Control (block mode)"
+        m_bActive = "1"
+        m_strDesignName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v5_FOB_Blocks.xml"
+        m_strAnalysisScript = "fnSinhaControlAnalysisV4"
+        m_strDisplayScript = "fnDisplaySinhaControl_SinhaFOBv3"
+    > </m_acSpecificAnalysis>    
+ 
+   
+        <m_acSpecificAnalysis
+        m_strAnalysisDescription = "Sinha Control (cartoon)"
+        m_bActive = "1"
+        m_strDesignName = "\\192.168.50.93\StimulusSet\cartoon\CartoonList.xml"
+        m_strAnalysisScript = "fnSinhaControlAnalysisCartoon"
+        m_strDisplayScript = "fnDisplaySinhaControlCartoon"
+    > </m_acSpecificAnalysis>     
+    
+    
+   <m_acSpecificAnalysis
+        m_strAnalysisDescription = "Sinha Control (block mode)"
+        m_bActive = "1"
+        m_strDesignName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v4_FOB_Blocks.xml"
+        m_strAnalysisScript = "fnSinhaControlAnalysisV4"
+        m_strDisplayScript = "fnDisplaySinhaControl_SinhaFOBv3"
+    > </m_acSpecificAnalysis>    
+    
+    
+    <m_acSpecificAnalysis
+        m_strAnalysisDescription = "Sinha Control"
+        m_bActive = "1"
+        
+        m_strDesignName = "\\192.168.50.93\StimulusSet\Sinha_Exp\Sinha_v3_FOB.xml"
+        m_strAnalysisScript = "fnSinhaControlAnalysis"
+        m_strDisplayScript = "fnDisplaySinhaControl_SinhaFOBv3"
+    > </m_acSpecificAnalysis>
+    
+    
+    <m_acSpecificAnalysis
+        m_strAnalysisDescription = "Reverse Correlation"
+        m_bActive = "1"
+        
+        m_strDesignName = "\\192.168.50.93\StimulusSet\ReverseCorrelation\ReverseCorrelationFrontal.xml"
+        m_strAnalysisScript = "fnAnalyzeReverseCorrelation"
+        m_strDisplayScript = "fnDisplayReverseCorrelation"
+    > </m_acSpecificAnalysis>
+    
+    
+    
+</Config>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    
+   
+     <GlobalVars>
+         <Var Name = "JuiceTimeMS"             InitialValue = "50"          Type = "Numeric" Panel = "Reward"  Description = "Juice time  (ms)" > </Var>
+         <Var Name = "TrialTimeoutMS"        InitialValue = "10000"    Type = "Numeric"  Panel = "Timing"   Description = "Trial timeout (ms)" > </Var>
+         <Var Name = "CuePeriodMS"            InitialValue = "500"        Type = "Numeric"  Panel = "Timing"   Description = "Cue period (ms)" > </Var>
+         <Var Name = "CueMemoryPeriod"   InitialValue = "500"        Type = "Numeric"  Panel = "Timing"   Description = "Cue memory (ms)" > </Var>
+         
+         <Var Name = "2ndCuePeriod"           InitialValue = "500"        Type = "Numeric"  Panel = "Timing"   Description = "2nd Cue period (ms)" > </Var>
+         <Var Name = "2ndCueMemory"           InitialValue = "500"        Type = "Numeric"  Panel = "Timing"   Description = "2nd Cue memory (ms)" > </Var>
+         
+	     <Var Name = "FixationToStartTrial"       InitialValue = "1000"        Type = "Numeric"  Panel = "Timing"   Description = "Fixate before Cue(ms)" > </Var>   
+         <Var Name = "FixationSpotSizePix"  InitialValue = "10"          Type = "Numeric"  Panel = "Stimuli"   Description = "Fixaiton size (pix)" > </Var>
+         <Var Name = "FixationRegionPix"     InitialValue = "30"          Type = "Numeric"  Panel = "Reward"   Description = "Fixaiton region (pix)" > </Var>
+         <Var Name = "ResponseRegionPix"  InitialValue = "40"          Type = "Numeric"  Panel = "Reward"   Description = "Response region (pix)" > </Var>
+         <Var Name = "CueSizePix"                 InitialValue = "20"          Type = "Numeric"  Panel = "Stimuli"   Description = "Cue size (pix)" > </Var>
+         <Var Name = "ResponseSizePix"                 InitialValue = "20"          Type = "Numeric"  Panel = "Stimuli"   Description = "Response size (pix)" > </Var>
+         
+         <Var Name = "AbortPunishMS"           InitialValue = "2000"        Type = "Numeric"  Panel = "Timing"   Description = "Abort Punish (ms)" > </Var>
+         <Var Name = "RetainSelectedMS"           InitialValue = "500"        Type = "Numeric"  Panel = "Timing"   Description = "Retain Selected (ms)" > </Var>
+    </GlobalVars>         
+    
+    
+    <TrialTypes>
+
+          <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "BasicTraining"  CueType = "NoCue"  ChoicesType = "NoChoices" ProbWeight = "1" JuiceMS = "60" MultipleSaccades = "0" TrialTimeoutMS = "60000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "30" FixationSpotType = "Disc" FixationRegion = "50" FixationPosition = "Random" AbortTrialIfTouchOutsideCue = "1" RewardTouchCue = "1" RewardSound = "CorrectTrialSoundFile" >  </PreCueFixation>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "4000" > </PostChoice>
+        </Trial>         
+          <!-- ********************************************************************************************* -->
+        
+       
+             
+        <Trial>
+            <TrialParams Name = "DMS_Match_All" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "JuiceTimeMS" 
+						 MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > 
+             </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "FixationToStartTrial" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" 
+                                        FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" 
+                                        RewardTouchCue = "0" >  
+            </PreCueFixation>            
+             
+            <Cue CueMedia = "Random" CueValidAttributes = "" CueInvalidAttributes = "" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" 
+				 CueSizePix = "CueSizePix" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 255"  
+				 AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" MemoryPeriodMS = "CueMemoryPeriod"  ShowFixationSpot = "0" 
+                 AbortTrialIfBreakFixation = "0">  
+            </Cue>
+                 
+            <Cue CueMedia = "Random" CueValidAttributes = "CueAttributes(1)" CueInvalidAttributes = ""  CuePeriodMS = "2ndCuePeriod" CueNoiseLevel = "0" 
+				 CueSizePix = "CueSizePix" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" 
+				 OverlayFixation = "0"  MemoryPeriodMS = "2ndCueMemory"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "1">  
+            </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" 
+							  InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > 
+                  </ChoicesParam>                    
+                <Choice Media ="GreenCircle" Position = "250 0" JuiceReward = "1" SizePix = "ResponseSizePix" > </Choice>
+                <Choice Media ="RedCircle" Position = "-250 0" JuiceReward = "0" SizePix = "ResponseSizePix"  > </Choice>
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "1" InterTrialIntervalMaxSec = "2" IncorrectTrialPunishmentDelayMS = "0" 
+                                    AbortedTrialPunishmentDelayMS = "AbortPunishMS"
+                                    ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "RetainSelectedMS"> 
+              </PostChoice>
+        </Trial>               
+        
+
+       <Trial>
+           
+            <TrialParams Name = "DMS_Mismatch_All" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "JuiceTimeMS" 
+						 MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > 
+             </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "FixationToStartTrial" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" 
+                                        FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" 
+                                        RewardTouchCue = "0" >  
+            </PreCueFixation>            
+             
+            <Cue CueMedia = "Random" CueValidAttributes = "" CueInvalidAttributes = "" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" 
+				 CueSizePix = "CueSizePix" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 255"  
+				 AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" MemoryPeriodMS = "CueMemoryPeriod"  ShowFixationSpot = "0" 
+                 AbortTrialIfBreakFixation = "0">  
+            </Cue>
+                 
+            <Cue CueMedia = "Random" CueValidAttributes = "" CueInvalidAttributes = "CueAttributes(1)"  CuePeriodMS = "2ndCuePeriod" CueNoiseLevel = "0" 
+				 CueSizePix = "CueSizePix" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" 
+				 OverlayFixation = "0"  MemoryPeriodMS = "2ndCueMemory"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "1">  
+            </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" 
+							  InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > 
+                  </ChoicesParam>                    
+                <Choice Media ="GreenCircle" Position = "250 0" JuiceReward = "0" SizePix = "ResponseSizePix" > </Choice>
+                <Choice Media ="RedCircle" Position = "-250 0" JuiceReward = "1" SizePix = "ResponseSizePix"  > </Choice>
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "1" InterTrialIntervalMaxSec = "2" IncorrectTrialPunishmentDelayMS = "0" 
+                                    AbortedTrialPunishmentDelayMS = "AbortPunishMS"
+                                    ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "RetainSelectedMS"> 
+              </PostChoice>
+           
+        </Trial>               
+       
+        
+    </TrialTypes>
+
+     <TrialOrder>
+          <Block Types = "DMS_Match_All"                                       NumTrials = "3" RepeatIncorrect = "1"> </Block>
+          <Block Types = "DMS_Mismatch_All"                                 NumTrials = "3" RepeatIncorrect = "1"> </Block>
+          <Block Types = "DMS_Match_All;DMS_Mismatch_All"     NumTrials = "10" RepeatIncorrect = "1"> </Block>
+    </TrialOrder>         
+   
+    <Media>
+        
+        <Image Name = "RedCircle" FileName = "\\192.168.50.93\StimulusSet\Delay Match To Sample\Training Week 1\RedCircle.png" Attr = ""> </Image>
+        <Image Name = "GreenCircle" FileName = "\\192.168.50.93\StimulusSet\Delay Match To Sample\Training Week 1\GreenCircle.png" Attr = ""> </Image>
+  
+        
+        <Image Name = "face1" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face1.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face2" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face2.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face3" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face3.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face4" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face4.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face5" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face5.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face6" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face6.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face7" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face7.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face8" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face8.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face9" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face9.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face10" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face10.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face11" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face11.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face12" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face12.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face13" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face13.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face14" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face14.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face15" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face15.bmp"  Attr = "Frontal Faces"> </Image>
+        <Image Name = "face16" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\face16.bmp"  Attr = "Frontal Faces"> </Image>
+        
+        <Image Name = "body1" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body1.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body2" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body2.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body3" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body3.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body4" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body4.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body5" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body5.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body6" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body6.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body7" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body7.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body8" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body8.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body9" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body9.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body10" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body10.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body11" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body11.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body12" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body12.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body13" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body13.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body14" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body14.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body15" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body15.bmp"  Attr = "Bodies"> </Image>
+        <Image Name = "body16" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\body16.bmp"  Attr = "Bodies"> </Image>
+        
+        <Image Name = "fruit1" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit1.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit2" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit2.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit3" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit3.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit4" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit4.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit5" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit5.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit6" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit6.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit7" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit7.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit8" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit8.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit9" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit9.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit10" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit10.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit11" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit11.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit12" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit12.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit13" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit13.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit14" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit14.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit15" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit15.bmp"  Attr = "Fruits"> </Image>
+        <Image Name = "fruit16" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\fruit16.bmp"  Attr = "Fruits"> </Image>
+        
+        
+        <Image Name = "techno1" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno1.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno2" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno2.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno3" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno3.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno4" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno4.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno5" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno5.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno6" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno6.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno7" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno7.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno8" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno8.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno9" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno9.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno10" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno10.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno11" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno11.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno12" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno12.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno13" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno13.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno14" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno14.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno15" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno15.bmp"  Attr = "Gadgets"> </Image>
+        <Image Name = "techno16" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\techno16.bmp"  Attr = "Gadgets"> </Image>
+        
+        
+        <Image Name = "hand1" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand1.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand2" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand2.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand3" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand3.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand4" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand4.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand5" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand5.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand6" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand6.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand7" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand7.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand8" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand8.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand9" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand9.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand10" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand10.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand11" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand11.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand12" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand12.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand13" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand13.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand14" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand14.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand15" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand15.bmp"  Attr = "Hands"> </Image>
+        <Image Name = "hand16" FileName = "\\192.168.50.93\Delay Match To Sample\Training Week 1\hand16.bmp"  Attr = "Hands"> </Image>
+        
+
+    </Media>
+    
+</Config>

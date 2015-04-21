@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Odd One Out Touch Paradigm Configuration -->        
+
+<Config>
+     
+            <m_strctGeneral
+                m_strParadigmName = "Touch Odd One Out"
+
+                m_strAnalysisDescription = "Odd One Out - Standard Analysis"
+                m_bActiveNeuralAnalysis = "0"
+
+                m_strStatisticsFunction = ""
+                m_strDisplayFunction = ""
+
+                m_strMultiChannelStatisticsFunction = ""
+                
+                m_bActiveBehaviorAnalysis = "1"
+                m_strBehaviorStatisticsScript = "fnAnalyzeOddOneOutBehaviorStatistics"
+                m_strBehaviorDisplayScript = "fnDisplayOddOneOutBehavior"                
+
+            > </m_strctGeneral>
+            
+            <m_strctParams
+                 m_strAlternativePathForDesign = "D:\Data\Doris\Stimuli\OddOneOut\"
+            > </m_strctParams>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Duck Flag"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\SinhaFOB\SinhaFOB.txt"
+                m_strAnalysisScript = "fnAnalyzeSinhaFOB"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+            > </m_acSpecificAnalysis>
+        
+            
+</Config>
+        

@@ -1,0 +1,5 @@
+C:\Users\shayo\SkyDrive\clrzmq\perf\remote_lat.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatRemote\obj\x64\Release\remote_lat.exe
+C:\Users\Shay\SkyDrive\clrzmq\perf\remote_lat.exe
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatRemote\obj\x64\Release\ZeroMQ.Perf.LatRemote.csprojResolveAssemblyReference.cache
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatRemote\obj\x64\Release\remote_lat.exe

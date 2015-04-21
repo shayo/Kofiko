@@ -1,0 +1,15 @@
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\ZeroMQ.SimpleTests.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\ZeroMQ.SimpleTests.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\clrzmq.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\clrzmq.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\obj\x86\Debug\ZeroMQ.SimpleTests.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\obj\x86\Debug\ZeroMQ.SimpleTests.pdb
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\obj\x86\Debug\ZeroMQ.SimpleTests.exe
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.SimpleTests\obj\x86\Debug\ZeroMQ.SimpleTests.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ.SimpleTests\obj\x86\Debug\ZeroMQ.SimpleTests.exe
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ.SimpleTests\obj\x86\Debug\ZeroMQ.SimpleTests.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\ZeroMQ.SimpleTests.exe
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\ZeroMQ.SimpleTests.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\clrzmq.dll
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ.SimpleTests\bin\x86\Debug\clrzmq.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\clrzmq\src\ZeroMQ.SimpleTests\obj\x86\Debug\ZeroMQ.SimpleTests.csprojResolveAssemblyReference.cache

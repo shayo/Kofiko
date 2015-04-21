@@ -1,0 +1,13 @@
+﻿Build started 12/3/2013 12:24:03 PM.
+     1>Project "Z:\MEX_Code\ZeroMQ_Wrapper\ZeroMQ_Wrapper.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "x64\Release\ZeroMQ_Wrapper.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\MATLAB\R2011a_x32\\extern\include /I"..\..\PublicLib\ZeroMQ-3.2.2\include" /Zi /nologo /W3 /WX- /O2 /Ob1 /D MX_COMPAT_32 /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SELECTLABELS_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x64\Release\\" /Fd".\x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt ZeroMQ_Wrapper.cpp
+         ZeroMQ_Wrapper.cpp
+     1>z:\mex_code\zeromq_wrapper\zeromq_wrapper.cpp(100): error C4716: 'MyWatchDogFunction' : must return a value
+     1>Done Building Project "Z:\MEX_Code\ZeroMQ_Wrapper\ZeroMQ_Wrapper.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.02

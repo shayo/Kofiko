@@ -1,0 +1,30 @@
+﻿Build started 12/2/2013 11:01:44 AM.
+     1>Project "C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookDLL\MiceHookDLL.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MICEHOOKDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\MiceHookDLL.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MICEHOOKDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt dllmain.cpp
+         dllmain.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D MICEHOOKDLL_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\MiceHookDLL.pch" /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt MiceHookDLL.cpp raw_mouse.cpp
+         raw_mouse.cpp
+     1>c:\users\shayo\skydrive\ephs scripts\micehooksolution\micehookdll\raw_mouse.cpp(11): warning C4603: '_WIN32_WINNT' : macro is not defined or definition is different after precompiled header use
+                 Add macro to precompiled header instead of defining here
+                 c:\users\shayo\skydrive\ephs scripts\micehooksolution\micehookdll\raw_mouse.cpp(12) : use of precompiled header
+     1>c:\users\shayo\skydrive\ephs scripts\micehooksolution\micehookdll\raw_mouse.cpp(276): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+     1>c:\users\shayo\skydrive\ephs scripts\micehooksolution\micehookdll\raw_mouse.cpp(278): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(357) : see declaration of 'sprintf'
+         MiceHookDLL.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\Debug\MiceHookDLL.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\Debug\MiceHookDLL.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\Debug\MiceHookDLL.lib" /MACHINE:X86 /DLL Debug\dllmain.obj
+         Debug\MiceHookDLL.obj
+         Debug\raw_mouse.obj
+         Debug\stdafx.obj
+            Creating library C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\Debug\MiceHookDLL.lib and object C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\Debug\MiceHookDLL.exp
+         MiceHookDLL.vcxproj -> C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\Debug\MiceHookDLL.dll
+     1>Done Building Project "C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookDLL\MiceHookDLL.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.26

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Behavior GUI Configuration -->
+
+<Config>
+
+<Directories
+   LogFolder = "D:\Data\TouchLogs\"
+   PTB_Folder = "D:\Code\PublicLib\PTB\"
+> </Directories>
+
+<StimulusServer
+    SingleComputerMode = "1"
+    PTBScreen = "2"
+    Address = "127.0.0.1"
+    Port = "1502"
+    VisibleOffset = "40 15 -35 0"
+> </StimulusServer>
+
+<RemoteAccess
+    Port = "2000"
+> </RemoteAccess>
+
+<VideoStreaming
+    DeviceName = ""
+    SampleRateHz = ""
+> </VideoStreaming>
+
+<EyeCalib
+    CenterX = "2041"
+    CenterY = "2018"
+    ScaleX = "-3.3"
+    ScaleY = "3.3"
+> </EyeCalib>
+
+<VarSave
+    EyePos = "1"
+    EyePosSampleRateHz = "120"
+    ExternalTriggers = "0"
+    Spikes = "0"
+    Motion = "0"
+    MotionSampleRateHz = "10"
+    WaterLevelUponExit = "0"
+> </VarSave>
+
+<GUIParams
+    PTBScreen = "1"
+    Experimental = "0"
+    Debug = "0"
+    JuiceMl_To_Ms = "378"
+    JuiceTimeMS = "50"
+    JuiceKey = "74"
+    RecenterKey = "67"
+    DrawAttentionKey = "65"
+    EyeTracesKey = "69"
+    ResetStatKey = "82"
+    TogglePTB = "80"
+    ToggleStat = "72"
+
+    RefreshRateMS = "60"
+    SpikeRateUpdateMS = "500"
+    StatisticsRefreshRateMS = "1000"
+    SettingsRefreshRateMS = "1000"
+    MotionThreshold = "250"
+    PauseTaskAfterMotionSec = "0.1"
+    MotionResumeTaskSec = "3"
+    PSTHStartAvgAfterOnsetMS = "50"
+    PSTHEndAvgAfterOnsetMS = "200"
+
+> </GUIParams>
+
+
+<DAQ
+    VirtualDAQ = "1"
+    AcqusitionCard = "redbox"
+    AcqusitionCardBoard = "0"
+    JuicePort = "0"
+    StartRecordPort = "[]"
+    StimulationPort = "[]"
+    UseMouseClickAsEyePosition = "1"
+    MonitorIndexForEyePosition = "2"
+    SimulateTouchScreenForDebug = "1"
+
+    EyePortX = "[]"
+    EyePortY = "[]"
+    EyePortPupil = "[]"
+    AnalogSpikePorts = "[]"
+    AnalogSpikePortsMappingToChannels = "[]"
+    LFPPorts = "[]"
+    LFPPortsMappingToChannels = "[]"
+    MotionPort = "[]"
+    ExternalTriggers = "[]"
+    ExternalTriggersNames = ""
+    ExternalTriggerThreshold = "[]"
+    SpikeThreshold = "[]"
+    MouseWheelToMM = "[]"
+    SystemStrobeFile = "SystemStrobeEvents.txt"
+> </DAQ>
+
+<Sounds
+    TrialOnsetSoundFile = "beep-6.wav"
+    TrialTimeoutSoundFile = "beep-10.wav"
+    CorrectTrialSoundFile = "beep-8.wav"
+    IncorrectTrialSoundFile = "beep-7.wav"
+> </Sounds>
+
+<Paradigms>
+
+    <Paradigm Name = "Default"
+        Init = "fnParadigmDefaultInit"
+        Cycle = "fnParadigmDefaultCycle"
+        Draw = "fnParadigmDefaultDraw"
+        DrawCycle = "fnParadigmDefaultDrawCycle"
+        Callbacks = "fnParadigmDefaultCallbacks"
+        GUI = "fnParadigmDefaultGUI"
+        Close = "fnParadigmDefaultClose"
+        ParadigmSwitch = "fnParadigmDefaultParadigmSwitch"
+   > </Paradigm>
+
+    <Paradigm Name = "Touch Screen Training"
+        Init = "fnParadigmTouchScreenInit"
+        Cycle = "fnParadigmTouchScreenCycle"
+        Draw = "fnParadigmTouchScreenDraw"
+        DrawCycle = "fnParadigmTouchScreenDrawCycle"
+        Callbacks = "fnParadigmTouchScreenCallbacks"
+        GUI = "fnParadigmTouchScreenGUI"
+        Close = "fnParadigmTouchScreenClose"
+        ParadigmSwitch = "fnParadigmTouchScreenParadigmSwitch"
+    
+        
+        
+        Initial_JuiceTimeMS = "110"
+        Initial_CorrectDistancePix = "75"
+        Initial_InterTrialIntervalMinSec = "0.5"
+        Initial_InterTrialIntervalMaxSec = "1.5"
+        Initial_TrialTimeOutSec = "60"
+        Initial_MaxNumTrials = "1000"
+        Initial_SpotRadius = "50"
+        Initial_MonkeyStartTrial = "0"
+        Initial_MultipleAttempts = "0"
+        
+        Initial_PlayTrialStart = "0"
+        Initial_PlayTrialTimeout = "0"
+        Initial_PlayTrialCorrect = "1"
+        Initial_PlayTrialIncorrect = "0"
+        
+        TrialOnsetSoundFile = "beep-6.wav"
+        TrialTimeoutSoundFile = "beep-10.wav"
+        CorrectTrialSoundFile = "beep-8.wav"
+        IncorrectTrialSoundFile = "beep-7.wav"
+  > </Paradigm>
+
+
+
+  <Paradigm Name = "Touch Force Choice"
+        Init = "fnParadigmTouchForceChoiceInit"
+        Cycle = "fnParadigmTouchForceChoiceCycle"
+        Draw = "fnParadigmTouchForceChoiceDraw"
+        DrawCycle = "fnParadigmTouchForceChoiceDrawCycle"
+        Callbacks = "fnParadigmTouchForceChoiceCallbacks"
+        GUI = "fnParadigmTouchForceChoiceGUI"
+        Close = "fnParadigmTouchForceChoiceClose"
+        ParadigmSwitch = "fnParadigmTouchForceChoiceParadigmSwitch"
+        
+        
+        Initial_PreCueFixationPeriodMS = "300"
+        Initial_PreCueFixationSpotSize = "30"
+        Initial_PreCueFixationSpotType = "Disc"
+        Initial_PreCueFixationRegion = "50"
+        
+        Initial_CuePeriodMS = "1000"
+        Initial_CueMemoryPeriodMS = "1000"
+        Initial_AbortTrialIfBreakFixationDuringCue = "1"
+        Initial_OverlayPreCueFixation = "1"
+        
+        Initial_MemoryPeriodMS = "1000"
+        
+        Initial_InterTrialIntervalMinSec = "0"
+        Initial_InterTrialIntervalMaxSec = "1"
+   
+        Initial_TrialTimeoutMS = "10000"
+        Initial_JuiceTimeMS = "50"
+        
+        
+        
+        Initial_DefaultFolder = "\\192.168.50.93\StimulusSet\"
+        Initial_ExtinguishChoicesAfterSaccade = "1"
+        Initial_ShowObjectsAfterSaccadeMS = "500"
+        Initial_IncorrectTrialDelayMS = "2000"
+
+        Initial_ImageHalfSizePix = "75"
+        Initial_ChoicesHalfSizePix = "75"
+
+        Initial_HitRadius = "100"
+        Initial_FixationRadiusPix = "100"
+
+        Initial_DesignFile = "\\192.168.50.93\StimulusSet\IdentityMatching\IdentityMatchingDMS.xml"
+
+        Initial_FavroiteList1 = "\\192.168.50.93\StimulusSet\ViewpointFaceGen\ViewDirectionForceChocie.xml"
+
+        Initial_NoiseLevel = "10"
+        Initial_StairCaseUp = "0"
+        Initial_StairCaseDown = "0"
+        Initial_StairCaseStepPerc = "0"
+        Initial_NoiseFile = "\\Kofiko-23B\StimulusSet\ClassificationImage\a2fRand_Pink_100x100x6000_Alpha1p2.mat"
+  > </Paradigm>
+  
+</Paradigms>
+
+</Config>

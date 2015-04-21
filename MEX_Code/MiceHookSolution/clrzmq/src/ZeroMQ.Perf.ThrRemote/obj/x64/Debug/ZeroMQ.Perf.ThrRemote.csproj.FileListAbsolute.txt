@@ -1,0 +1,5 @@
+C:\Users\shayo\SkyDrive\clrzmq\perf\remote_thr.exe
+C:\Users\shayo\SkyDrive\clrzmq\perf\remote_thr.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrRemote\obj\x64\Debug\ZeroMQ.Perf.ThrRemote.csprojResolveAssemblyReference.cache
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrRemote\obj\x64\Debug\remote_thr.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrRemote\obj\x64\Debug\remote_thr.pdb

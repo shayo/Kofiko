@@ -1,0 +1,429 @@
+* Revision 163 (5/272014)
+	- Added a flag to limit the number of images in a specific block in passive fixation paradigm ("ConstrainImagesPerBlock")
+
+* Revision 162 (4/2/2014)
+	- revisions to DataBrowser to make it compatible with R2014a
+	
+* Revision 156 (3/19/2014)
+	- Debugged nano stimulator frequency sweeps for antidromic. Restore values after sweep is finished.
+	- Modified nano stim arduino code to ignore triggers while train is being delivered.
+	
+* Revision 155 (3/19/2014)
+	- Modified nano stimulator arduino code to support gating operation per pulse (useful when deliverying high frequency antidromic pulses)
+	- Further improved open-ephys syncrhonization scripts.
+	
+* Revision 154 (2/21/2014)
+	- Added support for multiple block orders in passive fixation (/fixed non existing feature)
+	- Added new open ephys analysis scripts for importing sessions.
+
+* Revision 153 (2/18/2014)
+	- Added support for photodiode second triggering in nano-stimulator
+	- Added support for dropped trials with open-ephys
+	
+* Revision 152 (2/10/2014)
+	- Fixed a small bug related to multiple rasters for the same cell for different presentation times
+* Revision 151 (2/10/2014)
+	- added a new analysis pipeline that doesn't use stimulus server flip times (since they are mostly off with LCD screens).
+	  use the timestamp when the flip message arrived to kofiko and then search for a photodiode crossings.
+	- Added an option stimulus server to use PTB when it is "properly" installed on matlab's path (just leave the config line empty).
+
+* Revision 150 (1/29/2014)
+	- fixed minor bug in parameter sweep
+
+* Revision 149 (1/29/2014)
+	- Added ON/OFF time sweep to parameter sweep
+	- Minor fix in nano stimulator GUI
+	
+* Revision 146 (1/10/2014)
+	- Fixed movie playback issues.
+	- Fixed multiple run order GUI issues.
+	
+* Revision 145 (1/1/2014)
+	- Added support for gating in nano stimulator
+	- Added analysis scripts for fiberscope
+	- Added mice hooking support for open Ephys
+	- Added Needleman-Wunsch algorithm for synchornization
+* Revison 144
+	- Fixed a bug in mouse gaze emulator
+* Revision 141 (7 Oct 2013)
+	- Fixed bug in touch screen (incorrect touch location translation to pixel coordinates)
+
+* Revision 140 (7 Oct 2013)
+	- Updated Nano Stimulator based on the due (abort stimulations, get number of triggers, etc), proper shut down, ...
+	- Added antidromic stimulation sweeps to passive fixation
+ 	- Fixed Touch force choice to allow specific cues to be selected
+	
+
+* Revision 133 (24 Sep 2013)
+- Fixed a critical bug in spike sorter. When the active units file is saved by stat server, saved channels are indexed
+  i.e., if only channel 1 and 17 were recorded, it will be saved as "[1,2]". Spike sorted ignored that and literaly tried to 
+  load channels [1,2], instead of [1,17]. This is now fixed.
+
+* Revision 132 (30 August 2013)
+- Modified spike sorter (visualization when zooming wasn't consistent)
+  Modified the PCA projection, by taking into account the loads.
+  
+* Revision 131 (8 August 2013)
+- Modified analysis scripts (new antidromic analysis script, etc)
+- Added a time stamped variable for microstim source and amplitude to be able to infer which channel source was used to send antidromic pulses
+- Major change in spikes RAW format (values are now in uV instead of AU).
+- Databrwoser allows Auto Spike sorting on all channeels (useful for the axial array)
+- Cleanup in the nano stimulation sketch 
+- Revision in Statistical server (must load grids exported from new planner version)
+
+* Revision 129 (11 July 2013)
+- Fixed yet another small bug in time zone conversion (missing parentheses that caused a crash)
+
+* Revision 128 (9 July 2013)
+- Fixed crash in passive fixation analysis script (SNR when no spikes)
+
+* Revision 127 (9 July 2013)
+- Fixed the time zone conversion bug (incorrect transformation).
+
+* Revision 126 (8 July 2013)
+- Fixed a bug in passive fixation analysis script (incorrect valid trial estimation due to problem in timestamp conversion)
+- Fixed raster length in passive fixation (looks at the maximum ON+OFF period)
+- Added single unit SNR statistics
+
+* Build 1023 9 May 2013 [still 3.0 beta]
+
+- Added support for 64 bit MCC card
+- Added fixation spot color change for fMRI block design paradigm
+
+
+* Build 1022 14 Sep 2012 [version 3.0 beta]
+
+- Added support for reading eye position using serial port
+- Modified communication with Nano stimulator to serial port (fastest)
+- Support for Arduino DAQ instead of MCC (future support for Intan boards. This will not work with plexon since Strobe word is not sent).
+- Added support in Touch Force Choice to stimulate once saccade is initiated.
+- Added support in Touch Force Choice to constrain the next possible trial types (i.e., have a "trial graph" like structure)
+ 
+
+* Build 1021 26 May 2012 [version 2.0 beta]
+
+	- Changes to Stimulus Server
+	    * Added support for low-latency audio
+		
+	- Changes to Kofiko core
+		* Added a time stamped variable to g_strctDAQParams which keeps track of microstim events.
+		   Before, the only available information was a strobe word, lacking additional information, such as which channel was triggered
+		   and which amplitude, etc.
+		* Fixed the bug that prevented strobe words to be sent during mouse gaze emulator.
+		* Fixed small bug in Kofiko (proper error message when stimulus server is not available, instead of a crash)
+		* Added eye trace to better see saccades during force choice task
+		* Added information in saved log files to find out whether a juice pulse was given manually or not.
+		* Added Support for high definition audio on the kofiko machine. Please install ASIO drivers (see svn repository under /ThirdParty)
+		
+	- Changes to fMRI Block design paradigm (renamed, now called "BlockDesignNew")
+	   * Designs are specified in XML. Three text file lists are not supported anymore. A conversion utility is available (fnConvertOldStyleBlockDesignToXML.m) under Utilities
+	   * Support for displaying images at different presentation times (per image)
+	   * Support for blocks with different number of TRs
+	   * Support for multiple block orders
+	   * Built in support for micro stim with different presets for different blocks
+	   * See example file under \Documents\Examples for Block Design\
+	   * New Rig file (MRI-Rig.xml)
+	   * Analysis scripts updated. Support for different orders is still missing.
+	   * Fixed the small bug in triggering
+	   * Support for stimulation in multiple channels. Notice, there isa ~250usec delay in "simultaneous" triggering of channels due to two calls to fnDAQ
+	     At the moment, the two channels are triggered at the same rate. 
+		 
+		 
+	 - Changes to Touch Force choice:
+		* Fixed the small bug that caused an extra flip in cue presentation
+		* Global variables are not reset when reloading a design (unless specified)
+		* Fixed small bug that caused choices to appear off center.
+		* Added another flag "CueValidAttributesOR" to assist in selecting media files in a rule-based manner. The rule is now:
+          (ALL(A \ E) & OR(D)) AND  NOT [ (B) \ (C) ], where
+		  A is "CueValidAttributes", D is "CueValidAttributesOR", B is "CueInvalidAttributes" and C is "CueIgnoreAttributes"
+		  and E is "CueValidIgnoreAttributes"
+		  Logic should be backward compatible since when D or E are empty, it defaults to all available attributes.
+		* Fixed a bug in the statistics (crash after load new design with more trial types)  
+		* Added a feature to now show choices on the screen (used in saccade memory task). It is under block "ChoicesParam" and called "ShowChoicesOnScreen"
+		  See example file "SaccadeMemoryTask.xml" under documents folder.
+		* Added support for micro stimulation presets  
+		* Added missing information in log file (Cues onset on screen)
+		* Added more accurate timing information in log file for aborted trials
+		* Added an option to run the paradigm in the scanner (Instead of specifying NumTrials per block, you specify NumberTR)
+		  There is an additional check box to switch running in "fMRI mode", which will show a black screen until the first TR arrives,
+		  and then will start running trials, automatically switching to the next block after the desired number of TRs has elapsed.
+		* Added an option to microstimulate in "block mode" during fMRI mode  
+		* Trial is aborted when user click on load new design
+		* Added real time trial statistics table
+		* Added "AbortedTrialPunishmentDelayMS" to PostChoice block to select a delay for aborted trials
+		* Added "DelayPostTouchMS" to allow some delay between touching and first cue appearing.
+		* Modified things such that the touch version of the force choice runs smoothly and also allows to play high definition sounds using ASIO
+
+	 - Changes to Stat Server
+		* Fixed the bug in selection of an exit script
+		* Fixed a bug in Stat server (trial condition outcome filtering didn't work properly)
+		* Fixed the bug for analog channel selection
+		* Added the missing plexclient.dll to MEX32 folder
+		
+	- Changes to passive fixation
+		* Support for micro stim repeat trains (Fixed rate / poisson)
+		* Support for micro stim (only in certain blocks, and only for subsets of images). See Fixate_Microstim.xml
+		* Fixed a recentering bug (did not do it correctly when screen was stretched)
+		* The entire design is now saved as a timestamped variable.
+	
+	- Changes to Data Browser
+		* Now supports fixing missing/extra strobe recorded in plexon with multiple frame files.
+		* Allows to read multiple sessions within the same day
+		* Data browser now supports sessions that were recorded without the Statistics server.
+		* Population analysis GUI added.
+		
+	- Changes to Spike Sorter	
+		* Spike sorter now supports KlustaKwik & inter-spike histogram
+		* Fixed the bug with no annotation available
+		* Fixed the bug with "zero" reference
+		* Fixed the bug with multiple sessions in the same day leading to incorrect anotations
+		
+	- Changes to Analysis Pipelines
+		* Fixed critical error in reading analog intervals using fnReadDumpAnalog with Resampling option when spanning multiple plexon frames.
+		* Replaced the old force choice neural analysis pipeline with a new one that is compatible with Touch Force Choice
+	
+	* Other general changes:
+	
+	- Fixed a small bug in five dot (draw attention blacked out the screen).
+	- Fixed the bug in Stat server (auto zoom)
+	- Added a bunch of 3rd party libraries (circular statistics package, psychometric fitting function,...)
+	
+* Build 1020 (1 Nov 2011) [version 2.0 beta]
+
+- Major revision in new force choice task (Note, old paradigms XML files may not be fully compatible!!!!)
+    - Fixed many small bugs in cycle and callback functions
+	- Juice time moved from TrialParams block to PostChoice ("DefaultJuiceRewardMS"), "JuiceTimeMS" removed from TrialParams block
+	- New block in xml file (Global variables, see example file \Documents\Examples For Force Choice Designs\SaccadeTask.xml)
+		* Global variables only support single dimension numeric values at the moment. Future versions may support strings/2D vales
+		* Global variables can be automatically linked to GUI controllers
+		* Global variables can be plugged in for any 1D numerical value in trial definition.
+	- Two different fixation creterion are now available 
+		* AbortTrialIfBreakFixationDuringCue : Keep monkey looking at cue
+		* AbortTrialIfBreakFixationOnCue     : Keep monkey looking at fixation spot
+	- New block in xml file (RealTimeStatistics, see example file \Documents\Examples For Force Choice Designs\SaccadeTask.xml)
+		* Spike/LFP averaging is determined by a trial type to condition matrix. 
+		* Conditions can include "Trial Outcome", which can either be "Correct", "Incorrect", or "Aborted". 
+		* By default, statistics server discards all "aborted" trials
+		* Future versions may include an option to define a condition by trial type, outcome and cue selected at run time.
+		* Keep in mind that statistics server allocates a large chuck of memory
+		  (#Channels x #Units per channel x #conditions x max trial length x ....)
+		  So keep trials short as possible (time wise)....
+		* Changing trial length at run time using some global variable is not advised and will lead to crashes on statistics server side....(buffers are only allocated once)
+	- Strobe words are properly sent to plexon to be used with real time statistics server
+	- Stimulation support
+		* Micro stim can be applied at the onset of cues (+ POSITIVE delay)
+		* Micro stim can be appplied at onset of chocies 
+		* Micro stim parameters can be hooked up to global variables
+		* Multi channel stimulation is now supported
+	- Draw attention (disco button) now sends a signal back to the paradigm which is used to reset the current trial.
+	- Draw on kofiko now shows choices response regions and fixation region as white circles.
+	- Real time performance measures.  New panel in kofiko! instead of drawing things in PTB.
+	   * Currently shows statistics for all designs. Future versions will show statistics per design as well (i.e., performance as a function of trial type or condition...).
+	- SVN included in package. Used to infer the revision number (?) Still being tested.
+
+- Modifications in passive fixation paradigm
+	- Removed dual trigger/gate mechanism from micro stim
+	- Images can now be linked to microstim event (see \Documents\Examples for Passive Fixation\FOB_Microstim.xml)
+
+- Support to reconnect to stimulus server in case it crashed (under settings panel)
+- Multiple exit scripts available to Stat Server	
+		
+		
+* Build 1016 (11 May 2011) [Towards version 2.0]
+- Removed realtime statistics from kofiko.
+- Moved statistics to Real Time Statistics server
+- Redesigned the analysis pipeline (new file types, spike sorting, etc...)
+- Reorganized folders 
+
+* Build 1015 (23 Feb 2011)
+- Added a standalong version of fMRI block design (not tested throughly...)
+- Fixed a bug in fMRI block design that caused a crash (switching after clearing memory)
+- Modified Sinha Analysis code for revised paper
+- Added Analysis script for Odd-one-out touch task
+
+* Build 1014 (26 Nov 2010)
+- Fixed bugs related to memory leaks
+- Fixed bug related to juice remaining open while loading a list during fMRI block design
+
+
+* Build 1012 (22 Nov 2010)
+- Added support for playing movies in passive fixation and Block design paradigms
+- Added support for user TS
+- Added gain information for spike and LFP
+- Fixed a small bug in load image list
+
+
+This file has not been updated for some time...
+I'll try to update it before the next version
+
+* Build 1011
+- Remote Client added (still in development)
+- Fixed the bug in session browser that analyzed only the first recorded paradigm
+- Added analysis for inverted contrast experiments
+- Fixed the bug that caused plexon to crash if there were no strobe words in the plx file
+- Draw attention events are analyzed and render nearby trials invalid
+- Remote commands are now encapulated as cells
+- Paradigm switch is saved in a timestamped variable instead of the using fnLog
+
+
+* Build 1010 (9 Oct 2010)
+Major Changes:
+- Touch screen has its own xml file
+- Backward compatibility with old session browser files.
+- Support for Multi-Channel Analysis. "The m_strMultiChannelStatisticsFunction" field defines a function
+  that will handle across-channel analysis. It will get all the analyzed units AND all the raw data. 
+
+
+* Build 1006 (19 Feb 2010)
+
+Major Changes
+- Fixed many things in the Block Design paradigm (Trigger now works, No delay in first TR, Helpful messages on screen ...)
+- Revision in analysis scripts
+- Start/Pause/Resume buttons splitted into two separate buttons.
+
+
+Minor changes
+- Draw Attention button events are now saved under DrawAttentionEvents field in each paradigm.
+
+
+* Build 1005 (3 Feb 2010)
+
+- fMRI Block Design is now functional
+- Fixed the bug with imaginary number for gaze time
+- Added manual to documentation
+
+
+* Build 1004
+
+Major Changes:
+- Added two new paradigms (fMRI Block Design, and Classification Image). Both are still in development
+- Added a Documents folder
+- Modified MEX files and added support to detect a stimulus server crash ("Connection lost" message)
+- Added built in support for eye traces display (and hot key ("e"))
+- Paradigms need to inform Kofiko about the fixation point position so the calibration key work properly.
+- Paradigms can inform Kofiko about their current state ("fnParadigmToKofikoComm('SetParadigmState'...)
+- Major Revision in Analysis scripts: support for multiple plexon files for a single session (i.e.,
+  split plexon files that are generated using PlexUtil)
+
+
+Bug fixed:
+- Fixed a mionr bug in the juice delivery in Passive Fixation
+
+
+
+Changes to config files:
+- Added a new "SessionBrowser.xml" config file that holds information about how to analyze units 
+
+
+
+* Build 1003, [7 Jan 2010]
+
+Major Changes
+- Both stimulus server AND kofiko are running in non-blocking mode (with respect to network traffic).
+  All paradigms have been completely rewritten to allow support for this type of cycle
+- Stimulus server can recv commands (like "Clear screen", "Pause", "Resume", etc). Other commands are being dispatched
+  to the corresponding draw function on the stimulus server
+- Stimulus drawing function on Kofiko and on the stimulus server are now implemented as two separate functions
+  (it is a bit of a code duplication, but allows better generalization for future paradigms).
+   The draw on the stimulus server is now called "DrawCycle". It is a non blocking drawing function that handles timing issues
+   accurately. It can also report events back to Kofiko by sending information such as "Flipped", or "Displayed finished"
+
+- Additional revisions in the analysis scripts.
+- Added support for a "plexon server" that does analysis after experiment is over. 
+  User can send all available data from the Kofiko Machine to the "Season Browser" that is running on Plexon
+  by clicking "Send Stats". If Season browser is listening, it will recv the information and analyze both kofiko and 
+  plexon file that is currently being recorded.
+ 
+- On the fly analysis for multiple channels is now working.
+
+
+Changes to config file:
+- Plexon server information
+- Support for LFP ports
+- Added Query and InitStimulusServer functions. Query is used when Kofiko wants to query a paradigm for specific information, such
+ as the number of stimuli, etc. InitStimulusServer is called every time we switch back to a paradigm. So, for example, 
+ in passive fixation, we want to restore the image list back to VRAM. This will take care of that.
+- Added hot key for drawing attention 
+
+Bug fix:
+- Fixed the bug in IncreaseBufferSize. It will not crash when extending cell arrays
+- Fixed the bug of loading a smaller image list after a long image list.
+
+Other stuff:
+- Added missing x64 bit version of fnMyInterp1 mex file
+- Added hot keys (ALT-1, ALT-2,...) to switch between recorded channels. 
+- Added Ping-pong process that tests that stimulus server is still alive and what is the latency for packets to travel around
+- Session browser can handle any analog names as defined in Plexon Server
+
+Known bugs:
+- nojvm is not functional when using RegisterGUI
+
+* Build 1002, [date unknown]
+
+Major Changes
+- Added the Register GUI
+- Major revision in the analysis scripts, support for sessions and units 
+- Session browser is now functional
+- Added support for categories in Passive fixation paradigm
+- Added online PSTH display
+- In passive fixation paradigm, random images are displayed equally (preallocation of random indices)
+- Major speed up. Cycle time is now 0.45 - 2/3 ms (1.8kHz)
+  - Added the "Strip Buffer" function for each paradigm to speed things up
+  - Removed many GetSecs from the cycle
+  - Mouse & Keyboard are sampled every 60 ms and not in every cycle
+  - Statistics are drawn using PTB
+
+
+Bug fix:
+- Fixed a major bug in valid trial analysis in Session Browser
+- Fixed the bug in Load Image List
+- Fixed a bug in SaveParadigmToDisk
+- Fixed the bug in checkbuf MEX file (pooling mode)
+- On-line statistics were tested and verified,
+
+
+Changes to config file:
+- Stimulus server xml file has a flag to simulate spike trains (mainly for debugging purposes)
+- Kofiko has a VirtualDAQ flag that enables debugging on machines without mcc card
+
+
+* Build 1001, 19 Nov 2009
+
+Hardware Changes:
+- Kofiko now runs on nVIDIA GeForce 9800GT card (1GB memory). 
+  Textures are loaded faster and there is no latency for loading large images. 
+- Kofiko Stimulus server was tested with windows 7 and seems to work properly.
+
+New Features:
+- Right panel size and buttons are now fixed size relative to screen width.
+- Support for recording depth using mouse scroller
+- Support for loading all textures to video RAM
+- Support for recording external triggers
+- Stimulus rect is now visible in passive fixation
+- Eye traces in five dot paradigm
+
+Revisions:
+- Analysis scripts revised. Automatic analysis of passive fixation.
+- Main code components were moved to "Core" folder
+
+Changes to config file:
+
+- Information about electrophysiology was added
+- Location of Psychophysics toolbox was added
+- Parameters for multi-screen display were added
+- Juice estimate (mls/ms) parameter was added
+- Motion detection parameters were added
+- Paradigms inital parameters were added
+- New parameter to run stimulus server in "virtual mode" (no screen display)
+
+Bug Fix:
+- Draw attention does not crash with new stimulus server
+- Missing paths to PTB
+- Paradigm switch strobe word
+- Buffers are cropped upon application exit
+- FOB/Only faces button now work
+- Non rectangular images loading now work
+
+* Build 1000, 3 Nov 2009
+
+- First "public" release of Kofiko. 

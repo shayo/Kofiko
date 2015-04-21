@@ -1,0 +1,25 @@
+﻿Build started 11/15/2012 3:11:10 PM.
+     1>Project "Z:\MEX_Code\msconnect_thread\msconnect_thread.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Win32\Debug\msconnect_thread.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /IC:\MATLAB\R2011a_x32\\extern\include /IZ:\PublicLib\MCCDAQ\ /ZI /nologo /W3 /WX- /Od /Oy- /D MX_COMPAT_32 /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D SELECTLABELS_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Win32\Debug\\" /Fd".\Win32\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt msconnect_thread.cpp
+         msconnect_thread.cpp
+     1>z:\mex_code\msconnect_thread\msconnect_thread.cpp(84): warning C4101: 'hp' : unreferenced local variable
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(Z:\MEX_Code\msconnect_thread\Win32\Debug\msconnect_thread.dll) does not match the Linker's OutputFile property value (Z:\MEX\win32\msconnect_thread.mexw32). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.mexw32). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\MEX\win32\msconnect_thread.mexw32" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\MATLAB\R2011a_x32\\extern\lib\win32\microsoft /LIBPATH:Z:\PublicLib\MCCDAQ\ odbc32.lib odbccp32.lib libmx.lib libmex.lib libmat.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:".\msconnect_thread.def" /MANIFEST /ManifestFile:"Win32\Debug\msconnect_thread.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:".\Win32\Debug\fndllmsconnect_thread.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"Win32\Debug\msconnect_thread.lib" /MACHINE:X86 /DLL .\Win32\Debug\msconnect_thread.obj
+     1>msconnect_thread.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+            Creating library Win32\Debug\msconnect_thread.lib and object Win32\Debug\msconnect_thread.exp
+         msconnect_thread.vcxproj -> Z:\MEX_Code\msconnect_thread\Win32\Debug\msconnect_thread.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\MEX\win32\msconnect_thread.mexw32;#2" /manifest Win32\Debug\msconnect_thread.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Win32\Debug\msconnect_thread.unsuccessfulbuild".
+         Touching "Win32\Debug\msconnect_thread.lastbuildstate".
+     1>Done Building Project "Z:\MEX_Code\msconnect_thread\msconnect_thread.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.16

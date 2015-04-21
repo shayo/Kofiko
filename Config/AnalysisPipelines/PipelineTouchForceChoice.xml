@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Force Choice Paradigm Data Analysis Pipeline Configuration -->
+
+<Config>
+    
+    <m_strctGeneral
+        m_strParadigmName = "Touch Force Choice"
+        m_strAnalysisDescription = "Touch Force Choice - Standard Analysis"
+        
+        m_bActiveNeuralAnalysis = "1"
+        m_strStatisticsFunction = "fnAnalyzeForceChoiceParadigmNewFormat"
+        m_strDisplayFunction = "fnDisplayForceChoiceParadigm"
+        
+        m_bActiveBehaviorAnalysis = "1"                
+        m_strBehaviorStatisticsScript = "fnAnalyzeForceChoiceBehaviorStatistics"
+        m_strBehaviorDisplayScript = "fnDisplayForceChoiceParadigmBehavior"
+    > </m_strctGeneral>
+    
+    <m_strctParams
+        m_bAppendEyeTracesToSpecialAnalysisFunctions = "0"
+    > </m_strctParams>
+    
+    <m_acSpecificAnalysis>
+        <m_strctParams
+            m_strAnalysisDescription = "Two Alternative Force Choice"
+            m_bActive = "1"
+            
+            m_strDesignFile = "\\Kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC.txt"
+            m_strDesignFile2 = "\\kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes.txt"
+            m_strDesignFile3 = "\\kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes16Faces.txt"
+            m_strDesignFile4 = "\\kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC_Circle16Faces.txt"
+            m_strDesignFile5 = "\\Kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC.txt"
+            m_strDesignFile6 = "\\kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes.txt"
+            m_strDesignFile7 = "\\kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes16Faces.txt"
+            m_strDesignFile8 = "\\kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC_Circle16Faces.txt"
+            m_strSpecialAnalysisScript = "fnAnalyzeForceChoiceClassificationImageNeuralData"
+            m_strSpecialDisplayScript = "fnDisplayForceChoiceClassificationImage"
+            
+            m_strSpecialAnalysisBehaviorScript = "fnAnalyzeForceChoiceClassificationImageBehavior"
+            m_strSpecialDisplayBehaviorScript = "fnDisplayForceChoiceClassificationImageBehavior"
+            
+            m_strAlternativeNoiseFolder = "D:\Data\Doris\Stimuli\ClassificationImage\"
+        > </m_strctParams>
+        
+        
+        <m_acRaster
+            m_strName = "Face -> Face (low noise)"
+            m_strResponse = "Correct"
+            m_aiTrialSelectionIndices = ""
+            m_strTrialSelectionNames = "face\w*"
+            m_strNoiseSelection = "LE20"
+            m_fSmoothingMS = "7"
+        > </m_acRaster>
+        
+        <m_acRaster
+            m_strName = "Non Face -> Non Face (low noise)"
+            m_strResponse = "Correct"
+            m_aiTrialSelectionIndices = ""
+            m_strTrialSelectionNames = "gray\w*"
+            m_strNoiseSelection = "LE20"
+            m_fSmoothingMS = "7"
+        > </m_acRaster>
+        
+        
+        <m_acRaster
+            m_strName = "Face -> Face (high noise)"
+            m_strResponse = "Correct"
+            m_aiTrialSelectionIndices = ""
+            m_strTrialSelectionNames = "face\w*"
+            m_strNoiseSelection = "G20"
+            m_fSmoothingMS = "7"
+        > </m_acRaster>
+        
+        <m_acRaster
+            m_strName = "Non Face -> Face (high noise)"
+            m_strResponse = "Incorrect"
+            m_aiTrialSelectionIndices = ""
+            m_strTrialSelectionNames = "gray\w*"
+            m_strNoiseSelection = "G20"
+            m_fSmoothingMS = "7"
+        > </m_acRaster>
+        
+        <m_acRaster
+            m_strName = "Face -> Non Face (high noise)"
+            m_strResponse = "Incorrect"
+            m_aiTrialSelectionIndices = ""
+            m_strTrialSelectionNames = "face\w*"
+            m_strNoiseSelection = "G20"
+            m_fSmoothingMS = "7"
+        > </m_acRaster>
+        
+        <m_acRaster
+            m_strName = "Non Face -> Non Face (high noise)"
+            m_strResponse = "Correct"
+            m_aiTrialSelectionIndices = ""
+            m_strTrialSelectionNames = "gray\w*"
+            m_strNoiseSelection = "G20"
+            m_fSmoothingMS = "7"
+        > </m_acRaster>                
+    </m_acSpecificAnalysis>    
+    
+    
+</Config>
+
+

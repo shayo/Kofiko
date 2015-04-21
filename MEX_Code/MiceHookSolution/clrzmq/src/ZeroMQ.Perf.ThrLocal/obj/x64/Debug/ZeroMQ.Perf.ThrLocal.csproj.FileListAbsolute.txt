@@ -1,0 +1,4 @@
+C:\Users\shayo\SkyDrive\clrzmq\perf\local_thr.exe
+C:\Users\shayo\SkyDrive\clrzmq\perf\local_thr.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrLocal\obj\x64\Debug\local_thr.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrLocal\obj\x64\Debug\local_thr.pdb

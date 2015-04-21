@@ -1,0 +1,169 @@
+<Config>
+
+     <GlobalVars>
+         <Var Name = "NumTR"                            InitialValue = "16"          Type = "Numeric" Panel = "Timing"  Description = "Block Length  (TR)" > </Var>
+         <Var Name = "ImageDisplayTimeMS"   InitialValue = "500"        Type = "Numeric" Panel = "Timing"  Description = "Image display time (ms)" > </Var>
+     </GlobalVars>
+  
+      <Blocks>
+		<Block Name = "FamiliarFacesHuman" Attr = "FamiliarFacesHuman" > </Block>
+        <Block Name = "FamiliarFacesMonkey" Attr = "FamiliarFacesMonkey" > </Block>
+		<Block Name = "BodyBlock" Attr = "BodyBlock" > </Block>
+        <Block Name = "Fruits" Attr = "Fruits" > </Block>
+        <Block Name = "Hands" Attr = "Hands" > </Block>
+        <Block Name = "Techno" Attr = "Techno" > </Block>
+        <Block Name = "Scrambles" Attr = "Scrambles" > </Block>
+    </Blocks>
+    
+    <BlockOrder>
+        <Order Name = "Default Order">
+			<Block Name = "Scrambles"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "FamiliarFacesHuman"    LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Scrambles"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+ 			<Block Name = "Hands"                             LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Scrambles"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "FamiliarFacesMonkey"   LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Scrambles"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Techno"                            LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Scrambles"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Fruits"                              LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Scrambles"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "BodyBlock"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+			<Block Name = "Scrambles"                      LengthTR = "NumTR" ShuffleImages = "1" Microstim = "0"> </Block>
+          </Order>
+     </BlockOrder>
+        
+
+    <Media>
+        <Image Name = "body1" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body1.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body2" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body2.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body3" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body3.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body4" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body4.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body5" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body5.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body6" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body6.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body7" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body7.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body8" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body8.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body9" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body9.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body10" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body10.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body11" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body11.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body12" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body12.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body13" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body13.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body14" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body14.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body15" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body15.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        <Image Name = "body16" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Bodies\body16.tif"  Attr = "BodyBlock;" LengthMS = "ImageDisplayTimeMS" > </Image>
+
+        
+       <Image Name = "face_human_fam1" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\BJ_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam2" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\BR_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam3" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\BT_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam4" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\GP_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam5" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\JT_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam6" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\KI_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam7" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\KS_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam8" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\LK_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam9" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\LZ_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam10" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\ME_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam11" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\MS_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam12" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\OS_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam13" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\SN_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam14" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\TD_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam15" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\UA_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_human_fam16" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_human\WM_A00_E00.tif"  Attr = "FamiliarFacesHuman;" LengthMS = "ImageDisplayTimeMS" > </Image>
+        
+        
+       <Image Name = "face_monkey_fam1" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\anakin_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam2" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\benjamin_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam3" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\bert_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam4" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\dagobert_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam5" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\feivel_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam6" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\houdini_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam7" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\julien_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam8" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\maurice_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam9" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\michel_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam10" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\napoleon_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam11" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\quincy_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam12" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\rocco_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam13" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\spiderman_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "face_monkey_fam14" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Faces01_fam_monkey\tyson_A00_E00.tif"  Attr = "FamiliarFacesMonkey;" LengthMS = "ImageDisplayTimeMS" > </Image>
+
+       
+       <Image Name = "fruits1" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit1.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits2" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit2.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits3" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit3.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits4" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit4.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits5" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit5.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits6" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit6.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits7" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit7.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits8" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit8.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits9" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit9.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits10" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit10.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits11" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit11.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits12" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit12.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits13" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit13.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits14" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit14.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits15" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit15.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "fruits16" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Fruits\fruit16.tif"  Attr = "Fruits" LengthMS = "ImageDisplayTimeMS" > </Image>
+       
+       <Image Name = "hands1" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand1.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands2" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand2.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands3" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand3.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands4" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand4.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands5" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand5.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands6" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand6.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands7" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand7.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands8" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand8.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands9" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand9.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands10" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand10.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands11" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand11.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands12" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand12.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands13" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand13.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands14" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand14.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands15" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand15.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "hands16" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Hands\hand16.tif"  Attr = "Hands" LengthMS = "ImageDisplayTimeMS" > </Image>
+       
+       
+       <Image Name = "techno1" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno1.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno2" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno2.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno3" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno3.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno4" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno4.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno5" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno5.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno6" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno6.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno7" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno7.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno8" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno8.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno9" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno9.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno10" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno10.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno11" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno11.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno12" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno12.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno13" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno13.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno14" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno14.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno15" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno15.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "techno16" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\Techno\techno16.tif"  Attr = "Techno" LengthMS = "ImageDisplayTimeMS" > </Image>
+              
+
+              
+       <Image Name = "scram1" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\body10_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram2" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\body12_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram3" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\body16_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram4" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\body4_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram5" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\face11_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       
+       <Image Name = "scram6" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\face4_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram7" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\face9_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram8" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\fruit16_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram9" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\fruit3_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       
+       <Image Name = "scram10" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\hand12_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram11" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\hand13_gridscram.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram12" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\body10_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram13" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\hand3_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram14" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\part3_gridscram.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram15" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\pic_11_gridscram.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+
+       <Image Name = "scram16" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\pic_11_gridscram.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram17" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\rand_back.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram18" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\techno14_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram19" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\techno1_grid_40.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+       <Image Name = "scram20" FileName = "\\192.168.50.93\StimulusSet\fMRI_Shay_Localizer\scram\whole13_gridscram.tif"  Attr = "Scrambles" LengthMS = "ImageDisplayTimeMS" > </Image>
+    </Media>
+         
+</Config>

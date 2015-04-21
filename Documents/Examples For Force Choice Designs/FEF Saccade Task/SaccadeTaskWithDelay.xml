@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    
+     <GlobalVars>
+         <Var Name = "JuiceTimeMS"             InitialValue = "50"          Type = "Numeric" Panel = "Reward"  Description = "Juice time  (ms)" > </Var>
+         <Var Name = "TrialTimeoutMS"        InitialValue = "10000"    Type = "Numeric"  Panel = "Timing"   Description = "Trial timeout (ms)" > </Var>
+         <Var Name = "CuePeriodMS"            InitialValue = "500"        Type = "Numeric"  Panel = "Timing"   Description = "Cue period (ms)" > </Var>
+	     <Var Name = "DelayBeforeCueMS"       InitialValue = "1000"        Type = "Numeric"  Panel = "Timing"   Description = "Fixate before Cue(ms)" > </Var>   
+         <Var Name = "FixationSpotSizePix"  InitialValue = "10"          Type = "Numeric"  Panel = "Stimuli"   Description = "Fixaiton size (pix)" > </Var>
+         <Var Name = "FixationRegionPix"     InitialValue = "30"          Type = "Numeric"  Panel = "Reward"   Description = "Fixaiton region (pix)" > </Var>
+         <Var Name = "ResponseRegionPix"  InitialValue = "40"          Type = "Numeric"  Panel = "Reward"   Description = "Response region (pix)" > </Var>
+         <Var Name = "CueSizePix"                 InitialValue = "20"          Type = "Numeric"  Panel = "Stimuli"   Description = "Cue size (pix)" > </Var>
+         
+         <Var Name = "MicroStimActive"                              InitialValue = "0"          Type = "Boolean"   Panel = "Microstim"   Description = "Microstim active" > </Var>
+         <Var Name = "MicroStimAmplitude"                       InitialValue = "0"          Type = "Numeric"  Panel = "Microstim"   Description = "Current (uA)" > </Var>
+         <Var Name = "MicroStimDelayMS"                         InitialValue = "0"          Type = "Numeric"  Panel = "Microstim"   Description = "Delay to trigger (ms)" > </Var>
+         <Var Name = "MicroStimPulseWidthMS"               InitialValue = "0.25"     Type = "Numeric"  Panel = "Microstim"   Description = "Pulse width (ms)" > </Var>
+         <Var Name = "MicroStimBiPolar"                             InitialValue = "1"          Type = "Boolean"   Panel = "Microstim"   Description = "Biolar stimulation" > </Var>
+         <Var Name = "MicroStimSecondPulseWidthMS"   InitialValue = "0.25"     Type = "Numeric"  Panel = "Microstim"   Description = "Pulse #2 width (ms)" > </Var>
+         <Var Name = "MicroStimBipolarDelayMS"              InitialValue = "0.15"    Type = "Numeric"  Panel = "Microstim"   Description = "Bipolar delay (ms)" > </Var>
+         <Var Name = "MicroStimPulseRateHz"                    InitialValue = "300"     Type = "Numeric"  Panel = "Microstim"   Description = "Pulse Rate (Hz)" > </Var>
+         <Var Name = "MicroStimTrainRateHz"                    InitialValue = "0.1"       Type = "Numeric"  Panel = "Microstim"   Description = "Train Rate (Hz)" > </Var>
+         <Var Name = "MicroStimTrainDurationMS"            InitialValue = "300"     Type = "Numeric"  Panel = "Microstim"   Description = "Train Duration (ms)" > </Var>
+    </GlobalVars>         
+    
+    <TrialTypes>
+        <Trial>
+            <TrialParams Name = "SaccadeTaskRightEasy" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1" MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedCircle"  Position = "200 0" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>                 
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS" InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+             
+        <Trial>
+            <TrialParams Name = "SaccadeTaskLeftEasy" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1"  MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "-200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedCircle"  Position = "-200 0" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>                 
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS"  InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+
+      <Trial>
+            <TrialParams Name = "SaccadeTaskUpEasy" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1"  MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 -200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedCircle"  Position = "0 -200" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>                 
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS"  InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+        
+      <Trial>
+            <TrialParams Name = "SaccadeTaskDownEasy" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1"  MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedCircle"  Position = "0 200" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>                 
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS"  InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+    
+    
+	
+	
+	
+	
+	   <Trial>
+            <TrialParams Name = "SaccadeTaskRight" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1" MultipleSaccades = "0" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 -200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "1" ClearAfter = "0" DontFlip = "1" >  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "-200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="WhiteCircle"  Position = "0 -200" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>                 
+				<Choice Media ="WhiteCircle"  Position = "-200 0" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="WhiteCircle"  Position = "0 200" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="RedCircle"  Position = "200 0" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS" InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+             
+		
+		
+		   <Trial>
+            <TrialParams Name = "SaccadeTaskLeft" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1" MultipleSaccades = "0" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 -200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "1" ClearAfter = "0" DontFlip = "1" >  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "-200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="WhiteCircle"  Position = "0 -200" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>                 
+				<Choice Media ="WhiteCircle"  Position = "200 0" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="WhiteCircle"  Position = "0 200" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="RedCircle"  Position = "-200 0" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS" InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+  
+	
+	
+		   <Trial>
+            <TrialParams Name = "SaccadeTaskDown" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1" MultipleSaccades = "0" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 -200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "1" ClearAfter = "0" DontFlip = "1" >  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "-200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="WhiteCircle"  Position = "0 -200" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>                 
+				<Choice Media ="WhiteCircle"  Position = "200 0" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="WhiteCircle"  Position = "-200 0" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="RedCircle"  Position = "0 200" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS" InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+ 
+	
+	   <Trial>
+            <TrialParams Name = "SaccadeTaskUp" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1" MultipleSaccades = "0" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "1" ClearAfter = "0" DontFlip = "1" >  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+			<Cue CueMedia = "WhiteCircle" CuePeriodMS = "0" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "-200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0" ClearAfter = "0" DontFlip = "1">  </Cue>
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "0 -200"  AbortTrialIfBreakFixationDuringCue  = "1"  OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" ClearBefore = "0">  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "ResponseRegionPix" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="WhiteCircle"  Position = "0 200" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>                 
+				<Choice Media ="WhiteCircle"  Position = "200 0" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="WhiteCircle"  Position = "-200 0" JuiceReward = "0" SizePix = "CueSizePix" > </Choice>
+				<Choice Media ="RedCircle"  Position = "0 -200" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS" InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial> 
+	
+	
+    
+        <Trial>
+            <TrialParams Name = "StimulationExampleSingleChFixed" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1" MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  
+                       OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" 
+                       FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center"  
+                       Stimulation = "1" StimChannels = "1" MicroStimDelayMS = "10" >  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "20" KeepCueOnScreen = "0" 
+                                            Stimulation = "1" StimChannels = "1" MicroStimDelayMS = "20"> </ChoicesParam>                    
+                <Choice Media ="RedCircle"  Position = "200 0" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>                 
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS" InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>               
+    
+     <Trial>
+            <TrialParams Name = "StimulationExampleTwoChGUI" CueType = "Fixed" ChoicesType = "Fixed" ProbWeight = "1" MultipleSaccades = "1" TrialTimeoutMS = "TrialTimeoutMS" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "DelayBeforeCueMS" FixationSpotSize = "FixationSpotSizePix" FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center" FixationColor = "255 255 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "RedCircle" CuePeriodMS = "CuePeriodMS" CueNoiseLevel = "0" CueSizePix = "CueSizePix" CuePosition = "200 0"  AbortTrialIfBreakFixationDuringCue  = "1"  
+                       OverlayFixation = "1" MemoryPeriodMS = "0"  ShowFixationSpot = "1" AbortTrialIfBreakFixation = "1"  FixationSpotSize = "FixationSpotSizePix" 
+                       FixationSpotType = "Disc" FixationRegion = "FixationRegionPix" FixationPosition = "Center"  
+                       Stimulation = "MicroStimActive" StimChannels = "1 2" MicroStimDelayMS = "10 20" >  </Cue>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Circular" InsideChoiceRegionSize = "20" KeepCueOnScreen = "0" 
+                                            Stimulation = "MicroStimActive" StimChannels = "1" MicroStimDelayMS = "MicroStimDelayMS"> </ChoicesParam>                    
+                <Choice Media ="RedCircle"  Position = "200 0" JuiceReward = "1" SizePix = "CueSizePix" > </Choice>                 
+            </Choices>
+              <PostChoice DefaultJuiceRewardMS = "JuiceTimeMS" InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "0" RetainSelectedChoicePeriodMS = "0"> </PostChoice>
+        </Trial>             
+        </TrialTypes>
+    
+
+     <TrialOrder>
+         <Block Name = "Go Right Easy"   Types = "SaccadeTaskRightEasy"  NumTrials = "15" RepeatIncorrect = "1"> </Block>
+         <Block Name = "Go Left Easy"    Types = "SaccadeTaskLeftEasy"    NumTrials = "15" RepeatIncorrect = "1"> </Block>
+         <Block Name = "Go Up Easy"      Types = "SaccadeTaskUpEasy"        NumTrials = "15" RepeatIncorrect = "1"> </Block>
+         <Block Name = "Go Down Easy"    Types = "SaccadeTaskDownEasy"    NumTrials = "15" RepeatIncorrect = "1"> </Block>
+         <Block Name = "Go Mixed 4 Easy" Types = "SaccadeTaskRightEasy;SaccadeTaskLeftEasy;SaccadeTaskUpEasy;SaccadeTaskDownEasy"     NumTrials = "35" RepeatIncorrect = "1"> </Block>
+		 <Block Name = "Go Right (4)"    Types = "SaccadeTaskRight"    NumTrials = "15" RepeatIncorrect = "1"> </Block>
+		 <Block Name = "Go Left (4)"     Types = "SaccadeTaskLeft"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+		 <Block Name = "Go Up (4)"       Types = "SaccadeTaskUp"       NumTrials = "5" RepeatIncorrect = "1"> </Block>
+		 <Block Name = "Go Down (4)"     Types = "SaccadeTaskDown"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+		 <Block Name = "Go Mixed 4"     Types = "SaccadeTaskRight;SaccadeTaskLeft;SaccadeTaskUp;SaccadeTaskDown"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+		 
+    </TrialOrder>         
+
+    
+    <RealTimeStatistics> 
+        <Params
+            NumTrialsInCircularBuffer = "200"
+            PreTrialTimeSec = "0.5"
+            PostTrialTimeSec = "0.5"
+        > </Params>
+        
+        <Conditions>
+            <Condition Name = "All Correct Trials"     TrialTypes = "SaccadeTaskRightEasy;SaccadeTaskLeftEasy;SaccadeTaskUpEasy;SaccadeTaskDownEasy"  TrialOutcome = "Correct" DefaultVisibility = "1"> </Condition>
+            <Condition Name = "All Incorrect Trials"  TrialTypes = "SaccadeTaskRightEasy;SaccadeTaskLeftEasy;SaccadeTaskUpEasy;SaccadeTaskDownEasy" TrialOutcome = "Incorrect" DefaultVisibility = "1"> </Condition>
+            <Condition Name = "Go Right Trials"       TrialTypes = "SaccadeTaskRightEasy" DefaultVisibility = "1"> </Condition>
+         </Conditions>
+    </RealTimeStatistics>    
+    
+    
+    <Media>
+        <Image Name = "RedCircle" FileName = "\\192.168.50.93\StimulusSet\FEF_Saccade_Task\RedCircle.png" Attr = ""> </Image>
+        <Image Name = "RedTriangle" FileName = "\\192.168.50.93\StimulusSet\FEF_Saccade_Task\RedTriangle.png" Attr = ""> </Image>
+        <Image Name = "WhiteCircle" FileName = "\\192.168.50.93\StimulusSet\FEF_Saccade_Task\WhiteCircle.png" Attr = ""> </Image>
+        
+    </Media>
+    
+</Config>

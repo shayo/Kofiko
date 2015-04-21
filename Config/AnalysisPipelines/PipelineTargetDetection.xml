@@ -1,0 +1,38 @@
+       <m_acParadigmAnalysis>
+            <m_strctGeneral
+                m_strParadigmName = "Classification Image"
+
+                m_strAnalysisDescription = "Classification Image - Standard Analysis"
+                m_bActiveNeuralAnalysis = "1"
+
+                m_strStatisticsFunction = "fnCollectClassificationImageUnitStats"
+                m_strDisplayFunction = "fnDisplayClassificationImage"
+
+                m_bActiveBehaviorAnalysis = "0"
+                m_strBehaviorStatisticsScript = ""
+                m_strBehaviorDisplayScript = ""       
+
+            > </m_strctGeneral>
+            
+            <m_strctParams
+                m_fFixationPercThreshold = "95"
+                m_iBeforeMS = "-200"
+                m_iAfterMS = "500"
+                
+                m_bIncludeLFP_PerTrial = "0"
+                
+                m_iStartAvgMS = "50"
+                m_iEndAvgMS = "200"
+                m_iStartBaselineAvgMS = "-100"
+                m_iEndBaselineAvgMS = "0"
+                
+                m_fConfidenceLevel = "0.05"
+                m_iDiscardUnitMinimumSpikes = "50"    
+                
+                m_bFourierAnalysis = "No"
+                
+                m_iTimeSmoothingMS = "30"
+                
+                m_strRandFilesFolder = "\\Kofiko-23b\StimulusSet\ClassificationImage\"
+            > </m_strctParams>
+        </m_acParadigmAnalysis>

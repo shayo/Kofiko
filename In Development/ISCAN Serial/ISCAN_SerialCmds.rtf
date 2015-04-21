@@ -1,0 +1,140 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1038\cocoasubrtf320
+{\fonttbl\f0\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;}
+\vieww9000\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\ql\qnatural
+
+\f0\b\fs20 \cf0 \ul \ulc0 ISCAN Raw Eye Movement Data Acquisition Software - DQW1_XXX\
+
+\b0 \ulnone Update: February 6, 2008 - DQW v1.11M\
+Original: August 1, 2007 - DQW v1.11J
+\b \
+\
+\ul Remote Serial Controls\
+
+\b0 \ulnone \
+All DQW software versions allow the user to remotely control data recording and send synchronizing bytes to be incorporated in recorded data files. DQW software versions 1.11J and above feature greatly expanded remote serial control capabilities.\
+\
+To enable the serial input capability in DQW:\
+\pard\pardeftab720\li360\fi-360\ql\qnatural
+\cf0 In the DQW "System Configuration" dialog, select the "Serial I/O" tab.\
+Of the available COM channels, specify the COM port to be used as "Data I/O", the baud rate to match the remote data sending system, and select "Input" as active.\
+Click on "OK" to register changes to the system configuration.\
+With the above steps completed, the DQW system is ready to receive serial commands from a remote source. All DQW remote serial commands are single bytes between 128 and 255 (80 -> FF Hex).\
+Whenever "Track Active" is enabled, the DQW system can receive and record any single serial byte between 0 and 127 (00 and 7F Hex) as a syncronizing data marker. These bytes are represented as parameter "SerIn0" wherever parameter selections are made for display or recording in the DQW program.\
+File Storage Controls will function only if "Track Active" is disabled.\
+\pard\pardeftab720\ql\qnatural
+\cf0 \
+
+\b \ul Remote Serial Command Bytes\
+\
+\pard\tx720\tx5760\pardeftab720\ql\qnatural
+
+\b0 \cf0 \ulnone 	\ul Description\ulnone 	\ul Command Byte (Hex)\ulnone \
+\
+\ul General Operations\ulnone \
+	Turn ON "Track Active"	80\
+	Turn OFF "Track Active"	81\
+	Click "Options" Button	82\
+\
+\ul Data Recording\
+\ulnone 	Start Recording	84\
+	Quit Recording	88\
+\
+	Delete All Recorded Data	8A	// DQW v1.11M\
+	Delete Last Run Recorded 	8B	// DQW v1.11M\
+\
+\ul POR Calibration\ulnone \
+	Select POR1	90\
+	Select POR2	91\
+\
+	POR Reset Mode	92\
+	POR Calib Mode	93\
+	POR Output Mode	94\
+\
+	POR Select Point	96\
+	POR Enter Point	97\
+	POR Move Point - Up	9A\
+	POR Move Point - Down	9B\
+	POR Move Point - Left	9C\
+	POR Move Point - Right	9D\
+	POR Move Point - Coarse Increment	9E\
+	POR Move Point - Fine Increment	9F\
+\
+\ul Remote Pan/Tilt Control\
+\ulnone 	Pan/Tilt Select PT1	A0\
+	Pan/Tilt Select PT2	A1\
+\
+	Pan/Tilt Select Auto Follow Mode	A2\
+	Pan/Tilt Select Manual Follow Mode	A3\
+\
+	Pan/Tilt Movement - Stop	A4\
+	Pan/Tilt Movement - Left	A5\
+	Pan/Tilt Movement - Up	A6\
+	Pan/Tilt Movement - Down	A7\
+	Pan/Tilt Movement - Right	A8\
+\
+\ul Remote Eye Camera Lens Control\
+\ulnone 	Lens Movement - Stop	B0\
+	Lens Movement - Focus In	B2\
+	Lens Movement - Focus Out	B3\
+	Lens Movement - Zoom In	B4\
+	Lens Movement - Zoom Out	B5\
+	Lens Movement - Iris Closed	B6\
+	Lens Movement - Iris Open	B7\
+\
+\ul Eye Tracking Control\
+\ulnone 	ETK Select Eye 1	C0\
+	ETK Select Eye 2	C1\
+\
+	Eye Threshold Display OFF	C2\
+	Eye Threshold Display ON	C3\
+	Eye Pupil X-Hair OFF	C4\
+	Eye Pupil X-Hair ON	C5\
+	Eye Corneal Refl. X-Hair OFF	C6\
+	Eye Corneal Refl. X-Hair ON	C7\
+	Eye Image Gate OFF	C8\
+	Eye Image Gate ON	C9\
+\
+	Pupil Threshold Level - Up	CA\
+	Pupil Threshold Level - Down	CB\
+	Corneal Refl. Threshold Level - Up	CC\
+	Corneal Refl. Threshold Level - Down	CD\
+	Threshold Level Adjust - Coarse Increments	CE\
+	Threshold Level Adjust - Fine Increments	CF\
+\
+\ul File Storage Control\
+\ulnone 	Start File Save (ASCII Data File Format)	D0	// DQW v1.11M\
+	Start File Save (ISCAN Binary File Format)	D1	// DQW v1.11M\
+\
+	End File "Path+Name" Entry	D7	// DQW v1.11M\
+\
+	Execute/Complete File Save	DE	// DQW v1.11M\
+	Abort File Save	DF	// DQW v1.11M\
+\
+\ul Moving Graph Control\
+\ulnone 	Select Moving Graph - Graph A	E0\
+	Select Moving Graph - Graph B	E1\
+\
+	Select Graph Parameter Channel - 1	E2\
+	Select Graph Parameter Channel - 2	E3\
+	Select Graph Parameter Channel - 3	E4\
+	Select Graph Parameter Channel - 4	E5\
+	Select Graph Parameter Channel - 5	E6\
+	Select Graph Parameter Channel - 6	E7\
+	Select Graph Parameter Channel - None	E8\
+\
+	Graph Scaling - Shift Up	EA\
+	Graph Scaling - Shift Down	EB\
+	Graph Scaling - Zoom In	EC\
+	Graph Scaling - Zoom Out	ED\
+	Graph Scaling - Coarse Increments	EE\
+	Graph Scaling - Fine Increments	EF\
+\
+	Graph Scaling - Center on Selected Parameter Value	F0\
+	Graph Scaling - Invert Scale	F1\
+	Graph Scaling - Default Scale for Selected Parameter	F2\
+\
+\
+}

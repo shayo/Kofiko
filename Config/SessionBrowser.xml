@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Session Browser Configuration -->
+
+<Config>
+    
+    <m_strctDirectories
+        m_strDataFolder = "D:\Data\Doris\Electrophys\"
+        m_strAlternativeDataFolder = "D:\Data\Doris\Electrophys\"
+    > </m_strctDirectories>
+    
+    <m_strctChannels
+        m_strEyeX = "EyeX"
+        m_strEyeY = "EyeY"
+        m_strPhotodiode = "Photodiode"
+        m_strJuice = "Juice"
+        m_strLFP_Prefix = "AD"
+    > </m_strctChannels>
+    
+    
+    <m_strctDistributedAnalysis
+        m_strJobsFolder = "D:\Data\Doris\Electrophys\Jobs\"
+        m_strClusterType = "condor"
+        m_strClusterBinaries = "C:\Condor\bin\"
+        m_strExecutablePlatform = "win32"
+    > </m_strctDistributedAnalysis>
+    
+    
+    <m_strctParadigmsAnalysis>
+        
+<!-- Passive Fixation Configuration -->                
+        <m_acParadigmAnalysis>
+            <m_strctGeneral
+                m_strParadigmName = "Passive Fixation"
+
+                m_strAnalysisDescription = "Passive Fixation - Standard Analysis"
+                m_bActiveNeuralAnalysis = "1"
+
+                m_strStatisticsFunction = "fnCollectPassiveFixationUnitStats"
+                m_strDisplayFunction = "fnDisplayPassiveFixation"
+
+                m_strMultiChannelStatisticsFunction = "fnDummyMultiChannelAnalysis"
+                
+                m_bActiveBehaviorAnalysis = "0"
+                m_strBehaviorStatisticsScript = ""
+                m_strBehaviorDisplayScript = ""                
+
+            > </m_strctGeneral>
+            
+            <m_strctParams
+                m_bSkipInactiveDesigns = "0"
+                
+                m_strSyncMethod = "FlipTime"
+                
+                m_fFixationPercThreshold = "95"
+                
+                m_bIncludeLFP_PerTrial = "1"
+                m_bIncludeLFP_PerGroup = "1"
+                
+                m_iBeforeMS = "-200"
+                m_iAfterMS = "500"
+                
+                m_iStartAvgMS = "50"
+                m_iEndAvgMS = "250"
+                m_iStartBaselineAvgMS = "0"
+                m_iEndBaselineAvgMS = "50"
+                
+                m_iConfidenceLevel = "0.05"
+                m_iDiscardUnitMinimumSpikes = "50"    
+                
+                m_bFourierAnalysis = "0"
+                
+                m_iTimeSmoothingMS = "15"
+                m_bGaussianSmoothing = "1"
+                m_bSubtractBaseline = "1"
+            > </m_strctParams>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha List V0"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\SinhaFOB\SinhaFOB.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\SinhaFOB\SinhaFOB.txt"
+                m_strAnalysisScript = "fnAnalyzeSinhaFOB"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha List V1"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\Sinha_randbackAndControl\128x128\List.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\Sinha_randbackAndControl\128x128\List.txt"
+                m_strAnalysisScript = "fnAnalyzeSinha"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+            > </m_acSpecificAnalysis>
+
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha List V2"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\Sinha_v2_FOB\Sinha_v2_FOB.txt"
+                m_strDesignName2 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_4.txt"
+                m_strDesignName3 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_8.txt"
+                m_strDesignName4 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_16.txt"
+                m_strDesignName5 = "\\kofiko\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_32.txt"
+                m_strDesignName6 = "\\kofiko\StimulusSet\Sinha_v2_FOB_SecondTemplate\Sinha_v2_FOB_SecondTemplate.txt"
+                m_strDesignName7 = "\\kofiko\StimulusSet\Sinha_Edges\Sinha_Edges.txt"
+                m_strDesignName8 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB\Sinha_v2_FOB.txt"
+                m_strDesignName9 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_4.txt"
+                m_strDesignName10 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_8.txt"
+                m_strDesignName11 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_16.txt"
+                m_strDesignName12 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_LP_4\Sinha_v2_FOB_LP_32.txt"
+                m_strDesignName13 = "\\kofiko-23B\StimulusSet\Sinha_v2_FOB_SecondTemplate\Sinha_v2_FOB_SecondTemplate.txt"
+                m_strDesignName14 = "\\kofiko-23B\StimulusSet\Sinha_Edges\Sinha_Edges.txt"
+                
+                m_strAnalysisScript = "fnAnalyzeSinhaV2"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+                
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Sinha Profile List "
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\Sinha_Profile\Sinha_Profile.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\Sinha_Profile\Sinha_Profile.txt"
+                m_strAnalysisScript = "fnAnalyzeSinhaProfile"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "CBCL List"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\CMU_CBCL_Experiment\CMU_CBCL_Experiment.txt"
+                m_strDesignName2 = "\\kofiko-23B\StimulusSet\CMU_CBCL_Experiment\CMU_CBCL_Experiment.txt"
+                m_strAnalysisScript = "fnAnalyzeCBCL"
+                m_strDisplayScript = "fnDisplayCBCLAnalysis"
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Parameter Sweep"
+                m_bActive = "1"
+
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Monkey_Bodyparts\StandardFOB_v2_sweep.txt"
+                m_strAnalysisScript = "fnAnalyzeParameterSweep"
+                m_strDisplayScript = "fnDisplayParameterSweep"
+            > </m_acSpecificAnalysis>
+            
+          <m_acSpecificAnalysis
+                m_strAnalysisDescription = "ViolaJones"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Caltech256_VJ\ViolaJones.txt"
+                m_strAnalysisScript = "fnAnalyzeViolaJones"
+                m_strDisplayScript = "fnDisplayViolaJones"
+            > </m_acSpecificAnalysis>
+
+            
+            
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "FOB"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Monkey_Bodyparts\StandardFOB_v2.txt"
+                m_strAnalysisScript = "fnDummyPassiveFixationAnalysis"
+                m_strDisplayScript = "fnDisplayPassiveFixation"
+            > </m_acSpecificAnalysis>
+              
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Face Views"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\face_views\imlist_faceviews.txt"
+                m_strAnalysisScript = "fnDummyPassiveFixationAnalysis"
+                m_strDisplayScript = "fnDisplayPassiveFixation"
+            > </m_acSpecificAnalysis>
+             
+            
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "FOB Inv"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\Monkey_Bodyparts\StandardFOB_v4_Inv.txt"
+                m_strAnalysisScript = "fnAnalyzeFOBInv"
+                m_strDisplayScript = "fnDisplayPassiveFixationInv"
+            > </m_acSpecificAnalysis>
+            
+         <m_acSpecificAnalysis
+                m_strAnalysisDescription = "CBCL Inv List"
+                m_bActive = "1"
+
+                m_strDesignName = "\\Kofiko-23B\StimulusSet\CMU_CBCL_Experiment_Inv\CMU_CBCL_Experiment_Inv.txt"
+                m_strAnalysisScript = "fnAnalyzeCBCL_Inv"
+                m_strDisplayScript = "fnDisplayCBCL_Inv"
+                
+                m_strValidTrialMethod = "FixedDistToFixationSpot"
+                m_fValidTrialDist = "50"
+                
+            > </m_acSpecificAnalysis>
+              
+            
+        </m_acParadigmAnalysis>
+        
+        
+        
+        <m_acParadigmAnalysis>
+            <m_strctGeneral
+                m_strParadigmName = "Classification Image"
+
+                m_strAnalysisDescription = "Classification Image - Standard Analysis"
+                m_bActiveNeuralAnalysis = "1"
+
+                m_strStatisticsFunction = "fnCollectClassificationImageUnitStats"
+                m_strDisplayFunction = "fnDisplayClassificationImage"
+
+                m_bActiveBehaviorAnalysis = "0"
+                m_strBehaviorStatisticsScript = ""
+                m_strBehaviorDisplayScript = ""       
+
+            > </m_strctGeneral>
+            
+            <m_strctParams
+                m_fFixationPercThreshold = "95"
+                m_iBeforeMS = "-200"
+                m_iAfterMS = "500"
+                
+                m_bIncludeLFP_PerTrial = "0"
+                
+                m_iStartAvgMS = "50"
+                m_iEndAvgMS = "200"
+                m_iStartBaselineAvgMS = "-100"
+                m_iEndBaselineAvgMS = "0"
+                
+                m_fConfidenceLevel = "0.05"
+                m_iDiscardUnitMinimumSpikes = "50"    
+                
+                m_bFourierAnalysis = "No"
+                
+                m_iTimeSmoothingMS = "30"
+                
+                m_strRandFilesFolder = "\\Kofiko-23b\StimulusSet\ClassificationImage\"
+            > </m_strctParams>
+        </m_acParadigmAnalysis>
+        
+<!-- fMRI Paradigm Configuration -->        
+        
+        <m_acParadigmAnalysis>
+            <m_strctGeneral
+                m_strParadigmName = "fMRI Block Design"
+
+                m_strAnalysisDescription = "fMRI - Standard Analysis"
+                m_bActiveNeuralAnalysis = "0"
+
+                m_strStatisticsFunction = ""
+                m_strDisplayFunction  = ""
+
+                m_bActiveBehaviorAnalysis = "1"                
+                m_strBehaviorStatisticsScript = "fnAnalyzeBlockDesignParadigm"
+                m_strBehaviorDisplayScript = "fnDisplayBlockDesignExperiment"                
+
+            > </m_strctGeneral>
+            <m_strctParams
+                m_fCorrectTrialDistanceFromFixationSpot = "100"
+                m_fFixationPercThreshold = "95"
+                m_fCorrectBlockFixationPercThreshold = "80"
+            > </m_strctParams>
+        </m_acParadigmAnalysis>
+        
+<!-- Target Detection Paradigm Configuration -->        
+        <m_acParadigmAnalysis>
+            <m_strctGeneral
+                m_strParadigmName = "Target Detection"
+
+                m_strAnalysisDescription = "Target Detection - Standard Analysis"
+
+                m_bActiveNeuralAnalysis = "1"
+
+                m_strStatisticsFunction = "fnAnalyzeTargetDetectionParadigm"
+                m_strDisplayFunction = "fnDisplayTargetDetectionExperiment"
+                
+                m_bActiveBehaviorAnalysis = "1"                
+
+                m_strBehaviorStatisticsScript = "fnAnalyzeTargetDetectionBehaviorStatistics"
+                m_strBehaviorDisplayScript = "fnDisplayTargetDetectionExperiment"                
+            > </m_strctGeneral>
+            
+            <m_acSpecificAnalysis>
+                <m_strctParams
+                    m_strAnalysisDescription = "Caltech256"
+                    m_bActive = "1"
+
+                    m_strDesignFile = "\\Kofiko\StimulusSet\TargetDetection\TargetDetection.txt"
+                    m_strAnalysisScript = "fnAnalyzeTargetDetectionCaltech256"
+                    m_strDisplayScript = "fnDisplayTargetDetectionExperiment"
+                    
+                > </m_strctParams>
+                
+                <m_acRaster
+                    m_strName = "Dummy Raster"
+                    m_strResponse = "Correct"
+                    m_aiTrialSelectionIndices = ""
+                    m_strTrialSelectionNames = "gray\w*"
+                    m_fSmoothingMS = "7"
+                > </m_acRaster>
+                
+            </m_acSpecificAnalysis>
+            
+           <m_acSpecificAnalysis>
+                <m_strctParams
+                    m_strAnalysisDescription = "Identity Discrimination"
+                    m_bActive = "1"
+
+                    m_strDesignFile = "\\kofiko\StimulusSet\TargetDetection\Identity discrimination Tyson.txt"
+                    m_strDesignFile2 = "\\kofiko-23F\StimulusSet\TargetDetection\Identity discrimination Tyson.txt"
+
+                    m_strSpecialAnalysisBehaviorScript = "fnAnalyzeTargetDetectionBehaviorID"
+                    m_strSpecialDisplayBehaviorScript = "fnDisplayTargetDetectionID"                    
+                > </m_strctParams>
+                
+            </m_acSpecificAnalysis>
+            
+         </m_acParadigmAnalysis>
+        
+<!-- Force Choice Paradigm Configuration -->        
+
+        <m_acParadigmAnalysis>
+            <m_strctGeneral
+                m_strParadigmName = "Force Choice"
+                m_strAnalysisDescription = "Force Choice - Standard Analysis"
+
+                m_bActiveNeuralAnalysis = "1"
+                m_strStatisticsFunction = "fnAnalyzeForceChoiceParadigm"
+                m_strDisplayFunction = "fnDisplayForceChoiceParadigm"
+
+                m_bActiveBehaviorAnalysis = "1"                
+                m_strBehaviorStatisticsScript = "fnAnalyzeForceChoiceBehaviorStatistics"
+                m_strBehaviorDisplayScript = "fnDisplayForceChoiceParadigmBehavior"
+            > </m_strctGeneral>
+            
+            <m_strctParams
+                m_bAppendEyeTracesToSpecialAnalysisFunctions = "0"
+            > </m_strctParams>
+            
+            <m_acSpecificAnalysis>
+                <m_strctParams
+                    m_strAnalysisDescription = "Two Alternative Force Choice"
+                    m_bActive = "1"
+
+                    m_strDesignFile = "\\Kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC.txt"
+                    m_strDesignFile2 = "\\kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes.txt"
+                    m_strDesignFile3 = "\\kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes16Faces.txt"
+                    m_strDesignFile4 = "\\kofiko\StimulusSet\ForceChoice\ClassificationImage2AFC_Circle16Faces.txt"
+                    m_strDesignFile5 = "\\Kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC.txt"
+                    m_strDesignFile6 = "\\kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes.txt"
+                    m_strDesignFile7 = "\\kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC_Shapes16Faces.txt"
+                    m_strDesignFile8 = "\\kofiko-23B\StimulusSet\ForceChoice\ClassificationImage2AFC_Circle16Faces.txt"
+                    m_strSpecialAnalysisScript = "fnAnalyzeForceChoiceClassificationImageNeuralData"
+                    m_strSpecialDisplayScript = "fnDisplayForceChoiceClassificationImage"
+                    
+                    m_strSpecialAnalysisBehaviorScript = "fnAnalyzeForceChoiceClassificationImageBehavior"
+                    m_strSpecialDisplayBehaviorScript = "fnDisplayForceChoiceClassificationImageBehavior"
+                    
+                    m_strAlternativeNoiseFolder = "D:\Data\Doris\Stimuli\ClassificationImage\"
+                > </m_strctParams>
+                
+           
+                <m_acRaster
+                    m_strName = "Face -> Face (low noise)"
+                    m_strResponse = "Correct"
+                    m_aiTrialSelectionIndices = ""
+                    m_strTrialSelectionNames = "face\w*"
+                    m_strNoiseSelection = "LE20"
+                    m_fSmoothingMS = "7"
+                > </m_acRaster>
+                
+                  <m_acRaster
+                    m_strName = "Non Face -> Non Face (low noise)"
+                    m_strResponse = "Correct"
+                    m_aiTrialSelectionIndices = ""
+                    m_strTrialSelectionNames = "gray\w*"
+                    m_strNoiseSelection = "LE20"
+                    m_fSmoothingMS = "7"
+                > </m_acRaster>
+                
+                
+                <m_acRaster
+                    m_strName = "Face -> Face (high noise)"
+                    m_strResponse = "Correct"
+                    m_aiTrialSelectionIndices = ""
+                    m_strTrialSelectionNames = "face\w*"
+                    m_strNoiseSelection = "G20"
+                    m_fSmoothingMS = "7"
+                > </m_acRaster>
+                
+                <m_acRaster
+                    m_strName = "Non Face -> Face (high noise)"
+                    m_strResponse = "Incorrect"
+                    m_aiTrialSelectionIndices = ""
+                    m_strTrialSelectionNames = "gray\w*"
+                    m_strNoiseSelection = "G20"
+                    m_fSmoothingMS = "7"
+                > </m_acRaster>
+                
+                <m_acRaster
+                    m_strName = "Face -> Non Face (high noise)"
+                    m_strResponse = "Incorrect"
+                    m_aiTrialSelectionIndices = ""
+                    m_strTrialSelectionNames = "face\w*"
+                    m_strNoiseSelection = "G20"
+                    m_fSmoothingMS = "7"
+                > </m_acRaster>
+                
+                <m_acRaster
+                    m_strName = "Non Face -> Non Face (high noise)"
+                    m_strResponse = "Correct"
+                    m_aiTrialSelectionIndices = ""
+                    m_strTrialSelectionNames = "gray\w*"
+                    m_strNoiseSelection = "G20"
+                    m_fSmoothingMS = "7"
+                > </m_acRaster>                
+            </m_acSpecificAnalysis>    
+            
+            
+        </m_acParadigmAnalysis>
+        
+        
+        
+        
+        
+<!-- Odd One Out Touch Paradigm Configuration -->        
+
+          
+       <m_acParadigmAnalysis>
+            <m_strctGeneral
+                m_strParadigmName = "Touch Odd One Out"
+
+                m_strAnalysisDescription = "Odd One Out - Standard Analysis"
+                m_bActiveNeuralAnalysis = "0"
+
+                m_strStatisticsFunction = ""
+                m_strDisplayFunction = ""
+
+                m_strMultiChannelStatisticsFunction = ""
+                
+                m_bActiveBehaviorAnalysis = "1"
+                m_strBehaviorStatisticsScript = "fnAnalyzeOddOneOutBehaviorStatistics"
+                m_strBehaviorDisplayScript = "fnDisplayOddOneOutBehavior"                
+
+            > </m_strctGeneral>
+            
+            <m_strctParams
+                 m_strAlternativePathForDesign = "D:\Data\Doris\Stimuli\OddOneOut\"
+            > </m_strctParams>
+            
+            <m_acSpecificAnalysis
+                m_strAnalysisDescription = "Duck Flag"
+                m_bActive = "1"
+
+                m_strDesignName = "\\kofiko\StimulusSet\SinhaFOB\SinhaFOB.txt"
+                m_strAnalysisScript = "fnAnalyzeSinhaFOB"
+                m_strDisplayScript = "fnDisplaySinhaAnalysis"
+            > </m_acSpecificAnalysis>
+        
+            
+        </m_acParadigmAnalysis>
+        
+        
+        
+        
+    </m_strctParadigmsAnalysis>
+    
+<!-- Population Analysis Configuration -->
+    
+    <m_strctPopulationAnalysis>
+        
+        <m_acAnalysis
+            m_strName = "Passive Fixation - FOB Localizer"
+            m_strFunc = "fnStandardPopulationAnalysis"
+        > </m_acAnalysis>
+        
+        <m_acAnalysis
+            m_strName = "Passive Fixation - Sinha"
+            m_strFunc = "fnSinhaPopulationAnalysis"
+        > </m_acAnalysis>
+        
+        <m_acAnalysis
+            m_strName = "Passive Fixation - Sinha Profile"
+            m_strFunc = "fnSinhaProfilePopulationAnalysis"
+        > </m_acAnalysis>
+        
+        
+        <m_acAnalysis
+            m_strName = "Passive Fixation - Sinha Edges"
+            m_strFunc = "fnSinhaEdgePopulationAnalysis"
+        > </m_acAnalysis>
+        
+        <m_acAnalysis
+            m_strName = "Passive Fixation - Sinha Frontal AND profile"
+            m_strFunc = "fnFrontalProfileAnalysis"
+        > </m_acAnalysis>
+                
+        <m_acAnalysis
+            m_strName = "Passive Fixation - Inverted Contrast"
+            m_strFunc = "fnFOB_Inv_PopulationAnalysis"
+        > </m_acAnalysis>
+        
+        <m_acAnalysis
+            m_strName = "Passive Fixation - CBCL"
+            m_strFunc = "fnCBCLPopulationAnalysis"
+        > </m_acAnalysis>
+        
+        
+        <m_acAnalysis
+            m_strName = "Target Detection - Standard"
+            m_strFunc = "fnTargetDetectionStandardPopulationAnalysis"
+        > </m_acAnalysis>
+
+        <m_acAnalysis
+            m_strName = "Face Views"
+            m_strFunc = "fnFaceViewsPopulationAnalysis"
+        > </m_acAnalysis>
+        
+
+        <m_acAnalysis
+            m_strName = "Meta Analysis"
+            m_strFunc = "fnMetaAnalysis"
+        > </m_acAnalysis>
+        
+        
+            <m_acAnalysis
+                m_strName = "Inverted Contrast Controls"
+            m_strFunc = "fnPopulationInvertedContrastControl"
+        > </m_acAnalysis>
+        
+            <m_acAnalysis
+                m_strName = "Sinha - Best and Worst Stimuli"
+            m_strFunc = "fnSinhaBestStimulusPopulation"
+        > </m_acAnalysis>
+   
+   
+        
+        
+      
+            <m_acAnalysis
+                m_strName = "Viola Jones"
+            m_strFunc = "fnViolaJonesPopulationAnalysis"
+        > </m_acAnalysis>
+ 
+            <m_acAnalysis
+                m_strName = "Sinha - Just Contrast Polarity Graph"
+            m_strFunc = "fnSinhaPopulationAnalysisJustGraph"
+        > </m_acAnalysis>
+        
+    </m_strctPopulationAnalysis>
+    
+<!-- Unit Update Callback Configuration -->
+
+    <m_strctUnitUpdateFunctions>
+        <m_acUpdate
+            m_strName = "Add Missing Information Example"
+            m_strFunc = "fnAddMissingInformation1"
+        > </m_acUpdate>
+        
+        <m_acUpdate
+            m_strName = "Plot Passive FixationExperiment"
+            m_strFunc = "fnPlotExperiment"
+        > </m_acUpdate>
+        
+    </m_strctUnitUpdateFunctions>
+    
+    
+</Config>

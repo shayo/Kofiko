@@ -1,0 +1,17 @@
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\ZeroMQ.AcceptanceTests.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\ZeroMQ.AcceptanceTests.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\clrzmq.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\nunitlite.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\clrzmq.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\nunitlite.xml
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Release\ZeroMQ.AcceptanceTests.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Release\ZeroMQ.AcceptanceTests.pdb
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\ZeroMQ.AcceptanceTests.exe
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\ZeroMQ.AcceptanceTests.pdb
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\clrzmq.dll
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\nunitlite.dll
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\clrzmq.pdb
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Release\nunitlite.xml
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Release\ZeroMQ.AcceptanceTests.csprojResolveAssemblyReference.cache
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Release\ZeroMQ.AcceptanceTests.exe
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Release\ZeroMQ.AcceptanceTests.pdb

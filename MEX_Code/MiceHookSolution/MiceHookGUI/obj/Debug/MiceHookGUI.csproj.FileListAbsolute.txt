@@ -1,0 +1,27 @@
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\MiceHookGUI.exe.config
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\MiceHookGUI.exe
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\MiceHookGUI.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.Form1.resources
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.Properties.Resources.resources
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.csproj.GenerateResource.Cache
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.exe
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\clrzmq.dll
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\clrzmq.pdb
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\libzmq.dll
+C:\Users\Shay\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.csprojResolveAssemblyReference.cache
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\MiceHookGUI.exe.config
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.exe
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.pdb
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\libzmq.dll
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\MiceHookGUI.exe
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\MiceHookGUI.pdb
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\clrzmq.dll
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\bin\Debug\clrzmq.pdb
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.csprojResolveAssemblyReference.cache
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.Form1.resources
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.Properties.Resources.resources
+C:\Users\shayo\SkyDrive\Ephs scripts\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.csproj.GenerateResource.Cache
+Z:\MEX_Code\MiceHookSolution\MiceHookGUI\bin\Debug\MiceHookGUI.exe.config
+Z:\MEX_Code\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.exe
+Z:\MEX_Code\MiceHookSolution\MiceHookGUI\obj\Debug\MiceHookGUI.pdb

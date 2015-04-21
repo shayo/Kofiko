@@ -1,0 +1,29 @@
+_ATTENTION_each_line_must_contain_4_elements 22 33 44
+_LOCALIZERS CIT 33 44
+localizer			scout		nii	scout.nii
+localizer_surface-coil		scout		nii	scout.nii
+Localizer_4ch			scout		nii	scout.nii
+localizer_noise_detector	scout		nii	scout.nii
+
+_STRUCTURALS CIT T1 44
+T1_HB_0.5			mri/orig	nii	mprage.nii
+T1				mri/orig	nii	mprage.nii
+T1_HB_0.5_tmp			mri/orig	nii	mprage.nii
+T1_HB_0.5_tmp2			mri/orig	nii	mprage.nii
+T1_HB_0.5_tmp3			mri/orig	nii	mprage.nii
+T1_good_20090805		mri/orig	nii	mprage.nii
+T1_good_20090805_PAT		mri/orig	nii	mprage.nii
+T1_good_20090805_PAT2		mri/orig	nii	mprage.nii
+T1_good_20091117_GRE_PAT	mri/orig	nii	mprage.nii
+T1_good_20091117_T1_PAT		mri/orig	nii	mprage.nii
+t1_mprage_sag_1x1x1iPAT		mri/orig	nii	mprage.nii
+ArithmeticMean			mri/mean	nii	mprage.nii
+
+_STRUCTURALS SPECIAL  33 44
+B0_Map				fieldmap	nii	fieldmap.nii
+B0_Map_PAT2_Hor		fieldmap	nii	fieldmap.nii
+B0_Map_mgh_Hor			fieldmap	nii	fieldmap.nii
+B0_Map_mgh_PAT2_Hor		fieldmap	nii	fieldmap.nii
+
+_FUNCTIONALS 22 33 44
+EP2D_1mm_TR2_PAT2_Hor           bold            nii     f.nii

@@ -1,0 +1,9 @@
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Debug\ZeroMQ.AcceptanceTests.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Debug\ZeroMQ.AcceptanceTests.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Debug\clrzmq.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Debug\nunitlite.dll
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Debug\clrzmq.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\bin\x86\Debug\nunitlite.xml
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Debug\ZeroMQ.AcceptanceTests.csprojResolveAssemblyReference.cache
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Debug\ZeroMQ.AcceptanceTests.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.AcceptanceTests\obj\x86\Debug\ZeroMQ.AcceptanceTests.pdb

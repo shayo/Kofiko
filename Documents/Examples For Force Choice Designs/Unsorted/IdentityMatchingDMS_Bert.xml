@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <TrialTypes>
+
+          <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "BasicTraining"  CueType = "NoCue"  ChoicesType = "NoChoices" ProbWeight = "1" JuiceMS = "60" MultipleSaccades = "0" TrialTimeoutMS = "60000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "30" FixationSpotType = "Disc" FixationRegion = "50" FixationPosition = "Random" AbortTrialIfTouchOutsideCue = "1" RewardTouchCue = "1" RewardSound = "CorrectTrialSoundFile" >  </PreCueFixation>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" > </PostChoice>
+        </Trial>         
+          <!-- ********************************************************************************************* -->
+        
+       
+        <Trial>
+            <TrialParams Name = "IdentityMatching_Same_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp1" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "CueAttributes(1)" CueInvalidAttributes = ""  CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+                <Choice Media ="RedTriangle"  Position = "-250 0" JuiceReward = "0" SizePix = "80" > </Choice>                 
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+             
+        <Trial>
+            <TrialParams Name = "IdentityMatching_Same_Training_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp1" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "CueAttributes(1)" CueInvalidAttributes = ""  CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "20p0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+        
+
+       <Trial>
+            <TrialParams Name = "IdentityMatching_Different_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp1" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp1"  CueInvalidAttributes = "CueAttributes(1)" CueIgnoreAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "-250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+                <Choice Media ="RedTriangle"  Position = "250 0" JuiceReward = "0" SizePix = "80" > </Choice>                 
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+        
+        
+       <Trial>
+            <TrialParams Name = "IdentityMatching_Different_Training_Exp1" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp1" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp1"  CueInvalidAttributes = "CueAttributes(1)" CueIgnoreAttributes = "IdentityMatching_Exp1" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "-250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+              </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+     
+        
+        
+        
+        
+        <!---  ****************************************************************** -->
+        
+     
+        <Trial>
+            <TrialParams Name = "IdentityMatching_Same_Exp2" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp2" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "CueAttributes(1)" CueInvalidAttributes = ""  CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+                <Choice Media ="RedTriangle"  Position = "-250 0" JuiceReward = "0" SizePix = "80" > </Choice>                 
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+             
+        <Trial>
+            <TrialParams Name = "IdentityMatching_Same_Training_Exp2" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp2" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "CueAttributes(1)" CueInvalidAttributes = ""  CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "20p0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+        
+
+       <Trial>
+            <TrialParams Name = "IdentityMatching_Different_Exp2" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp2" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp2"  CueInvalidAttributes = "CueAttributes(1)" CueIgnoreAttributes = "IdentityMatching_Exp2" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "-250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+                <Choice Media ="RedTriangle"  Position = "250 0" JuiceReward = "0" SizePix = "80" > </Choice>                 
+            </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+        
+        
+       <Trial>
+            <TrialParams Name = "IdentityMatching_Different_Training_Exp2" CueType = "Random" ChoicesType = "Fixed" ProbWeight = "1" JuiceMS = "610" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "Triangle" FixationRegion = "60" FixationPosition = "Center" FixationColor = "255 0 0"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp2" CueInvalidAttributes = "" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "255 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <Cue CueMedia = "Random" CueValidAttributes = "IdentityMatching_Exp2"  CueInvalidAttributes = "CueAttributes(1)" CueIgnoreAttributes = "IdentityMatching_Exp2" CuePeriodMS = "500" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "0" CueHighlightColor = "0 0 0"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0"  MemoryPeriodMS = "200"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0">  </Cue>
+            <MemoryPeriod MemoryPeriodMS = "0"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+           <Choices>
+                <ChoicesParam HoldToSelectChoiceMS = "0" MultipleAttemptsUntilJuice = "0" InsideChoiceRegionType = "Rect" InsideChoiceRegionSize = "100" KeepCueOnScreen = "0" > </ChoicesParam>                    
+                <Choice Media ="RedTriangle" Position = "-250 0" JuiceReward = "1" SizePix = "80" RewardSound = "CorrectTrialSoundFile" > </Choice>
+              </Choices>
+              <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+             
+        
+        
+    </TrialTypes>
+
+     <TrialOrder>
+         
+          <Block Types = "BasicTraining"                                 NumTrials = "5" > </Block>
+         <Block Types = "IdentityMatching_Different_Training_Exp2" NumTrials = "2" >  </Block>
+         <Block Types = "IdentityMatching_Same_Training_Exp2" NumTrials = "2"  > </Block>
+         <Block Types = "IdentityMatching_Different_Training_Exp2" NumTrials = "2" >  </Block>
+         <Block Types = "IdentityMatching_Same_Training_Exp2" NumTrials = "2"  > </Block>
+         <Block Types = "IdentityMatching_Different_Training_Exp2" NumTrials = "2" >  </Block>
+         <Block Types = "IdentityMatching_Same_Training_Exp2" NumTrials = "2"  > </Block>
+        
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        
+
+         <Block Types = "IdentityMatching_Different_Exp2;IdentityMatching_Same_Exp2"     NumTrials = "50" RepeatIncorrect = "1"> </Block>
+        
+
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp2"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp2"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+
+         <Block Types = "IdentityMatching_Different_Exp2;IdentityMatching_Same_Exp2"     NumTrials = "100" RepeatIncorrect = "0"> </Block>
+
+          <Block Types = "BasicTraining"                                 NumTrials = "10" > </Block>
+         
+         <Block Types = "IdentityMatching_Different_Training_Exp1" NumTrials = "2" >  </Block>
+         <Block Types = "IdentityMatching_Same_Training_Exp1" NumTrials = "2"  > </Block>
+
+         <Block Types = "IdentityMatching_Different_Training_Exp1" NumTrials = "2" >  </Block>
+         <Block Types = "IdentityMatching_Same_Training_Exp1" NumTrials = "2"  > </Block>
+
+         <Block Types = "IdentityMatching_Different_Training_Exp1" NumTrials = "2" >  </Block>
+         <Block Types = "IdentityMatching_Same_Training_Exp1" NumTrials = "2"  > </Block>
+         
+         
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "4" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+ 
+        <Block Types = "IdentityMatching_Same_Exp1;IdentityMatching_Different_Exp1"     NumTrials = "20" RepeatIncorrect = "1"> </Block>
+
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "4" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "1" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "3" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+         <Block Types = "IdentityMatching_Different_Exp1"     NumTrials = "2" RepeatIncorrect = "1"> </Block>
+        <Block Types = "IdentityMatching_Same_Exp1"     NumTrials = "5" RepeatIncorrect = "1"> </Block>
+        
+        <Block Types = "IdentityMatching_Same_Exp1;IdentityMatching_Different_Exp1"     NumTrials = "50" RepeatIncorrect = "0"> </Block>
+        
+        
+    </TrialOrder>         
+   
+     <Media>
+        
+        <Image Name = "RedTriangle" FileName = "\\Touch\StimulusSet\IdentityMatching\RedTriangle.png" Attr = ""> </Image>
+            
+        <Image Name = "ID1-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0001.jpg" Attr = "IdentityMatching_Exp1;Identity1"> </Image>
+        <Image Name = "ID1-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0002.jpg" Attr = "IdentityMatching_Exp1;Identity1"> </Image>
+        <Image Name = "ID1-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0003.jpg" Attr = "IdentityMatching_Exp1;Identity1"> </Image>
+        <Image Name = "ID1-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0004.jpg" Attr = "IdentityMatching_Exp1;Identity1"> </Image>
+        <Image Name = "ID1-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0005.jpg" Attr = "IdentityMatching_Exp1;Identity1"> </Image>
+
+        <Image Name = "ID2-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0022.jpg" Attr = "IdentityMatching_Exp1;Identity2"> </Image>
+        <Image Name = "ID2-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0023.jpg" Attr = "IdentityMatching_Exp1;Identity2"> </Image>
+        <Image Name = "ID2-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0024.jpg" Attr = "IdentityMatching_Exp1;Identity2"> </Image>
+        <Image Name = "ID2-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0025.jpg" Attr = "IdentityMatching_Exp1;Identity2"> </Image>
+        <Image Name = "ID2-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0026.jpg" Attr = "IdentityMatching_Exp1;Identity2"> </Image>
+
+        <Image Name = "ID3-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0042.jpg" Attr = "IdentityMatching_Exp1;Identity3"> </Image>
+        <Image Name = "ID3-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0043.jpg" Attr = "IdentityMatching_Exp1;Identity3"> </Image>
+        <Image Name = "ID3-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0044.jpg" Attr = "IdentityMatching_Exp1;Identity3"> </Image>
+        <Image Name = "ID3-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0045.jpg" Attr = "IdentityMatching_Exp1;Identity3"> </Image>
+        <Image Name = "ID3-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0046.jpg" Attr = "IdentityMatching_Exp1;Identity3"> </Image>
+
+        <Image Name = "ID4-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0047.jpg" Attr = "IdentityMatching_Exp1;Identity4"> </Image>
+        <Image Name = "ID4-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0048.jpg" Attr = "IdentityMatching_Exp1;Identity4"> </Image>
+        <Image Name = "ID4-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0049.jpg" Attr = "IdentityMatching_Exp1;Identity4"> </Image>
+        <Image Name = "ID4-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0050.jpg" Attr = "IdentityMatching_Exp1;Identity4"> </Image>
+        <Image Name = "ID4-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0051.jpg" Attr = "IdentityMatching_Exp1;Identity4"> </Image>
+        
+        <Image Name = "ID5-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0069.jpg" Attr = "IdentityMatching_Exp1;Identity5"> </Image>
+        <Image Name = "ID5-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0070.jpg" Attr = "IdentityMatching_Exp1;Identity5"> </Image>
+        <Image Name = "ID5-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0071.jpg" Attr = "IdentityMatching_Exp1;Identity5"> </Image>
+        <Image Name = "ID5-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0072.jpg" Attr = "IdentityMatching_Exp1;Identity5"> </Image>
+        <Image Name = "ID5-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0073.jpg" Attr = "IdentityMatching_Exp1;Identity5"> </Image>
+        
+        <Image Name = "ID6-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0090.jpg" Attr = "IdentityMatching_Exp1;Identity6"> </Image>
+        <Image Name = "ID6-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0091.jpg" Attr = "IdentityMatching_Exp1;Identity6"> </Image>
+        <Image Name = "ID6-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0092.jpg" Attr = "IdentityMatching_Exp1;Identity6"> </Image>
+        <Image Name = "ID6-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0093.jpg" Attr = "IdentityMatching_Exp1;Identity6"> </Image>
+        <Image Name = "ID6-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0094.jpg" Attr = "IdentityMatching_Exp1;Identity6"> </Image>
+        
+          
+        <Image Name = "ID7-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0113.jpg" Attr = "IdentityMatching_Exp1;Identity7"> </Image>
+        <Image Name = "ID7-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0114.jpg" Attr = "IdentityMatching_Exp1;Identity7"> </Image>
+        <Image Name = "ID7-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0115.jpg" Attr = "IdentityMatching_Exp1;Identity7"> </Image>
+        <Image Name = "ID7-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0116.jpg" Attr = "IdentityMatching_Exp1;Identity7"> </Image>
+        <Image Name = "ID7-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0117.jpg" Attr = "IdentityMatching_Exp1;Identity7"> </Image>
+      
+         
+        <Image Name = "ID8-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0133.jpg" Attr = "IdentityMatching_Exp1;Identity8"> </Image>
+        <Image Name = "ID8-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0134.jpg" Attr = "IdentityMatching_Exp1;Identity8"> </Image>
+        <Image Name = "ID8-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0135.jpg" Attr = "IdentityMatching_Exp1;Identity8"> </Image>
+        <Image Name = "ID8-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0136.jpg" Attr = "IdentityMatching_Exp1;Identity8"> </Image>
+        <Image Name = "ID8-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0137.jpg" Attr = "IdentityMatching_Exp1;Identity8"> </Image>
+
+        
+        <Image Name = "ID9-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0153.jpg" Attr = "IdentityMatching_Exp1;Identity9"> </Image>
+        <Image Name = "ID9-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0154.jpg" Attr = "IdentityMatching_Exp1;Identity9"> </Image>
+        <Image Name = "ID9-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0155.jpg" Attr = "IdentityMatching_Exp1;Identity9"> </Image>
+        <Image Name = "ID9-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0156.jpg" Attr = "IdentityMatching_Exp1;Identity9"> </Image>
+        <Image Name = "ID9-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0157.jpg" Attr = "IdentityMatching_Exp1;Identity9"> </Image>
+        
+        <Image Name = "ID10-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0159.jpg" Attr = "IdentityMatching_Exp1;Identity10"> </Image>
+        <Image Name = "ID10-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0160.jpg" Attr = "IdentityMatching_Exp1;Identity10"> </Image>
+        <Image Name = "ID10-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0161.jpg" Attr = "IdentityMatching_Exp1;Identity10"> </Image>
+        <Image Name = "ID10-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0162.jpg" Attr = "IdentityMatching_Exp1;Identity10"> </Image>
+        <Image Name = "ID10-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0163.jpg" Attr = "IdentityMatching_Exp1;Identity10"> </Image>
+
+        <Image Name = "ID11-1" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0164.jpg" Attr = "IdentityMatching_Exp1;Identity11"> </Image>
+        <Image Name = "ID11-2" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0165.jpg" Attr = "IdentityMatching_Exp1;Identity11"> </Image>
+        <Image Name = "ID11-3" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0166.jpg" Attr = "IdentityMatching_Exp1;Identity11"> </Image>
+        <Image Name = "ID11-4" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0167.jpg" Attr = "IdentityMatching_Exp1;Identity11"> </Image>
+        <Image Name = "ID11-5" FileName = "\\Touch\StimulusSet\Caltech256\253.faces-easy-101\253_0168.jpg" Attr = "IdentityMatching_Exp1;Identity11"> </Image>
+        
+              
+        
+        
+<Image Name = "RandID1_Yaw_-10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_-10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Anger_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Anger_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Anger_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Anger_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_BigAhh_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_BigAhh_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_BigAhh_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_BigAhh_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Disgust_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Disgust_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Disgust_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Disgust_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_EarsOut_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_EarsOut_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Fear_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Fear_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Fear_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Fear_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_PhonemeW_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_PhonemeW_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_PhonemeW_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_PhonemeW_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Sad_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Sad_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Sad_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Sad_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_SmileClosed_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_SmileClosed_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_SmileClosed_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_SmileClosed_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_SmileOpen_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_SmileOpen_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_SmileOpen_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_SmileOpen_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Surprise_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Surprise_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_0_Pitch_0_Surprise_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_0_Pitch_0_Surprise_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>
+<Image Name = "RandID1_Yaw_10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>        
+
+
+<Image Name = "RandID1_Yaw_20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>        
+<Image Name = "RandID1_Yaw_-20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_-20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>        
+<Image Name = "RandID1_Yaw_30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>        
+<Image Name = "RandID1_Yaw_-30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID1\RandID1_Yaw_-30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity1"> </Image>        
+
+
+<Image Name = "RandID2_Yaw_-10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_-10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Anger_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Anger_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Anger_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Anger_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_BigAhh_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_BigAhh_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_BigAhh_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_BigAhh_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Disgust_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Disgust_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Disgust_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Disgust_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_EarsOut_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_EarsOut_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_EarsOut_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_EarsOut_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Fear_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Fear_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Fear_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Fear_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_PhonemeW_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_PhonemeW_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_PhonemeW_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_PhonemeW_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Sad_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Sad_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Sad_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Sad_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_SmileClosed_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_SmileClosed_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_SmileClosed_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_SmileClosed_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_SmileOpen_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_SmileOpen_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_SmileOpen_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_SmileOpen_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Surprise_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Surprise_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_0_Pitch_0_Surprise_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_0_Pitch_0_Surprise_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+<Image Name = "RandID2_Yaw_10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>
+
+<Image Name = "RandID2_Yaw_20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>        
+<Image Name = "RandID2_Yaw_-20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_-20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>        
+<Image Name = "RandID2_Yaw_30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>        
+<Image Name = "RandID2_Yaw_-30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID2\RandID2_Yaw_-30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity2"> </Image>        
+
+
+
+
+<Image Name = "RandID3_Yaw_-10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_-10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Anger_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Anger_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Anger_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Anger_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_BigAhh_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_BigAhh_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_BigAhh_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_BigAhh_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Disgust_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Disgust_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Disgust_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Disgust_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_EarsOut_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_EarsOut_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Fear_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Fear_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Fear_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Fear_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_PhonemeW_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_PhonemeW_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_PhonemeW_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_PhonemeW_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Sad_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Sad_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Sad_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Sad_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_SmileClosed_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_SmileClosed_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_SmileClosed_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_SmileClosed_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_SmileOpen_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_SmileOpen_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_SmileOpen_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_SmileOpen_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Surprise_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Surprise_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_0_Pitch_0_Surprise_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_0_Pitch_0_Surprise_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>
+<Image Name = "RandID3_Yaw_10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>        
+<Image Name = "RandID3_Yaw_20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>        
+<Image Name = "RandID3_Yaw_-20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_-20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>        
+<Image Name = "RandID3_Yaw_30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>        
+<Image Name = "RandID3_Yaw_-30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID3\RandID3_Yaw_-30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity3"> </Image>        
+
+
+<Image Name = "RandID4_Yaw_-10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_-10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_-20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_-20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_-30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_-30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Anger_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Anger_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Anger_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Anger_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_BigAhh_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_BigAhh_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_BigAhh_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_BigAhh_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Disgust_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Disgust_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Disgust_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Disgust_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_EarsOut_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_EarsOut_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Fear_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Fear_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Fear_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Fear_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_PhonemeW_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_PhonemeW_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_PhonemeW_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_PhonemeW_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Sad_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Sad_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Sad_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Sad_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_SmileClosed_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_SmileClosed_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_SmileClosed_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_SmileClosed_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_SmileOpen_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_SmileOpen_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_SmileOpen_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_SmileOpen_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Surprise_0.5" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Surprise_0.5.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_0_Pitch_0_Surprise_1" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_0_Pitch_0_Surprise_1.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_10_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_10_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_20_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_20_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+<Image Name = "RandID4_Yaw_30_Pitch_0" FileName = "\\Touch\StimulusSet\IdentityMatching\RandomID\RandID4\RandID4_Yaw_30_Pitch_0.bmp" Attr = "IdentityMatching_Exp2;RandIdentity4"> </Image>
+
+
+    </Media>
+   
+</Config>

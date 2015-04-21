@@ -1,0 +1,5 @@
+C:\Users\shayo\SkyDrive\clrzmq\perf\local_thr.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrLocal\obj\x64\Release\local_thr.exe
+C:\Users\Shay\SkyDrive\clrzmq\perf\local_thr.exe
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrLocal\obj\x64\Release\ZeroMQ.Perf.ThrLocal.csprojResolveAssemblyReference.cache
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.Perf.ThrLocal\obj\x64\Release\local_thr.exe

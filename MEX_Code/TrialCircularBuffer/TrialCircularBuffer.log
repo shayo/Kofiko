@@ -1,0 +1,30 @@
+﻿Build started 10/22/2013 10:19:25 AM.
+     1>Project "Z:\MEX_Code\TrialCircularBuffer\TrialCircularBuffer.vcxproj" on node 2 (rebuild target(s)).
+     1>_PrepareForClean:
+         Deleting file "x64\Release\TrialCircularBuffer.lastbuildstate".
+       InitializeBuildStatus:
+         Creating "x64\Release\TrialCircularBuffer.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\CL.exe /c /IC:\MATLAB\R2012b_x64\\extern\include /Zi /nologo /W3 /WX- /O2 /Ob1 /D MX_COMPAT_32 /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D SELECTLABELS_EXPORTS /D _VC80_UPGRADE=0x0600 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\x64\Release\\" /Fd".\x64\Release\vc100.pdb" /Gd /TP /errorReport:prompt TrialCircularBuffer.cpp
+         TrialCircularBuffer.cpp
+     1>TrialCircularBuffer.cpp(1629): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>TrialCircularBuffer.cpp(1638): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>TrialCircularBuffer.cpp(1683): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>TrialCircularBuffer.cpp(1698): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>TrialCircularBuffer.cpp(2073): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(Z:\MEX_Code\TrialCircularBuffer\x64\Release\TrialCircularBuffer.dll) does not match the Linker's OutputFile property value (Z:\MEX\x64\TrialCircularBuffer.mexw64). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(991,5): warning MSB8012: TargetExt(.dll) does not match the Linker's OutputFile property value (.mexw64). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\MEX\x64\TrialCircularBuffer.mexw64" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\MATLAB\R2012b_x64\\extern\lib\win64\microsoft odbc32.lib odbccp32.lib libmx.lib libmex.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /DEF:"TrialCircularBuffer.def" /MANIFEST /ManifestFile:"x64\Release\TrialCircularBuffer.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:".\x64\Release\fndllTrialCircularBuffer.pdb" /TLBID:1 /DYNAMICBASE:NO /IMPLIB:"x64\Release\TrialCircularBuffer.lib" /MACHINE:X64 /DLL .\x64\Release\TrialCircularBuffer.obj
+            Creating library x64\Release\TrialCircularBuffer.lib and object x64\Release\TrialCircularBuffer.exp
+         TrialCircularBuffer.vcxproj -> Z:\MEX_Code\TrialCircularBuffer\x64\Release\TrialCircularBuffer.dll
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"..\..\MEX\x64\TrialCircularBuffer.mexw64;#2" /manifest x64\Release\TrialCircularBuffer.dll.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "x64\Release\TrialCircularBuffer.unsuccessfulbuild".
+         Touching "x64\Release\TrialCircularBuffer.lastbuildstate".
+     1>Done Building Project "Z:\MEX_Code\TrialCircularBuffer\TrialCircularBuffer.vcxproj" (rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.61

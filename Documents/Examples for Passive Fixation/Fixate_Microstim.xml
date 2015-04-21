@@ -1,0 +1,34 @@
+<Config>
+    
+    <Media>
+         <Image Name = "Gray" FileName = "\\192.168.50.93\StimulusSet\PassiveFixationMicrostim\Gray.bmp"  Attr = "Gray"> </Image>
+         <Image Name = "GrayStim" FileName = "\\192.168.50.93\StimulusSet\PassiveFixationMicrostim\Gray.bmp"  Attr = "Stim"> </Image>
+       </Media>
+    
+   <Blocks>
+		<Block Name = "NoStim" Attr = "Gray" > </Block>
+        <Block Name = "Stim" Attr = "Stim" MicroStim = "1" MicroStimAttr = "Stim"> </Block>
+    </Blocks>
+    
+    <BlockOrder>
+        <Order Name = "Default Order">
+			<Block Name = "NoStim" Repitition = "9" > </Block>
+			<Block Name = "Stim" Repitition = "1" > </Block>
+          </Order>
+     </BlockOrder>
+        
+    <Conditions>
+      <Condition Name = "No Stimulation" ValidAttributes = "Gray" DefaultVisibility = "1"> </Condition>
+      <Condition Name = "Stimulation" ValidAttributes = "Stim" DefaultVisibility = "1"> </Condition>
+    </Conditions>
+    
+    <StatServer
+        NumTrialsInCircularBuffer = "200"
+        Pre_TimeSec = "0.5"
+        Post_TimeSec = "0.5"
+    > </StatServer>   
+    
+    
+</Config>
+
+

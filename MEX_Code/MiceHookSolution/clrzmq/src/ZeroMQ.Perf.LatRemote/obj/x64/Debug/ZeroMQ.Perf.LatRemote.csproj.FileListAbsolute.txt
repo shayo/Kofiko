@@ -1,0 +1,4 @@
+C:\Users\shayo\SkyDrive\clrzmq\perf\remote_lat.exe
+C:\Users\shayo\SkyDrive\clrzmq\perf\remote_lat.pdb
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatRemote\obj\x64\Debug\remote_lat.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatRemote\obj\x64\Debug\remote_lat.pdb

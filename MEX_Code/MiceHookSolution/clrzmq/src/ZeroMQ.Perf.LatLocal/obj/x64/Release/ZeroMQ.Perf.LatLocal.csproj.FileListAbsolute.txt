@@ -1,0 +1,5 @@
+C:\Users\shayo\SkyDrive\clrzmq\perf\local_lat.exe
+C:\Users\shayo\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatLocal\obj\x64\Release\local_lat.exe
+C:\Users\Shay\SkyDrive\clrzmq\perf\local_lat.exe
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatLocal\obj\x64\Release\ZeroMQ.Perf.LatLocal.csprojResolveAssemblyReference.cache
+C:\Users\Shay\SkyDrive\clrzmq\src\ZeroMQ.Perf.LatLocal\obj\x64\Release\local_lat.exe

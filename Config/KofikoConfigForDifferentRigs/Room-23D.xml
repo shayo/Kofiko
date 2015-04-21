@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Behavior GUI Configuration -->
+
+<Config>
+
+<Directories
+   LogFolder = "C:\Shay\Data\Logs\"
+   PTB_Folder = "C:\Shay\Code\PublicLib\PTB\"
+> </Directories>
+
+<StimulusServer
+    SingleComputerMode = "0"
+    PTBScreen = "2"
+    Address = "192.168.50.163"
+    Port = "1502"
+> </StimulusServer>
+
+<RemoteAccess
+    Port = "2000"
+> </RemoteAccess>
+
+<VideoStreaming
+    DeviceName = ""
+    SampleRateHz = "0"
+> </VideoStreaming>
+
+<RealTimeStatisticsServer
+    Address = "192.168.50.96"
+    Port = "4003"    
+> </RealTimeStatisticsServer>
+
+<EyeCalib
+    CenterX = "2041"
+    CenterY = "2018"
+    ScaleX = "1"
+    ScaleY = "1"
+> </EyeCalib>
+
+<VarSave
+    EyePos = "0"
+    EyePosSampleRateHz = "120"
+    ExternalTriggers = "1"
+    Spikes = "0"
+    Motion = "0"
+    MotionSampleRateHz = "10"
+    WaterLevelUponExit = "0"
+> </VarSave>
+
+<GUIParams
+    PTBScreen = "0"
+    Experimental = "0"
+    Debug = "0"
+    JuiceMl_To_Ms = "378"
+    JuiceTimeMS = "35"
+    JuiceKey = "74"
+    RecenterKey = "67"
+    DrawAttentionKey = "65"
+    EyeTracesKey = "69"
+    ResetStatKey = "82"
+    TogglePTB = "80"
+    ToggleStat = "72"
+
+    RefreshRateMS = "60"
+    SettingsRefreshRateMS = "1000"
+    MotionThreshold = "250"
+    PauseTaskAfterMotionSec = "0.1"
+    MotionResumeTaskSec = "3"
+
+> </GUIParams>
+
+<DAQ
+    VirtualDAQ = "0"
+    AcqusitionCard = "mc"
+    AcqusitionCardBoard = "0"
+    JuicePort = "18"
+    StartRecordPort = "19"
+    StimulationPort = "20"
+    UseMouseClickAsEyePosition = "0"
+    MonitorIndexForEyePosition = "2"
+    SimulateTouchScreenForDebug = "0"
+    
+    EyePortX = "0"
+    EyePortY = "1"
+    EyePortPupil = "2"
+    AnalogSpikePorts = "3 4 5 6"
+    AnalogSpikePortsMappingToChannels = "1 1 2 2"
+    AnalogSpikePortsMappingToUnits = "1 2 1 2"
+    LFPPorts = "8 9"
+    LFPPortsMappingToChannels = "1 2"
+    MotionPort = "7"
+    ExternalTriggers = "10"
+    ExternalTriggersNames = "MRI"
+    ExternalTriggerThreshold = "3000"
+    SpikeThreshold = "3000"
+    MouseWheelToMM = "115"
+    SystemStrobeFile = "SystemStrobeEvents.txt"
+> </DAQ>
+
+
+<Paradigms>
+
+    <Paradigm Name = "Default"
+        Init = "fnParadigmDefaultInit"
+        Cycle = "fnParadigmDefaultCycle"
+        Draw = "fnParadigmDefaultDraw"
+        DrawCycle = "fnParadigmDefaultDrawCycle"
+        Callbacks = "fnParadigmDefaultCallbacks"
+        GUI = "fnParadigmDefaultGUI"
+        Close = "fnParadigmDefaultClose"
+        ParadigmSwitch = "fnParadigmDefaultParadigmSwitch"
+        StrobeCodes = "DefualtStrobeCodes.txt"
+   > </Paradigm>
+
+
+    <Paradigm Name = "Five Dot Eye Calibration"
+        Init = "fnParadigmFiveDotInit"
+        Cycle = "fnParadigmFiveDotCycle"
+        Draw = "fnParadigmFiveDotDraw"
+        DrawCycle = "fnParadigmFiveDotDrawCycle"
+        Callbacks = "fnParadigmFiveDotCallbacks"
+        GUI = "fnParadigmFiveDotGUI"
+        Close = "fnParadigmFiveDotClose"
+        ParadigmSwitch = "fnParadigmFiveDotParadigmSwitch"
+        StrobeCodes = "FiveDotStrobeCodes.txt"
+    
+        Initial_JuiceTimeMS = "35"
+        Initial_JuiceTimeHighMS = "40"
+        Initial_BlinkTimeMS = "200"
+        Initial_GazeTimeMS = "4000"
+        Initial_GazeTimeLowMS = "3000"
+        Initial_BackgroundColor = "128 128 128"
+        Initial_FixationSizePix = "10"
+        Initial_GazeBoxPix = "150"
+        Initial_SpreadPix = "0"
+        Initial_StimulusON_MS = "3000"
+        Initial_ShowEyeTraces = "1"
+        Initial_EyeTracesRefreshMS = "500"
+        Initial_EyeTracesBufferSize = "1000"
+        Initial_PositiveIncrementPercent = "10"
+  
+   > </Paradigm>
+
+
+
+    <Paradigm Name = "Passive Fixation New"
+        Init = "fnParadigmPassiveFixationInitNew"
+        Cycle = "fnParadigmPassiveFixationCycleNew"
+        Draw = "fnParadigmPassiveFixationDrawNew"
+        DrawCycle = "fnParadigmPassiveFixationDrawCycleNew"
+        Callbacks = "fnParadigmPassiveFixationCallbacksNew"
+        GUI = "fnParadigmPassiveFixationGUINew"
+        Close = "fnParadigmPassiveFixationCloseNew"
+        ParadigmSwitch = "fnParadigmPassiveFixationParadigmSwitchNew"
+        StrobeCodes = "PassiveFixationStrobeCodesNew.txt"
+
+        Initial_ShowPhotodiodeRect = "1"
+
+        Initial_ShowImagesOnLoad = "0"
+        Initial_RescaleToPower2 = "0"
+        Initial_PreloadTexturesVRAM = "1"
+
+        Initial_GazeBoxPix = "100"
+        Initial_JuiceTimeMS = "35"
+        Initial_JuiceTimeHighMS = "40"
+        Initial_BlinkTimeMS = "200"
+        Initial_GazeTimeMS = "6000"
+        Initial_GazeTimeLowMS = "6000"
+        Initial_PositiveIncrementPercent = "10"
+
+        Initial_BackgroundColor = "128 128 128"
+        Initial_FixationSizePix = "4"
+        Initial_StimulusSizePix = "128"
+        Initial_StimulusON_MS = "200"
+        Initial_StimulusOFF_MS = "200"
+        Initial_RandomStimuli = "1"
+  
+        Initial_DefaultImageFolder = "\\kofiko-23d\StimulusSet\"
+        Initial_DefaultImageList = "\\kofiko-23d\StimulusSet\Monkey_Bodyparts\imlist.txt"
+        Initial_FavroiteList1 = "\\Kofiko-23B\StimulusSet\Monkey_Bodyparts\StandardFOB_v5_Inv_Edges.txt"
+        Initial_FavroiteList1 = "\\kofiko-23d\StimulusSet\Monkey_Bodyparts\imlist.txt"
+        Initial_FavroiteList2 = "\\kofiko-23d\StimulusSet\Monkey_Bodyparts\faces_only.txt"
+        
+        Initial_RandomPosition = "1"
+        Initial_RandomPositionMin = "50"
+        Initial_RandomPositionMax = "90"
+        Initial_RandomPositionRadius = "90"
+
+        Initial_HideStimulusWhenNotLooking = "1"
+
+        Initial_ParameterSweep = "0"
+
+   > </Paradigm>   
+   
+
+
+    <Paradigm Name = "fMRI Block Design"
+        Init = "fnParadigmBlockDesignInit"
+        Cycle = "fnParadigmBlockDesignCycle"
+        Draw = "fnParadigmBlockDesignDraw"
+        DrawCycle = "fnParadigmBlockDesignDrawCycle"
+        Callbacks = "fnParadigmBlockDesignCallbacks"
+        GUI = "fnParadigmBlockDesignGUI"
+        Close = "fnParadigmBlockDesignClose"
+        ParadigmSwitch = "fnParadigmBlockDesignParadigmSwitch"
+        StrobeCodes = "BlockDesignStrobeCodes.txt"
+ 
+
+        Initial_GazeBoxPix = "150"
+        Initial_JuiceTimeMS = "45"
+        Initial_JuiceTimeHighMS = "70"
+        Initial_BlinkTimeMS = "200"
+        Initial_GazeTimeMS = "3000"
+        Initial_GazeTimeLowMS = "1000"
+        Initial_PositiveIncrementPercent = "10"
+
+        Initial_BackgroundColor = "128 128 128"
+        Initial_FixationSizePix = "7"
+        Initial_StimulusSizePix = "128"
+        Initial_StimulusON_MS = "200"
+        Initial_StimulusOFF_MS = "200"
+        Initial_RotationAngleDeg = "0"
+        Initial_TR_MS = "2000"
+        Initial_NumTRsPerBlock = "8"
+        Initial_StimulusTimeMS = "500"
+        Initial_MicroStim = "0"
+        Initial_MicroStimCycleMS = "1000"
+
+        Initial_DefaultImageFolder = "\\kofiko-23d\StimulusSet\"
+        Initial_DefaultImageList = "\\kofiko-23d\StimulusSet\fMRI_Standard_Localizer\stimlist_face_body_places_localizer.txt"
+        Initial_DefaultBlockList = "\\kofiko-23d\StimulusSet\fMRI_Standard_Localizer\blocklist_face_body_places_localizer.txt"
+        Initial_DefaultRunList = "\\kofiko-23d\StimulusSet\fMRI_Standard_Localizer\BlockOrder_face_localizer_monkey.txt"
+
+        Initial_Default_RunType = "Block TR With Repeats"
+
+   > </Paradigm>
+
+
+
+
+  <Paradigm Name = "Touch Force Choice"
+        Init = "fnParadigmTouchForceChoiceInit"
+        Cycle = "fnParadigmTouchForceChoiceCycle"
+        Draw = "fnParadigmTouchForceChoiceDraw"
+        DrawCycle = "fnParadigmTouchForceChoiceDrawCycle"
+        Callbacks = "fnParadigmTouchForceChoiceCallbacks"
+        GUI = "fnParadigmTouchForceChoiceGUI"
+        Close = "fnParadigmTouchForceChoiceClose"
+        ParadigmSwitch = "fnParadigmTouchForceChoiceParadigmSwitch"
+        
+        
+        Initial_PreCueFixationPeriodMS = "300"
+        Initial_PreCueFixationSpotSize = "30"
+        Initial_PreCueFixationSpotType = "Disc"
+        Initial_PreCueFixationRegion = "50"
+        
+        Initial_CuePeriodMS = "1000"
+        Initial_CueMemoryPeriodMS = "1000"
+        Initial_AbortTrialIfBreakFixationDuringCue = "1"
+        Initial_OverlayPreCueFixation = "1"
+        
+        Initial_MemoryPeriodMS = "1000"
+        
+        Initial_InterTrialIntervalMinSec = "0"
+        Initial_InterTrialIntervalMaxSec = "1"
+   
+        Initial_TrialTimeoutMS = "10000"
+        Initial_JuiceTimeMS = "50"
+        
+        
+        
+        Initial_DefaultFolder = "\\touch\StimulusSet\"
+        Initial_ExtinguishChoicesAfterSaccade = "1"
+        Initial_ShowObjectsAfterSaccadeMS = "500"
+        Initial_IncorrectTrialDelayMS = "2000"
+
+        Initial_ImageHalfSizePix = "75"
+        Initial_ChoicesHalfSizePix = "75"
+
+        Initial_HitRadius = "100"
+        Initial_FixationRadiusPix = "100"
+
+        Initial_DesignFile = "\\Kofiko-23d\StimulusSet\Doris_IdentityMatching\IdentityMatchingDMS_Spiderman.xml"
+
+        Initial_FavroiteList1 = "\\Kofiko-23d\StimulusSet\Doris_IdentityMatching\IdentityMatchingDMS_Spiderman.xml"
+
+        Initial_NoiseLevel = "10"
+        Initial_StairCaseUp = "0"
+        Initial_StairCaseDown = "0"
+        Initial_StairCaseStepPerc = "0"
+        Initial_NoiseFile = ""
+  > </Paradigm>
+  
+   
+</Paradigms>
+
+</Config>

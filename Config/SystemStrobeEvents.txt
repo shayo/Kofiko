@@ -1,0 +1,16 @@
+# System Events
+0 No Stimulus
+
+32755 Micro Stimulation
+32756 Paradigm Switch
+32757 Sync
+32758 Recenter Gaze
+32759 Start Paradigm
+32760 Pause Paradigm
+32761 Resume Paradigm
+32762 Stop Paradigm
+32763 Comment
+32764 Juice OFF
+32765 Juice ON
+32766 Stop Recording
+32767 Start Recording

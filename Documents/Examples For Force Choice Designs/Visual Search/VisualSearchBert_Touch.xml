@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <TrialTypes>
+
+          <!-- ********************************************************************************************* -->
+        <Trial>
+            <TrialParams Name = "BasicTraining"  CueType = "NoCue"  ChoicesType = "NoChoices" ProbWeight = "1" JuiceMS = "60" MultipleSaccades = "0" TrialTimeoutMS = "60000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "30" FixationSpotType = "Disc" FixationRegion = "50" FixationPosition = "Random" AbortTrialIfTouchOutsideCue = "1" RewardTouchCue = "1" RewardSound = "CorrectTrialSoundFile" >  </PreCueFixation>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" > </PostChoice>
+        </Trial>         
+          <!-- ********************************************************************************************* -->
+        
+       
+        <Trial>
+            <TrialParams Name = "VisualSearch_1Choice_Easy_Exp1" CueType = "Random" ChoicesType = "Random" ProbWeight = "1" JuiceMS = "510" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "X" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "VisualSearch_Exp1" CueInvalidAttributes = "" CuePeriodMS = "1200" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "1" CueHighlightColor = "0 0 255 "  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" >  </Cue>
+             <MemoryPeriod MemoryPeriodMS = "300"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+            <Choices> 
+                <ChoicesParam NumChoices = "1" IncludeCueAsChoice = "1" ValidAttributes= "VisualSearch_Exp1" InvalidAttributes= "" 
+                                            NumChoicesWithSimilarAttributesToCue = "0"  SizePix = "100" Arrangement = "random" ValidAttributesForJuiceReward = "CueAttributes" 
+                                            RewardSound = "CorrectTrialSoundFile"  MultipleAttemptsUntilJuice = "0" HoldToSelectChoiceMS = "0" InsideChoiceRegionType = "Rect" 
+                                            InsideChoiceRegionSize = "100" > </ChoicesParam>   
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>               
+                   
+     <Trial>
+            <TrialParams Name = "VisualSearch_2Choice_Easy_Exp1" CueType = "Random" ChoicesType = "Random" ProbWeight = "1" JuiceMS = "510" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "X" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "VisualSearch_Exp1" CueInvalidAttributes = "" CuePeriodMS = "1200" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "1" CueHighlightColor = "0 0 255"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" >  </Cue>
+             <MemoryPeriod MemoryPeriodMS = "300"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+            <Choices> 
+                <ChoicesParam NumChoices = "2" IncludeCueAsChoice = "1" ValidAttributes= "VisualSearch_Exp1" InvalidAttributes= "" 
+                                            NumChoicesWithSimilarAttributesToCue = "0"  SizePix = "100" Arrangement = "random" ValidAttributesForJuiceReward = "CueAttributes" 
+                                            RewardSound = "CorrectTrialSoundFile"  MultipleAttemptsUntilJuice = "0" HoldToSelectChoiceMS = "0" InsideChoiceRegionType = "Rect" 
+                                            InsideChoiceRegionSize = "100" > </ChoicesParam>   
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial> 
+        
+        <Trial>
+            <TrialParams Name = "VisualSearch_4Choice_Easy_Exp1" CueType = "Random" ChoicesType = "Random" ProbWeight = "1" JuiceMS = "510" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "X" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "VisualSearch_Exp1" CueInvalidAttributes = "" CuePeriodMS = "1200" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "1" CueHighlightColor = "0 0 255"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" >  </Cue>
+             <MemoryPeriod MemoryPeriodMS = "300"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+            <Choices> 
+                <ChoicesParam NumChoices = "4" IncludeCueAsChoice = "1" ValidAttributes= "VisualSearch_Exp1" InvalidAttributes= "" 
+                                            NumChoicesWithSimilarAttributesToCue = "0"  SizePix = "100" Arrangement = "random" ValidAttributesForJuiceReward = "CueAttributes" 
+                                            RewardSound = "CorrectTrialSoundFile"  MultipleAttemptsUntilJuice = "0" HoldToSelectChoiceMS = "0" InsideChoiceRegionType = "Rect" 
+                                            InsideChoiceRegionSize = "100" > </ChoicesParam>   
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial> 
+                     
+    <Trial>
+            <TrialParams Name = "VisualSearch_6Choice_Easy_Exp1" CueType = "Random" ChoicesType = "Random" ProbWeight = "1" JuiceMS = "510" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "X" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "VisualSearch_Exp1" CueInvalidAttributes = "" CuePeriodMS = "1200" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "1" CueHighlightColor = "0 0 255"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" >  </Cue>
+             <MemoryPeriod MemoryPeriodMS = "300"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+            <Choices> 
+                <ChoicesParam NumChoices = "6" IncludeCueAsChoice = "1" ValidAttributes= "VisualSearch_Exp1" InvalidAttributes= "" 
+                                            NumChoicesWithSimilarAttributesToCue = "0"  SizePix = "100" Arrangement = "random" ValidAttributesForJuiceReward = "CueAttributes" 
+                                            RewardSound = "CorrectTrialSoundFile"  MultipleAttemptsUntilJuice = "0" HoldToSelectChoiceMS = "0" InsideChoiceRegionType = "Rect" 
+                                            InsideChoiceRegionSize = "100" > </ChoicesParam>   
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>   
+        
+        
+        
+    <Trial>
+            <TrialParams Name = "VisualSearch_8Choice_Easy_Exp1" CueType = "Random" ChoicesType = "Random" ProbWeight = "1" JuiceMS = "510" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "X" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "VisualSearch_Exp1" CueInvalidAttributes = "" CuePeriodMS = "1200" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "1" CueHighlightColor = "0 0 255"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" >  </Cue>
+             <MemoryPeriod MemoryPeriodMS = "300"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+            <Choices> 
+                <ChoicesParam NumChoices = "8" IncludeCueAsChoice = "1" ValidAttributes= "VisualSearch_Exp1" InvalidAttributes= "" 
+                                            NumChoicesWithSimilarAttributesToCue = "0"  SizePix = "100" Arrangement = "random" ValidAttributesForJuiceReward = "CueAttributes" 
+                                            RewardSound = "CorrectTrialSoundFile"  MultipleAttemptsUntilJuice = "0" HoldToSelectChoiceMS = "0" InsideChoiceRegionType = "Rect" 
+                                            InsideChoiceRegionSize = "100" > </ChoicesParam>   
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>         
+        
+    
+   <Trial>
+            <TrialParams Name = "VisualSearch_4Choice_Hard_Exp1" CueType = "Random" ChoicesType = "Random" ProbWeight = "1" JuiceMS = "510" MultipleSaccades = "1" TrialTimeoutMS = "10000" > </TrialParams>
+            <PreCueFixation PreCueFixationPeriodMS = "0" FixationSpotSize = "50" FixationSpotType = "X" FixationRegion = "60" FixationPosition = "Center" FixationColor = "0 0 255"  AbortTrialIfTouchOutsideCue = "0" RewardTouchCue = "0" >  </PreCueFixation>            
+            <Cue CueMedia = "Random" CueValidAttributes = "VisualSearch_Exp1" CueInvalidAttributes = "" CuePeriodMS = "1200" CueNoiseLevel = "0" CueSizePix = "100" CuePosition = "Center" CueHighlight = "1" CueHighlightColor = "0 0 255"  AbortTrialIfBreakFixationDuringCue  = "1" OverlayFixation = "0" >  </Cue>
+             <MemoryPeriod MemoryPeriodMS = "300"  ShowFixationSpot = "0" AbortTrialIfBreakFixation = "0" > </MemoryPeriod>
+            <Choices> 
+                <ChoicesParam NumChoices = "4" IncludeCueAsChoice = "0" ValidAttributes= "VisualSearch_Exp1" InvalidAttributes= "" 
+                                            NumChoicesWithSimilarAttributesToCue = "1"  SizePix = "100" Arrangement = "random" ValidAttributesForJuiceReward = "CueAttributes" 
+                                            RewardSound = "CorrectTrialSoundFile"  MultipleAttemptsUntilJuice = "0" HoldToSelectChoiceMS = "0" InsideChoiceRegionType = "Rect" 
+                                            InsideChoiceRegionSize = "100" > </ChoicesParam>   
+            </Choices>
+            <PostChoice InterTrialIntervalMinSec = "0" InterTrialIntervalMaxSec = "1" IncorrectTrialPunishmentDelayMS = "3000" ExtinguishNonSelectedChoicesAfterChoice = "1" RetainSelectedChoicePeriodMS = "500"> </PostChoice>
+        </Trial>    
+        
+   
+    </TrialTypes>
+        
+     <TrialOrder>
+     <Block Types = "VisualSearch_4Choice_Easy_Exp1"                NumTrials = "20" RepeatIncorrect = "1"> </Block>
+     <Block Types = "VisualSearch_6Choice_Easy_Exp1"                NumTrials = "20" RepeatIncorrect = "1"> </Block>
+     <Block Types = "VisualSearch_8Choice_Easy_Exp1"                NumTrials = "20" RepeatIncorrect = "1"> </Block>
+
+     <Block Types = "VisualSearch_4Choice_Easy_Exp1"                NumTrials = "20" RepeatIncorrect = "0"> </Block>
+     <Block Types = "VisualSearch_6Choice_Easy_Exp1"                NumTrials = "20" RepeatIncorrect = "0"> </Block>
+     <Block Types = "VisualSearch_8Choice_Easy_Exp1"                NumTrials = "20" RepeatIncorrect = "0"> </Block>
+ 
+     <Block Types = "VisualSearch_4Choice_Hard_Exp1"                NumTrials = "10" RepeatIncorrect = "1"> </Block>     
+     <Block Types = "VisualSearch_4Choice_Hard_Exp1"                NumTrials = "10" RepeatIncorrect = "0"> </Block>     
+      
+    </TrialOrder>         
+   
+    <Media>
+      
+        <Image Name = "ID1-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0001.jpg" Attr = "VisualSearch_Exp1;Face;Identity1"> </Image>
+        <Image Name = "ID1-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0002.jpg" Attr = "VisualSearch_Exp1;Face;Identity1"> </Image>
+        <Image Name = "ID1-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0003.jpg" Attr = "VisualSearch_Exp1;Face;Identity1"> </Image>
+        <Image Name = "ID1-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0004.jpg" Attr = "VisualSearch_Exp1;Face;Identity1"> </Image>
+        <Image Name = "ID1-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0005.jpg" Attr = "VisualSearch_Exp1;Face;Identity1"> </Image>
+
+        <Image Name = "ID2-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0022.jpg" Attr = "VisualSearch_Exp1;Face;Identity2"> </Image>
+        <Image Name = "ID2-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0023.jpg" Attr = "VisualSearch_Exp1;Face;Identity2"> </Image>
+        <Image Name = "ID2-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0024.jpg" Attr = "VisualSearch_Exp1;Face;Identity2"> </Image>
+        <Image Name = "ID2-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0025.jpg" Attr = "VisualSearch_Exp1;Face;Identity2"> </Image>
+        <Image Name = "ID2-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0026.jpg" Attr = "VisualSearch_Exp1;Face;Identity2"> </Image>
+
+        <Image Name = "ID3-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0042.jpg" Attr = "VisualSearch_Exp1;Face;Identity3"> </Image>
+        <Image Name = "ID3-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0043.jpg" Attr = "VisualSearch_Exp1;Face;Identity3"> </Image>
+        <Image Name = "ID3-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0044.jpg" Attr = "VisualSearch_Exp1;Face;Identity3"> </Image>
+        <Image Name = "ID3-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0045.jpg" Attr = "VisualSearch_Exp1;Face;Identity3"> </Image>
+        <Image Name = "ID3-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0046.jpg" Attr = "VisualSearch_Exp1;Face;Identity3"> </Image>
+
+        <Image Name = "ID4-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0047.jpg" Attr = "VisualSearch_Exp1;Face;Identity4"> </Image>
+        <Image Name = "ID4-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0048.jpg" Attr = "VisualSearch_Exp1;Face;Identity4"> </Image>
+        <Image Name = "ID4-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0049.jpg" Attr = "VisualSearch_Exp1;Face;Identity4"> </Image>
+        <Image Name = "ID4-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0050.jpg" Attr = "VisualSearch_Exp1;Face;Identity4"> </Image>
+        <Image Name = "ID4-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0051.jpg" Attr = "VisualSearch_Exp1;Face;Identity4"> </Image>
+        
+        <Image Name = "ID5-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0069.jpg" Attr = "VisualSearch_Exp1;Face;Identity5"> </Image>
+        <Image Name = "ID5-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0070.jpg" Attr = "VisualSearch_Exp1;Face;Identity5"> </Image>
+        <Image Name = "ID5-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0071.jpg" Attr = "VisualSearch_Exp1;Face;Identity5"> </Image>
+        <Image Name = "ID5-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0072.jpg" Attr = "VisualSearch_Exp1;Face;Identity5"> </Image>
+        <Image Name = "ID5-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0073.jpg" Attr = "VisualSearch_Exp1;Face;Identity5"> </Image>
+        
+        <Image Name = "ID6-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0090.jpg" Attr = "VisualSearch_Exp1;Face;Identity6"> </Image>
+        <Image Name = "ID6-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0091.jpg" Attr = "VisualSearch_Exp1;Face;Identity6"> </Image>
+        <Image Name = "ID6-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0092.jpg" Attr = "VisualSearch_Exp1;Face;Identity6"> </Image>
+        <Image Name = "ID6-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0093.jpg" Attr = "VisualSearch_Exp1;Face;Identity6"> </Image>
+        <Image Name = "ID6-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0094.jpg" Attr = "VisualSearch_Exp1;Face;Identity6"> </Image>
+        
+          
+        <Image Name = "ID7-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0113.jpg" Attr = "VisualSearch_Exp1;Face;Identity7"> </Image>
+        <Image Name = "ID7-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0114.jpg" Attr = "VisualSearch_Exp1;Face;Identity7"> </Image>
+        <Image Name = "ID7-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0115.jpg" Attr = "VisualSearch_Exp1;Face;Identity7"> </Image>
+        <Image Name = "ID7-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0116.jpg" Attr = "VisualSearch_Exp1;Face;Identity7"> </Image>
+        <Image Name = "ID7-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0117.jpg" Attr = "VisualSearch_Exp1;Face;Identity7"> </Image>
+      
+         
+        <Image Name = "ID8-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0133.jpg" Attr = "VisualSearch_Exp1;Face;Identity8"> </Image>
+        <Image Name = "ID8-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0134.jpg" Attr = "VisualSearch_Exp1;Face;Identity8"> </Image>
+        <Image Name = "ID8-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0135.jpg" Attr = "VisualSearch_Exp1;Face;Identity8"> </Image>
+        <Image Name = "ID8-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0136.jpg" Attr = "VisualSearch_Exp1;Face;Identity8"> </Image>
+        <Image Name = "ID8-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0137.jpg" Attr = "VisualSearch_Exp1;Face;Identity8"> </Image>
+
+        
+        <Image Name = "ID9-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0153.jpg" Attr = "VisualSearch_Exp1;Face;Identity9"> </Image>
+        <Image Name = "ID9-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0154.jpg" Attr = "VisualSearch_Exp1;Face;Identity9"> </Image>
+        <Image Name = "ID9-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0155.jpg" Attr = "VisualSearch_Exp1;Face;Identity9"> </Image>
+        <Image Name = "ID9-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0156.jpg" Attr = "VisualSearch_Exp1;Face;Identity9"> </Image>
+        <Image Name = "ID9-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0157.jpg" Attr = "VisualSearch_Exp1;Face;Identity9"> </Image>
+        
+        <Image Name = "ID10-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0159.jpg" Attr = "VisualSearch_Exp1;Face;Identity10"> </Image>
+        <Image Name = "ID10-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0160.jpg" Attr = "VisualSearch_Exp1;Face;Identity10"> </Image>
+        <Image Name = "ID10-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0161.jpg" Attr = "VisualSearch_Exp1;Face;Identity10"> </Image>
+        <Image Name = "ID10-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0162.jpg" Attr = "VisualSearch_Exp1;Face;Identity10"> </Image>
+        <Image Name = "ID10-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0163.jpg" Attr = "VisualSearch_Exp1;Face;Identity10"> </Image>
+
+        <Image Name = "ID11-1" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0164.jpg" Attr = "VisualSearch_Exp1;Face;Identity11"> </Image>
+        <Image Name = "ID11-2" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0165.jpg" Attr = "VisualSearch_Exp1;Face;Identity11"> </Image>
+        <Image Name = "ID11-3" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0166.jpg" Attr = "VisualSearch_Exp1;Face;Identity11"> </Image>
+        <Image Name = "ID11-4" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0167.jpg" Attr = "VisualSearch_Exp1;Face;Identity11"> </Image>
+        <Image Name = "ID11-5" FileName = "\\touch\StimulusSet\Caltech256\253.faces-easy-101\253_0168.jpg" Attr = "VisualSearch_Exp1;Face;Identity11"> </Image>
+        
+
+        <Image Name = "Obj250-1" FileName = "\\touch\StimulusSet\Caltech256\250.zebra\250_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object250"> </Image>
+        <Image Name = "Obj250-2" FileName = "\\touch\StimulusSet\Caltech256\250.zebra\250_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object250"> </Image>
+        <Image Name = "Obj250-3" FileName = "\\touch\StimulusSet\Caltech256\250.zebra\250_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object250"> </Image>
+        <Image Name = "Obj250-4" FileName = "\\touch\StimulusSet\Caltech256\250.zebra\250_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object250"> </Image>
+        <Image Name = "Obj250-5" FileName = "\\touch\StimulusSet\Caltech256\250.zebra\250_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object250"> </Image>
+      
+        <Image Name = "Obj002-1" FileName = "\\touch\StimulusSet\Caltech256\002.american-flag\002_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object2"> </Image>
+        <Image Name = "Obj002-2" FileName = "\\touch\StimulusSet\Caltech256\002.american-flag\002_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object2"> </Image>
+        <Image Name = "Obj002-3" FileName = "\\touch\StimulusSet\Caltech256\002.american-flag\002_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object2"> </Image>
+        <Image Name = "Obj002-4" FileName = "\\touch\StimulusSet\Caltech256\002.american-flag\002_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object2"> </Image>
+        <Image Name = "Obj002-5" FileName = "\\touch\StimulusSet\Caltech256\002.american-flag\002_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object2"> </Image>
+        
+        <Image Name = "Obj010-1" FileName = "\\touch\StimulusSet\Caltech256\010.beer-mug\010_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object10"> </Image>
+        <Image Name = "Obj010-2" FileName = "\\touch\StimulusSet\Caltech256\010.beer-mug\010_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object10"> </Image>
+        <Image Name = "Obj010-3" FileName = "\\touch\StimulusSet\Caltech256\010.beer-mug\010_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object10"> </Image>
+        <Image Name = "Obj010-4" FileName = "\\touch\StimulusSet\Caltech256\010.beer-mug\010_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object10"> </Image>
+        <Image Name = "Obj010-5" FileName = "\\touch\StimulusSet\Caltech256\010.beer-mug\010_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object10"> </Image>
+        
+        <Image Name = "Obj021-1" FileName = "\\touch\StimulusSet\Caltech256\021.breadmaker\021_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object21"> </Image>
+        <Image Name = "Obj021-2" FileName = "\\touch\StimulusSet\Caltech256\021.breadmaker\021_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object21"> </Image>
+        <Image Name = "Obj021-3" FileName = "\\touch\StimulusSet\Caltech256\021.breadmaker\021_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object21"> </Image>
+        <Image Name = "Obj021-4" FileName = "\\touch\StimulusSet\Caltech256\021.breadmaker\021_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object21"> </Image>
+        <Image Name = "Obj021-5" FileName = "\\touch\StimulusSet\Caltech256\021.breadmaker\021_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object21"> </Image>
+    
+        <Image Name = "Obj022-1" FileName = "\\touch\StimulusSet\Caltech256\022.buddha-101\022_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object22"> </Image>
+        <Image Name = "Obj022-2" FileName = "\\touch\StimulusSet\Caltech256\022.buddha-101\022_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object22"> </Image>
+        <Image Name = "Obj022-3" FileName = "\\touch\StimulusSet\Caltech256\022.buddha-101\022_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object22"> </Image>
+        <Image Name = "Obj022-4" FileName = "\\touch\StimulusSet\Caltech256\022.buddha-101\022_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object22"> </Image>
+        <Image Name = "Obj022-5" FileName = "\\touch\StimulusSet\Caltech256\022.buddha-101\022_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object22"> </Image>
+        
+        <Image Name = "Obj023-1" FileName = "\\touch\StimulusSet\Caltech256\023.bulldozer\023_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object23"> </Image>
+        <Image Name = "Obj023-2" FileName = "\\touch\StimulusSet\Caltech256\023.bulldozer\023_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object23"> </Image>
+        <Image Name = "Obj023-3" FileName = "\\touch\StimulusSet\Caltech256\023.bulldozer\023_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object23"> </Image>
+        <Image Name = "Obj023-4" FileName = "\\touch\StimulusSet\Caltech256\023.bulldozer\023_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object23"> </Image>
+        <Image Name = "Obj023-5" FileName = "\\touch\StimulusSet\Caltech256\023.bulldozer\023_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object23"> </Image>
+        
+
+        <Image Name = "Obj024-1" FileName = "\\touch\StimulusSet\Caltech256\024.butterfly\024_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object24"> </Image>
+        <Image Name = "Obj024-2" FileName = "\\touch\StimulusSet\Caltech256\024.butterfly\024_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object24"> </Image>
+        <Image Name = "Obj024-3" FileName = "\\touch\StimulusSet\Caltech256\024.butterfly\024_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object24"> </Image>
+        <Image Name = "Obj024-4" FileName = "\\touch\StimulusSet\Caltech256\024.butterfly\024_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object24"> </Image>
+        <Image Name = "Obj024-5" FileName = "\\touch\StimulusSet\Caltech256\024.butterfly\024_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object24"> </Image>
+
+        <Image Name = "Obj025-1" FileName = "\\touch\StimulusSet\Caltech256\025.cactus\025_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object25"> </Image>
+        <Image Name = "Obj025-2" FileName = "\\touch\StimulusSet\Caltech256\025.cactus\025_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object25"> </Image>
+        <Image Name = "Obj025-3" FileName = "\\touch\StimulusSet\Caltech256\025.cactus\025_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object25"> </Image>
+        <Image Name = "Obj025-4" FileName = "\\touch\StimulusSet\Caltech256\025.cactus\025_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object25"> </Image>
+        <Image Name = "Obj025-5" FileName = "\\touch\StimulusSet\Caltech256\025.cactus\025_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object25"> </Image>
+                
+        <Image Name = "Obj040-1" FileName = "\\touch\StimulusSet\Caltech256\040.cockroach\040_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object40"> </Image>
+        <Image Name = "Obj040-2" FileName = "\\touch\StimulusSet\Caltech256\040.cockroach\040_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object40"> </Image>
+        <Image Name = "Obj040-3" FileName = "\\touch\StimulusSet\Caltech256\040.cockroach\040_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object40"> </Image>
+        <Image Name = "Obj040-4" FileName = "\\touch\StimulusSet\Caltech256\040.cockroach\040_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object40"> </Image>
+        <Image Name = "Obj040-5" FileName = "\\touch\StimulusSet\Caltech256\040.cockroach\040_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object40"> </Image>
+        
+        <Image Name = "Obj049-1" FileName = "\\touch\StimulusSet\Caltech256\049.cormorant\049_0001.jpg" Attr = "VisualSearch_Exp1;Object;Object49"> </Image>
+        <Image Name = "Obj049-2" FileName = "\\touch\StimulusSet\Caltech256\049.cormorant\049_0002.jpg" Attr = "VisualSearch_Exp1;Object;Object49"> </Image>
+        <Image Name = "Obj049-3" FileName = "\\touch\StimulusSet\Caltech256\049.cormorant\049_0003.jpg" Attr = "VisualSearch_Exp1;Object;Object49"> </Image>
+        <Image Name = "Obj049-4" FileName = "\\touch\StimulusSet\Caltech256\049.cormorant\049_0004.jpg" Attr = "VisualSearch_Exp1;Object;Object49"> </Image>
+        <Image Name = "Obj049-5" FileName = "\\touch\StimulusSet\Caltech256\049.cormorant\049_0005.jpg" Attr = "VisualSearch_Exp1;Object;Object49"> </Image>
+        
+        
+    </Media>
+    
+</Config>

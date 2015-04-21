@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Stat Server Config File -->
+
+<Config>
+
+<Directories
+   LogFolder = "C:\Shay\Data\Logs\"
+> </Directories>
+
+<NeuralServer
+    Type = "PLEXON"
+> </NeuralServer>
+
+<Misc
+   ExitScript = "fnStatServerExitScript_Rig23B"
+> </Misc>
+
+</Config>

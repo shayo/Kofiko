@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- fMRI Paradigm Configuration -->        
+
+<Config>
+            <m_strctGeneral
+                m_strParadigmName = "fMRI Block Design"
+
+                m_strAnalysisDescription = "fMRI - Standard Analysis"
+                m_bActiveNeuralAnalysis = "0"
+
+                m_strStatisticsFunction = ""
+                m_strDisplayFunction  = ""
+
+                m_bActiveBehaviorAnalysis = "1"                
+                m_strBehaviorStatisticsScript = "fnAnalyzeBlockDesignParadigm"
+                m_strBehaviorDisplayScript = "fnDisplayBlockDesignExperiment"                
+
+            > </m_strctGeneral>
+            <m_strctParams
+                m_fCorrectTrialDistanceFromFixationSpot = "100"
+                m_fFixationPercThreshold = "95"
+                m_fCorrectBlockFixationPercThreshold = "80"
+            > </m_strctParams>
+        </Config>
+
+        

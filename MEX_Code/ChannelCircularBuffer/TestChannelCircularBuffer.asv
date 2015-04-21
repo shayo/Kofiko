@@ -1,0 +1,37 @@
+addpath('Z:\MEX\x64');
+
+BufSize = 100;
+N =100;
+W = 40;
+NumCh = 16;
+
+h=ChannelCircularBuffer('Init',NumCh,BufSize,W);
+
+Waves = randi(4096, [N W])-2048;
+aiChannels = ones(1,N);
+
+ChannelCircularBuffer('Update',h, aiChannels, Waves'); % important! waves must be WxN (num points in wave form x num samples)
+
+afMeanWave = mean(Waves,1);
+afMeanWave(1)
+
+[V,E]=ChannelCircularBuffer('RunPCA',h, 1); % important! waves must be WxN (num points in wave form x num samples)
+
+
+WavesZeroMean = Waves - repmat(afMeanWave, size(Waves,1),1);
+C=WavesZeroMean'*WavesZeroMean;
+[VV,EE]=eig(C);
+EE(end,end)
+VV(:,end)
+E-round(fliplr(diag(EE)'))
+
+
+
+
+
+WavesInBuffer = ChannelCircularBuffer('GetBuffer',h, 1); % important! waves must be WxN (num points in wave form x num samples)
+MeanW = mean(Waves,1)
+
+
+% ChannelCircularBuffer('Clear',h, 1:NumCh); % important! waves must be WxN (num points in wave form x num samples)
+% 	
