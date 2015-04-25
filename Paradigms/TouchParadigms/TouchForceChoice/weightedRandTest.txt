@@ -1,0 +1,10 @@
+function weightedRandTest()
+
+
+tic
+a = 1:3;             %# possible numbers
+w = [0.3 0.1 0.2];   %# corresponding weights
+N = 10;              %# how many numbers to generate
+
+R = a( sum( bsxfun(@ge, rand(N,1), cumsum(w./sum(w))), 2) + 1 )
+toc

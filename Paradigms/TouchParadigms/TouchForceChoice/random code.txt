@@ -1,0 +1,15 @@
+function fnAdjustLocationWeights()
+global g_strctParadigm
+
+
+
+
+g_strctParadigm.m_iSelectedChoice
+g_strctParadigm.m_strctChoicesVars.m_aiChoiceSelectedCounter
+
+
+
+
+
+
+return;

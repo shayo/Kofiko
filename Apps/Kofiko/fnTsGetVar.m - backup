@@ -1,0 +1,45 @@
+function Value = fnTsGetVar(tstrct, strVarName)
+%tic
+global g_strctParadigm g_strctEyeCalib  g_strctDAQParams
+
+if ischar(tstrct)
+	structName = tstrct;
+else
+	structName = inputname(1);
+end
+switch structName
+	case 'g_strctParadigm'
+		if ischar(g_strctParadigm.(strVarName).Buffer) || iscell(g_strctParadigm.(strVarName).Buffer)
+		   Value = g_strctParadigm.(strVarName).Buffer{g_strctParadigm.(strVarName).BufferIdx};
+		else
+			if length(size(g_strctParadigm.(strVarName).Buffer)) == 3
+				Value =  g_strctParadigm.(strVarName).Buffer(:,:,g_strctParadigm.(strVarName).BufferIdx);
+			end
+		end
+	case 'g_strctEyeCalib'
+		if ischar(g_strctEyeCalib.(strVarName).Buffer) || iscell(g_strctEyeCalib.(strVarName).Buffer)
+		   Value = g_strctEyeCalib.(strVarName).Buffer{g_strctEyeCalib.(strVarName).BufferIdx};
+		else
+			if length(size(g_strctEyeCalib.(strVarName).Buffer)) == 3
+				Value =  g_strctEyeCalib.(strVarName).Buffer(:,:,g_strctEyeCalib.(strVarName).BufferIdx);
+			end
+		end
+	case 'g_strctDAQParams'
+		if ischar(g_strctDAQParams.(strVarName).Buffer) || iscell(g_strctDAQParams.(strVarName).Buffer)
+		   Value = g_strctDAQParams.(strVarName).Buffer{g_strctDAQParams.(strVarName).BufferIdx};
+		else
+			if length(size(g_strctDAQParams.(strVarName).Buffer)) == 3
+				Value =  g_strctDAQParams.(strVarName).Buffer(:,:,g_strctDAQParams.(strVarName).BufferIdx);
+			end
+		end
+	otherwise 
+		if ischar(tstrct.(strVarName).Buffer) || iscell(tstrct.(strVarName).Buffer)
+		   Value = tstrct.(strVarName).Buffer{tstrct.(strVarName).BufferIdx};
+		else
+			if length(size(tstrct.(strVarName).Buffer)) == 3
+				Value =  tstrct.(strVarName).Buffer(:,:,tstrct.(strVarName).BufferIdx);
+			end
+		end
+end	
+%disp(sprintf('get struct %s takes %f',structName,toc))
+return;

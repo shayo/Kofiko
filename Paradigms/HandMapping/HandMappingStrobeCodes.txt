@@ -1,0 +1,29 @@
+# Stimulus Events
+1 Stimulus 1
+2 Stimulus 2
+3 Stimulus 3
+# They are not written explicitly, but the paradigm will send the current stimulus index as a strobe word
+
+32600 Image List Changed
+32601 Gaze Time Changed
+32602 Fixation Spot Size Changed
+32603 Stimulus ON Time Changed
+32604 Stimulus OFF Time Changed
+32605 Gaze Reward Rect Changed
+32606 Stimulus Size Changed
+32607 Juice Time Changed
+32608 Fixation Spot Position Changed
+32609 Stimulus Position Changed
+32610 Background Color Changed
+32611 Rotation Angle Changed
+32612 Fit-To-Screen enabled
+32613 Fit-To-Screen Disabled
+
+# Callback events
+
+32695 Trial Outcome 3 - Miss Flip
+32696 Trial Outcome 2 - Incorrect Fixation
+32697 Trial Outcome 1 - Correct Fixation
+32698 Trial Align
+32699 Trial End
+32700 Trial Start

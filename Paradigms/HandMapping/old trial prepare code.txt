@@ -1,0 +1,154 @@
+old prepare trial code
+
+
+
+
+%{
+% Update the trial times
+if strcmp(strctTrial.m_strTrialType, 'Plain Bar')
+    strctTrial.m_fStimulusON_MS = 0;
+    strctTrial.m_fStimulusOFF_MS = 0;
+    %Override the number of bars if this paradigm is selected. Might change this later.
+    strctTrial.NumberOfBars = 1;
+    g_strctParadigm.m_bRandomStimulusPosition = 0;
+else % Other types of trials may want different timing
+    strctTrial.m_fStimulusON_MS = g_strctParadigm.StimulusON_MS.Buffer(1,:,g_strctParadigm.StimulusON_MS.BufferIdx);
+    strctTrial.m_fStimulusOFF_MS = g_strctParadigm.StimulusOFF_MS.Buffer(1,:,g_strctParadigm.StimulusOFF_MS.BufferIdx);
+end
+
+if ~g_strctParadigm.m_bRandomStimulusPosition
+    % No point drawing a bunch of bars on top of each other
+    strctTrial.NumberOfBars = 1;
+end
+
+% Get all the variables ready here, and calculate the bar size and whatnot
+
+
+
+strctTrial.numFrames = round(strctTrial.m_fStimulusON_MS / (g_strctPTB.g_strctStimulusServer.m_RefreshRateMS));
+if strctTrial.numFrames == 0
+    strctTrial.numFrames = 1;
+end
+
+ClockRandSeed;
+if g_strctParadigm.m_bRandomStimulusPosition && ~strcmp(g_strctParadigm.m_strctDesign.m_strctBlocksAndOrder.m_astrctBlocks(g_strctParadigm.m_iCurrentBlockIndexInOrderList).m_strBlockName, 'Plain Bar')
+    %strctTrial.m_bRandomStimulusLocations = zeros(2,strctTrial.NumberOfBars);
+    for iNumBars = 1 : strctTrial.NumberOfBars
+        % Random center points
+        
+        strctTrial.location_x(iNumBars) = g_strctParadigm.m_bStimulusRect(1)+ round(rand*range([g_strctParadigm.m_bStimulusRect(1),g_strctParadigm.m_bStimulusRect(3)]));
+        strctTrial.location_y(iNumBars) = g_strctParadigm.m_bStimulusRect(2)+ round(rand*range([g_strctParadigm.m_bStimulusRect(2),g_strctParadigm.m_bStimulusRect(4)]));
+        strctTrial.bar_rect(iNumBars,1:4) = [(strctTrial.location_x(iNumBars) - strctTrial.Length/2), (strctTrial.location_y(iNumBars)  - strctTrial.Width/2), ...
+            (strctTrial.location_x(iNumBars) + strctTrial.Length/2), (strctTrial.location_y(iNumBars) + strctTrial.Width/2)];
+        
+    end
+else
+    strctTrial.location_x(1) = g_strctParadigm.m_bCenterOfStimulus(1);
+    strctTrial.location_y(1) = g_strctParadigm.m_bCenterOfStimulus(2);
+    strctTrial.bar_rect(1,1:4) = [(g_strctParadigm.m_bCenterOfStimulus(1) - strctTrial.Length/2), (g_strctParadigm.m_bCenterOfStimulus(2) - strctTrial.Width/2), ...
+        (g_strctParadigm.m_bCenterOfStimulus(1) + strctTrial.Length/2), (g_strctParadigm.m_bCenterOfStimulus(2) + strctTrial.Width/2)];
+end
+
+if ~g_strctParadigm.m_bRandomStimulusOrientation && strcmp(strctTrial.m_strTrialType,'Moving Bar')
+    strctTrial.fRotationAngle = squeeze(g_strctParadigm.Orientation.Buffer(1,:,g_strctParadigm.Orientation.BufferIdx));
+else
+    
+    strctTrial.fRotationAngle = round(19.*rand(1,1) + 1) * 18;
+end
+
+
+if strcmp(strctTrial.m_strTrialType, 'Color Tuning Function')
+    % Use strobe words
+    strctTrial.m_bUseStrobes = 1;
+    % Get which color we're using for this iteration
+	
+	strctTrial.moveDistance = 0; % No moving for this paradigm. Could change eventually
+    strctTrial.BarColor = [2 2 2]; % Always set to this so the Clut is accurate
+	% Background color
+    strctTrial.m_afBackgroundColor = [1 1 1]; % ditto
+	
+    [g_strctParadigm, strctTrial] = fnChooseColor(g_strctParadigm, strctTrial);
+    
+    
+
+    
+else
+    strctTrial.m_bUseStrobes = 0;
+    strctTrial.moveDistance = squeeze(g_strctParadigm.MoveDistance.Buffer(1,:,g_strctParadigm.MoveDistance.BufferIdx));
+    strctTrial.BarColor = [squeeze(g_strctParadigm.BarRed.Buffer(1,:,g_strctParadigm.BarRed.BufferIdx)), ...
+        squeeze(g_strctParadigm.BarGreen.Buffer(1,:,g_strctParadigm.BarGreen.BufferIdx)),...
+        squeeze(g_strctParadigm.BarBlue.Buffer(1,:,g_strctParadigm.BarBlue.BufferIdx))];
+    
+    % Background color
+    strctTrial.m_afBackgroundColor = [squeeze(g_strctParadigm.BackgroundRed.Buffer(1,:,g_strctParadigm.BackgroundRed.BufferIdx))...
+        squeeze(g_strctParadigm.BackgroundGreen.Buffer(1,:,g_strctParadigm.BackgroundGreen.BufferIdx))...
+        squeeze(g_strctParadigm.BackgroundBlue.Buffer(1,:,g_strctParadigm.BackgroundBlue.BufferIdx))];
+end
+
+
+
+
+
+
+if strctTrial.NumberOfBars == 1
+    [strctTrial.point1(1,1), strctTrial.point1(2,1)] = fnRotateAroundPoint(strctTrial.bar_rect(1,1),strctTrial.bar_rect(1,2),strctTrial.location_x(1),strctTrial.location_y(1),strctTrial.fRotationAngle);
+    [strctTrial.point2(1,1), strctTrial.point2(2,1)] = fnRotateAroundPoint(strctTrial.bar_rect(1,1),strctTrial.bar_rect(1,4),strctTrial.location_x(1),strctTrial.location_y(1),strctTrial.fRotationAngle);
+    [strctTrial.point3(1,1), strctTrial.point3(2,1)] = fnRotateAroundPoint(strctTrial.bar_rect(1,3),strctTrial.bar_rect(1,4),strctTrial.location_x(1),strctTrial.location_y(1),strctTrial.fRotationAngle);
+    [strctTrial.point4(1,1), strctTrial.point4(2,1)] = fnRotateAroundPoint(strctTrial.bar_rect(1,3),strctTrial.bar_rect(1,2),strctTrial.location_x(1),strctTrial.location_y(1),strctTrial.fRotationAngle);
+    [strctTrial.bar_starting_point(1,1),strctTrial.bar_starting_point(2,1)] = fnRotateAroundPoint(strctTrial.location_x(1),(strctTrial.location_y(1) - strctTrial.moveDistance/2),strctTrial.location_x(1),strctTrial.location_y(1),strctTrial.fRotationAngle);
+    [strctTrial.bar_ending_point(1,1),strctTrial.bar_ending_point(2,1)] = fnRotateAroundPoint(strctTrial.location_x(1),(strctTrial.location_y(1) + strctTrial.moveDistance/2),strctTrial.location_x(1),strctTrial.location_y(1),strctTrial.fRotationAngle);
+else
+    for iNumOfBars = 1:strctTrial.NumberOfBars
+        [strctTrial.point1(1,iNumOfBars), strctTrial.point1(2,iNumOfBars)] = fnRotateAroundPoint(strctTrial.bar_rect(iNumOfBars,1),strctTrial.bar_rect(iNumOfBars,2),strctTrial.location_x(iNumOfBars),strctTrial.location_y(iNumOfBars),strctTrial.fRotationAngle);
+        [strctTrial.point2(1,iNumOfBars), strctTrial.point2(2,iNumOfBars)] = fnRotateAroundPoint(strctTrial.bar_rect(iNumOfBars,1),strctTrial.bar_rect(iNumOfBars,4),strctTrial.location_x(iNumOfBars),strctTrial.location_y(iNumOfBars),strctTrial.fRotationAngle);
+        [strctTrial.point3(1,iNumOfBars), strctTrial.point3(2,iNumOfBars)] = fnRotateAroundPoint(strctTrial.bar_rect(iNumOfBars,3),strctTrial.bar_rect(iNumOfBars,4),strctTrial.location_x(iNumOfBars),strctTrial.location_y(iNumOfBars),strctTrial.fRotationAngle);
+        [strctTrial.point4(1,iNumOfBars), strctTrial.point4(2,iNumOfBars)] = fnRotateAroundPoint(strctTrial.bar_rect(iNumOfBars,3),strctTrial.bar_rect(iNumOfBars,2),strctTrial.location_x(iNumOfBars),strctTrial.location_y(iNumOfBars),strctTrial.fRotationAngle);
+        [strctTrial.bar_starting_point(1,iNumOfBars),strctTrial.bar_starting_point(2,iNumOfBars)] = fnRotateAroundPoint(strctTrial.location_x(iNumOfBars),(strctTrial.location_y(iNumOfBars) - strctTrial.moveDistance/2),strctTrial.location_x(iNumOfBars),strctTrial.location_y(iNumOfBars),strctTrial.fRotationAngle);
+        [strctTrial.bar_ending_point(1,iNumOfBars),strctTrial.bar_ending_point(2,iNumOfBars)] = fnRotateAroundPoint(strctTrial.location_x(iNumOfBars),(strctTrial.location_y(iNumOfBars) + strctTrial.moveDistance/2),strctTrial.location_x(iNumOfBars),strctTrial.location_y(iNumOfBars),strctTrial.fRotationAngle);
+        
+        
+        % Calculate center points for all the bars based on random generation of coordinates inside the stimulus area, and generate the appropriate point list
+    end
+end
+
+% clear this or if the stimulus on time is changed it will break the array and crash kofiko
+[strctTrial.coordinatesX, strctTrial.coordinatesY]  = deal(zeros(4, strctTrial.numFrames, strctTrial.NumberOfBars));
+
+% Check if the trial has more than 1 frame in it, so we can plan the trial
+if strctTrial.numFrames > 1
+    for iNumOfBars = 1:strctTrial.NumberOfBars
+        % Calculate coordinates for every frame
+        
+        strctTrial.coordinatesX(1:4,:,iNumOfBars) = vertcat(round(linspace(strctTrial.point1(1,iNumOfBars) - (strctTrial.location_x(iNumOfBars) - strctTrial.bar_starting_point(1,iNumOfBars)),strctTrial.point1(1,iNumOfBars)-(strctTrial.location_x(iNumOfBars) - strctTrial.bar_ending_point(1,iNumOfBars)),strctTrial.numFrames)),...
+            round(linspace(strctTrial.point2(1,iNumOfBars) - (strctTrial.location_x(iNumOfBars) - strctTrial.bar_starting_point(1,iNumOfBars)),strctTrial.point2(1,iNumOfBars) - (strctTrial.location_x(iNumOfBars) - strctTrial.bar_ending_point(1,iNumOfBars)),strctTrial.numFrames)),...
+            round(linspace(strctTrial.point3(1,iNumOfBars) - (strctTrial.location_x(iNumOfBars) - strctTrial.bar_starting_point(1,iNumOfBars)),strctTrial.point3(1,iNumOfBars) - (strctTrial.location_x(iNumOfBars) - strctTrial.bar_ending_point(1,iNumOfBars)),strctTrial.numFrames)),...
+            round(linspace(strctTrial.point4(1,iNumOfBars) - (strctTrial.location_x(iNumOfBars) - strctTrial.bar_starting_point(1,iNumOfBars)),strctTrial.point4(1,iNumOfBars) - (strctTrial.location_x(iNumOfBars) - strctTrial.bar_ending_point(1,iNumOfBars)),strctTrial.numFrames)));
+        strctTrial.coordinatesY(1:4,:,iNumOfBars) = vertcat(round(linspace(strctTrial.point1(2,iNumOfBars) - (strctTrial.location_y(iNumOfBars) - strctTrial.bar_starting_point(2,iNumOfBars)),strctTrial.point1(2,iNumOfBars)-(strctTrial.location_y(iNumOfBars) - strctTrial.bar_ending_point(2,iNumOfBars)),strctTrial.numFrames)),...
+            round(linspace(strctTrial.point2(2,iNumOfBars) - (strctTrial.location_y(iNumOfBars) - strctTrial.bar_starting_point(2,iNumOfBars)),strctTrial.point2(2,iNumOfBars) - (strctTrial.location_y(iNumOfBars) - strctTrial.bar_ending_point(2,iNumOfBars)),strctTrial.numFrames)),...
+            round(linspace(strctTrial.point3(2,iNumOfBars) - (strctTrial.location_y(iNumOfBars) - strctTrial.bar_starting_point(2,iNumOfBars)),strctTrial.point3(2,iNumOfBars) - (strctTrial.location_y(iNumOfBars) - strctTrial.bar_ending_point(2,iNumOfBars)),strctTrial.numFrames)),...
+            round(linspace(strctTrial.point4(2,iNumOfBars) - (strctTrial.location_y(iNumOfBars) - strctTrial.bar_starting_point(2,iNumOfBars)),strctTrial.point4(2,iNumOfBars) - (strctTrial.location_y(iNumOfBars) - strctTrial.bar_ending_point(2,iNumOfBars)),strctTrial.numFrames)));
+    end
+else
+    for iNumOfBars = 1:strctTrial.NumberOfBars
+        % Only one frame, so the coordinates are static
+        %{
+	 strctTrial.coordinatesX(1:4,:,iNumOfBars) = vertcat(round(strctTrial.point1(1,iNumOfBars)),...
+														   round(strctTrial.point2(1,iNumOfBars)),...
+														   round(strctTrial.point3(1,iNumOfBars)),...
+														   round(strctTrial.point4(1,iNumOfBars)));
+		strctTrial.coordinatesY(1:4,:,iNumOfBars) = vertcat(round(strctTrial.point1(2,iNumOfBars)),...
+														   round(strctTrial.point2(2,iNumOfBars)),...
+														   round(strctTrial.point3(2,iNumOfBars)),...
+														   round(strctTrial.point4(2,iNumOfBars)));
+    
+        %}
+        
+        strctTrial.coordinatesX(1:4,:) = [strctTrial.point1(1), strctTrial.point2(1), strctTrial.point3(1),strctTrial.point4(1)];
+        strctTrial.coordinatesY(1:4,:) = [strctTrial.point1(2), strctTrial.point2(2), strctTrial.point3(2),strctTrial.point4(2)];
+    end
+end
+
+
+
+return;
+%}
