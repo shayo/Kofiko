@@ -1,5 +1,8 @@
 # Kofiko Tutorial Getting started
 #### Meyer 2015
+https://github.com/ninehundred1
+
+
 Kofiko allows you to run the Matlab Psychotoolbox within a wrapper for easy generation of new paradigms. 
 Below is a guide how to set up Kofiko to work with a touchscreen and how to modify the paradigms. You need two screens in this tutorial, the right screen needs a lower resolution (as does the touch screen if you want to run it this way). The left screen is a direct mirror of the touch screen. Additionally to that there are also GUI elements that allow for different settings. As those elements need screen size, the left (experimentator) screen needs to be wider in the number of pixes. It is also possible to connect to computers, which we are not doing here.
 You would also need hardware connected to handle the giving of a reward, turning on of an LED or whatnot you like to add. You can use different devices, including an Ardunio. Look in the manual for more info on that.
@@ -16,13 +19,18 @@ These 5 steps below need to be done just to get Kofiko working.
 I have not tried newer matlab than 2012, so not sure that works. Also we use 32 bit matlab 2009-2012 (64 will not work with the current mex files it seems). If you only have 64bit matlab (go to the folder where matlab is installed **(eg C:\ProgramFiles\MATLAB\R2012a32bit\bin\)** and see if there is a folder win32. If there is only win64, you need to download the 32bit version of Matlab. Go to the mathworks website, enter your info and then look for previous versions and install the 32bit of matlab 2012.
 
 ### 1. Download Kofiko.
-Now you have two options, if you want to do the whole tutorial,
+Now you have two options:
+A. if you want to do the whole tutorial,
 download the original zip from here:
 https://github.com/shayo/Kofiko
 or clone using git:
 >git clone https://github.com/shayo/Kofiko
 
-if you want to just set it up to work the way it does here but not go into details, download the current working Version from here
+if that file it not available anymore, use the *original* branch here
+https://github.com/ninehundred1/Kofiko/tree/original
+
+
+B. if you want to just set it up to work the way it does here but not go into details, download the current working Version from here
 
 https://github.com/ninehundred1/Kofiko/tree/tutorial
 
